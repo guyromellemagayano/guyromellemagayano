@@ -1,0 +1,26 @@
+[
+  {
+    "section": "not-found-intro",
+    "content": [
+      {
+        "title": "404: Page Not Found"
+      }
+    ]
+  },
+  {
+    "section": "not-found-info",
+    "content": [
+      {
+        "description": [
+          "Ooops! It looks like the page you were looking for could not be found. Why not check out the homepage? I'm sure there will be something you're looking for there."
+        ],
+        "ctaLink": [
+          {
+            "link": "/",
+            "label": "Go to homepage"
+          }
+        ]
+      }
+    ]
+  }
+]

@@ -1,0 +1,17 @@
+[
+  {
+    "section": "home-blog",
+    "content": [
+      {
+        "title": "Blog",
+        "subtitle": "WordPress and tech, in general, in my own words.",
+        "ctaLink": [
+          {
+            "link": "/blog/",
+            "label": "More from my blog"
+          }
+        ]
+      }
+    ]
+  }
+]

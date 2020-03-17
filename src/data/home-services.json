@@ -1,0 +1,69 @@
+[
+  {
+    "section": "home-services",
+    "content": [
+      {
+        "title": "Services and Specialties",
+        "subtitle": "Helping businesses through design and development primarily using WordPress.",
+        "skills": [
+          {
+            "thumbnail": [
+              {
+                "src": "thumbnail-placeholder.png",
+                "alt": "sample-logo"
+              }
+            ],
+            "title": "Visual and UI Design",
+            "description": "Resourceful and tech-savvy web developer with at least 5 years of progressive experience in WordPress both in front-end and back-end web development. I'm currently available for new projects."
+          },
+          {
+            "thumbnail": [
+              {
+                "src": "thumbnail-placeholder.png",
+                "alt": "sample-logo"
+              }
+            ],
+            "title": "Custom Theme Development",
+            "description": "Resourceful and tech-savvy web developer with at least 5 years of progressive experience in WordPress both in front-end and back-end web development. I'm currently available for new projects."
+          },
+          {
+            "thumbnail": [
+              {
+                "src": "thumbnail-placeholder.png",
+                "alt": "sample-logo"
+              }
+            ],
+            "title": "Custom Plugin Development",
+            "description": "Resourceful and tech-savvy web developer with at least 5 years of progressive experience in WordPress both in front-end and back-end web development. I'm currently available for new projects."
+          },
+          {
+            "thumbnail": [
+              {
+                "src": "thumbnail-placeholder.png",
+                "alt": "sample-logo"
+              }
+            ],
+            "title": "Server Deployment and Maintenance",
+            "description": "Resourceful and tech-savvy web developer with at least 5 years of progressive experience in WordPress both in front-end and back-end web development. I'm currently available for new projects."
+          },
+          {
+            "thumbnail": [
+              {
+                "src": "thumbnail-placeholder.png",
+                "alt": "sample-logo"
+              }
+            ],
+            "title": "Search Engine Optimization (SEO)",
+            "description": "Resourceful and tech-savvy web developer with at least 5 years of progressive experience in WordPress both in front-end and back-end web development. I'm currently available for new projects."
+          }
+        ],
+        "ctaLink": [
+          {
+            "link": "/specialties/",
+            "label": "Check out my specialties"
+          }
+        ]
+      }
+    ]
+  }
+]

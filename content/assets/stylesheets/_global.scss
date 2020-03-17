@@ -1,0 +1,64 @@
+// Global
+body {
+  font-family: $typeface-source-sans-pro, $typeface-sans-serif !important;
+}
+
+.container {
+  @media only screen and (min-width: 1024px) {
+    max-width: 960px;
+  }
+
+  @media only screen and (min-width: 1280px) {
+    max-width: 1136px;
+  }
+
+  @media only screen and (min-width: 1366px) {
+    max-width: 1280px;
+  }
+
+  @media only screen and (min-width: 1400px) {
+    max-width: 1400px;
+  }
+
+  @media only screen and (min-width: 1650px) {
+    max-width: 1650px;
+  }
+}
+
+// Flex
+.flex-basis-1 {
+  flex-basis: 100%;
+}
+
+.flex-basis-0 {
+  flex-basis: 50%;
+}
+
+// Colors
+.darker-gray {
+  color: $darker-gray;
+}
+
+.dark-gray {
+  color: $dark-gray;
+}
+
+.light-gray {
+  color: $light-gray;
+}
+
+.lighter-gray {
+  color: $lighter-gray;
+}
+
+.regular-gray {
+  color: $regular-gray;
+}
+
+.regular-green {
+  color: $regular-green;
+}
+
+.regular-red {
+  color: $regular-red;
+}

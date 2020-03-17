@@ -1,0 +1,15 @@
+[
+  {
+    "section": "tags-template-intro",
+    "content": [
+      {
+        "ctaLink": [
+          {
+            "link": "/tags/",
+            "label": "Check out all tags"
+          }
+        ]
+      }
+    ]
+  }
+]

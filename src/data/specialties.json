@@ -1,0 +1,116 @@
+[
+  {
+    "section": "services-intro",
+    "content": [
+      {
+        "title": "Specialities",
+        "subtitle": "Resourceful and tech-savvy WordPress developer with at least 5 years of progressive experience in WordPress both in front-end and back-end. I'm currently available for <a href=\"/contact\" class=\"regular-green\">new projects</a>."
+      }
+    ]
+  },
+  {
+    "section": "services-list",
+    "content": [
+      {
+        "skills": [
+          {
+            "thumbnail": [
+              {
+                "src": "thumbnail-placeholder.png",
+                "alt": "sample-logo",
+                "width": 120,
+                "height": 120
+              }
+            ],
+            "title": "Front-End Development",
+            "description": "HTML5, CSS3, JavaScript <i>(ES6)</i>, JQuery, Task Runners <i>(Gulp, Grunt, and Webpack)</i>, Package Managers <i>(Yarn and NPM)</i>, CSS Frameworks <i>(Twitter Bootstrap, Bulma, and Tailwind CSS)</i>, Laravel Blade, CSS Preprocessors <i>(SCSS / SASS)</i>, Methodologies <i>(BEM)</i>, Grid System, WCAG Accesibility Compliance, Cross-browser compatibility practices <i>(i.e, Firefox, Chrome, Safari, and Opera)</i>, ReactJS Framework, and JAMstack <i>(Gatsby, Hugo, and Jekyll)</i>"
+          },
+          {
+            "thumbnail": [
+              {
+                "src": "thumbnail-placeholder.png",
+                "alt": "sample-logo",
+                "width": 120,
+                "height": 120
+              }
+            ],
+            "title": "Back-End Development",
+            "description": "PHP <i>(WordPress)</i>, Timber <i>(Twig)</i>, Composer, and WordPress API <i>(REST API)</i>"
+          },
+          {
+            "thumbnail": [
+              {
+                "src": "thumbnail-placeholder.png",
+                "alt": "sample-logo",
+                "width": 120,
+                "height": 120
+              }
+            ],
+            "title": "Database Administration",
+            "description": "MariaDB, MySQL, Adminer, and PHPMyAdmin"
+          },
+          {
+            "thumbnail": [
+              {
+                "src": "thumbnail-placeholder.png",
+                "alt": "sample-logo",
+                "width": 120,
+                "height": 120
+              }
+            ],
+            "title": "Version Control",
+            "description": "Git, Github, Gitlab, and Bitbucket"
+          },
+          {
+            "thumbnail": [
+              {
+                "src": "thumbnail-placeholder.png",
+                "alt": "sample-logo",
+                "width": 120,
+                "height": 120
+              }
+            ],
+            "title": "Server Administration",
+            "description": "Docker, Vagrant, Terminal <i>(SSH, BASH, ZSH, MS-DOS)</i>, Open-Source Web Server Solutions <i>(XAMPP, LAMP, LEMP, WAMP and MAMP)</i>, Remote Web Servers <i>(cPanel and WHM Administration and VPS)</i>, Web Servers <i>(Apache and NGINX)</i>, FTP, SFTP, and CLI <i>(Command-Line Interface)</i>"
+          },
+          {
+            "thumbnail": [
+              {
+                "src": "thumbnail-placeholder.png",
+                "alt": "sample-logo",
+                "width": 120,
+                "height": 120
+              }
+            ],
+            "title": "Web Design (UI/UX)",
+            "description": "Sketch, Adobe Photoshop, and Adobe XD"
+          },
+          {
+            "thumbnail": [
+              {
+                "src": "thumbnail-placeholder.png",
+                "alt": "sample-logo",
+                "width": 120,
+                "height": 120
+              }
+            ],
+            "title": "Search Engine Optimization (SEO)",
+            "description": "On-page and off-page SEO <i>(backlinking, schema markup, meta tags, and keywords)</i>, Google SEO tools <i>(Analytics, Webmaster, PageSpeed Insights)</i> and GTMetrix for site performance benchmark and analysis."
+          },
+          {
+            "thumbnail": [
+              {
+                "src": "thumbnail-placeholder.png",
+                "alt": "sample-logo",
+                "width": 120,
+                "height": 120
+              }
+            ],
+            "title": "Project Management",
+            "description": "Trello, Jira, and Asana"
+          }
+        ]
+      }
+    ]
+  }
+]

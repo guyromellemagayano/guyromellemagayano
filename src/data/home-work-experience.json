@@ -1,0 +1,97 @@
+[
+  {
+    "section": "home-work-experience",
+    "content": [
+      {
+        "title": "Work Experience",
+        "subtitle": "Everyone once started somewhere. Everyday is a chance to learn something new.",
+        "workHistory": [
+          {
+            "company": "MAKE Interactive / ZUID Creatives",
+            "employmentDate": "April 2019 – February 2020",
+            "position": "Full Stack WordPress Developer and Front-End Developer",
+            "description": "Hired as a full-time full stack WordPress developer (WordPress) and front-end developer (<i>for the company’s SASS platform</i>)",
+            "keyContributions": [
+              "Assisted the lead WordPress web developers in providing solutions to various WordPress websites (<i>ecommerce and company websites</i>)",
+              "Performed theme and plugin development for various WordPress websites",
+              "Worked with a small team of full stack web developers to establish an internal SASS platform for the company (<i>Web App Stack: React, Redux, Laravel, Redis, MySQL, NodeJS</i>)"
+            ]
+          },
+          {
+            "company": "Orth Enterprises, LLC",
+            "employmentDate": "April 2019 - August 2019",
+            "position": "Web Developer",
+            "description": "Hired as a freelance web developer to work on Shopify sites and static sites using JAMstack",
+            "keyContributions": [
+              "Worked on a web project and apply Hugo static site generator for web development.",
+              "Worked on a Shopify project to add a custom functionality as per request by the client."
+            ]
+          },
+          {
+            "company": "Outsourcing Wizards",
+            "employmentDate": "January 2019 - March 2019",
+            "position": "Full Stack WordPress Developer",
+            "description": "Hired as full-time full stack WordPress developer.",
+            "keyContributions": [
+              "Worked with a small team in developing a real estate plugin for various clients.",
+              "Performed theme and plugin development for various WordPress websites."
+            ]
+          },
+          {
+            "company": "Infosoft Studio",
+            "employmentDate": "May 2017 - September 2018",
+            "position": "Full Stack Web Developer",
+            "description": "Hired as a full-time full stack web developer by various clients (<i>many to mention here</i>)",
+            "keyContributions": [
+              "Worked with the CTO in serving various client’s website needs.",
+              "Maintained, developed, and designed websites for various clients ranging from WordPress sites to custom websites developed other than WordPress."
+            ]
+          },
+          {
+            "company": "Freelance",
+            "employmentDate": "November 2014 - March 2015",
+            "position": "Full Stack Web Developer",
+            "description": "Hired as a full-time full stack web developer by my friend who happened to be the manager of a local company here in Davao City, Philippines.",
+            "keyContributions": [
+              "Worked with the manager in serving various client’s website needs.",
+              "Maintained, developed, and designed websites for various clients ranging from WordPress sites to custom websites developed other than WordPress."
+            ]
+          },
+          {
+            "company": "Freelance",
+            "employmentDate": "May 2014 - October 2014",
+            "position": "Front-End Developer / Project Manager",
+            "description": "Hired as a freelance front-end developer / project manager by a client to handle project management and development of his vocabulary and assessment management system.",
+            "keyContributions": [
+              "Hired a small team of developers to help design and create the aforementioned web application.",
+              "Contributed to the development of the application by providing additional code to the codebase.",
+              "Applied project management skills initially learned and utilized tools including Microsoft Project and Trello."
+            ]
+          },
+          {
+            "company": "Western Pest Control",
+            "employmentDate": "May 2014 - October 2014",
+            "position": "Full-Time Webmaster / Virtual Assistant / SEO Specialist",
+            "description": "Hired as a full-time webmaster to handle various existing websites (<i>Easter Car Show, Western Pest Control, and Leadership Dixie</i>)",
+            "keyContributions": [
+              "Performed SEO techniques (<i>on-page and off-page</i>) in the aforementioned websites.",
+              "Utilized Google Analytics and Google Webmaster during the SEO process of the aforementioned websites.",
+              "Handled server management among the aforementioned websites with cPanel.",
+              "Provided various reports to the client through spreadsheets and word documents."
+            ]
+          },
+          {
+            "company": "Freelancer",
+            "employmentDate": "September 2013 - October 2013",
+            "position": "Front-End Developer",
+            "description": "Hired as a freelance, front-end developer to design and develop client websites.",
+            "keyContributions": [
+              "Gained new experience in developing better web layouts with the use of Twitter Bootstrap.",
+              "Applied responsive web design into the client’s web application (<i>Susumamas: Family and Youth Health Services</i>)"
+            ]
+          }
+        ]
+      }
+    ]
+  }
+]

@@ -1,0 +1,60 @@
+[
+  {
+    "section": "contact-intro",
+    "content": [
+      {
+        "title": "Contact",
+        "subtitle": "I'm currently available to work on new projects. You can get in touch with me by filling out the small form below or grab my <a href=\"#contact-details\" class=\"regular-green\">contact details</a>."
+      }
+    ]
+  },
+  {
+    "section": "contact-form",
+    "content": [
+      {
+        "action": "/thank-you/",
+        "method": "POST",
+        "inputs": [
+          {
+            "label": "Full Name",
+            "type": "text",
+            "name": "gmContactFullName",
+            "req": true
+          },
+          {
+            "label": "Email Address",
+            "type": "email",
+            "name": "gmContactEmailAddress",
+            "req": true
+          },
+          {
+            "label": "Company Name",
+            "type": "text",
+            "name": "gmContactCompanyName",
+            "req": false
+          },
+          {
+            "label": "Current URL",
+            "type": "url",
+            "name": "gmContactCurrentUrl",
+            "req": false
+          },
+          {
+            "label": "Message",
+            "type": "textarea",
+            "name": "gmContactMessage",
+            "req": true
+          }
+        ],
+        "info": [
+          {
+            "title": "Contact Details"
+          },
+          {
+            "title": "Social Media"
+          }
+        ]
+      }
+    ]
+  }
+]

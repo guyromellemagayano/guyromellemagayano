@@ -1,0 +1,15 @@
+[
+  {
+    "section": "category-template-intro",
+    "content": [
+      {
+        "ctaLink": [
+          {
+            "link": "/categories/",
+            "label": "Check out all categories"
+          }
+        ]
+      }
+    ]
+  }
+]
