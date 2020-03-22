@@ -20,46 +20,53 @@ const PortfolioDiv = styled.div`
       position: relative !important;
       z-index: 999;
       cursor: pointer;
-
-      .portfolio-item {
-        position: absolute;
-        top: 4rem;
-        left: 4rem;
-        
-        h3,
-        p {
-          color: #fff !important;
-        }
-
-        h3 {
-          font-size: 2rem;
-        }
-
-        p {
-          font-size: 1.45rem
-        }
-      }
     }
   }
 
-  .button-back {
-    background-image: url(./images/nav.svg);
-    position: absolute;
-    top: 50%;
-    left: 2rem;
-    transform: translateY(-50%);
-    width: 52px;
-    height: 52px;
+  .portfolio-item {
+    display: none;
   }
 
-  .button-next {
-    background-image: url(./images/nav.svg);
-    position: absolute;
-    top: 50%;
-    right: 2rem;
-    transform: rotate(180deg) translateY(50%);
-    width: 52px;
-    height: 52px;
+  @media only screen and (min-width: 961px) {
+    .button-back {
+      background-image: url(./images/nav.svg);
+      position: absolute;
+      top: 50%;
+      left: 2rem;
+      transform: translateY(-50%);
+      width: 52px;
+      height: 52px;
+    }
+  
+    .button-next {
+      background-image: url(./images/nav.svg);
+      position: absolute;
+      top: 50%;
+      right: 2rem;
+      transform: rotate(180deg) translateY(50%);
+      width: 52px;
+      height: 52px;
+    }
+
+    .portfolio-item {
+      display: block;
+      position: absolute;
+      top: 4rem;
+      left: 4rem;
+      
+      h3,
+      p {
+        color: #fff !important;
+      }
+
+      h3 {
+        font-size: 2rem;
+      }
+
+      p {
+        font-size: 1.45rem
+      }
+    }
   }
 
   .dot-group {
@@ -68,7 +75,8 @@ const PortfolioDiv = styled.div`
     margin-bottom: 1rem;
 
     > button {
-      width: 5rem;
+      width: 100%;
+      max-width: 4rem;
       height: 1rem;
       background-color: #989f9c;
       margin-left: auto;
