@@ -203,6 +203,20 @@ module.exports = {
       },
     },
     {
+      resolve: `gatsby-plugin-google-analytics`,
+      options: {
+        trackingId: "UA-161610502-1",
+        head: true,
+        anonymize: true,
+        respectDNT: true,
+        pageTransitionDelay: 1000,
+        optimizeId: "GTM-P36KGZX",
+        sampleRate: 5,
+        siteSpeedSampleRate: 10,
+        cookieDomain: "guyromellemagayano.tech",
+      },
+    },
+    {
       resolve: `gatsby-plugin-netlify`,
       options: {
         mergeSecurityHeaders: false,
