@@ -261,6 +261,12 @@ const Info = ({ data, images }) => {
                     </div>
                   </div>
                 ) : null}
+                {data.node.section === "home-portfolio" ? (
+                  <>
+                    <Portfolio data={val} />
+                    <Description className={`my-12`} text={val.description} />
+                  </>
+                ) : null}
                 {data.node.section === "about-info"
                   ? val.info.map((val2, index) => {
                       return (
