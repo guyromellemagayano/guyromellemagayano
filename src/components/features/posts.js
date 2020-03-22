@@ -16,6 +16,14 @@ const PostsDiv = styled.article`
     box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.16);
   }
 
+  @media only screen and (min-width: 320px) and (max-width: 960px) {
+    box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.16);
+
+    hover {
+      box-shadow: 0;
+    }
+  }
+
   h3 {
     font-family: Lora, sans-serif;
     font-weight: 700;
