@@ -72,9 +72,9 @@ const Header = ({ menuLinks }) => {
               isMobile ? "fixed bottom-0 left-0 py-5" : "relative ml-8"
             } flex items-center`}
           >
-            {menuLinks.map(link => {
+            {menuLinks.map((link, index) => {
               return (
-                <React.Fragment>
+                <React.Fragment key={index}>
                   <li key={link.name} className={`ml-3 mr-3`}>
                     <Link
                       to={link.link}
