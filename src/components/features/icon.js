@@ -8,7 +8,7 @@ const Icon = () => {
     <StaticQuery
       query={graphql`
         query {
-          placeholderImage: file(relativePath: { eq: "site-logo.svg" }) {
+          placeholderImage: file(relativePath: { eq: "site-icon.svg" }) {
             childImageSharp {
               fixed(width: 81, height: 81) {
                 ...GatsbyImageSharpFixed
