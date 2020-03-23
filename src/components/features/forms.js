@@ -171,8 +171,6 @@ const Forms = ({ data }) => {
           name={`gm-contact-form`}
           method={data.method}
           action={data.action}
-          data-netlify={true}
-          data-netlify-recaptcha={true}
         >
           {data.inputs.length
             ? data.inputs.map((val, index) => {
@@ -197,7 +195,6 @@ const Forms = ({ data }) => {
                 )
               })
             : null}
-          <div data-netlify-recaptcha="true"></div>
           <button
             type="submit"
             className={`text-2xl mt-12 px-4 py-2 font-bold not-italic tracking-tighter`}
