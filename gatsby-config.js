@@ -112,16 +112,6 @@ module.exports = {
         ],
         link: "https://medium.com/@mguyromelle",
       },
-      {
-        name: "SlideShare",
-        icon: [
-          {
-            style: "fab",
-            type: "slideshare",
-          },
-        ],
-        link: "https://www.slideshare.net/mguyromelle",
-      },
     ],
   },
   plugins: [
