@@ -1,4 +1,4 @@
-import React, { useEffect } from "react"
+import React, { useEffect, useState } from "react"
 import styled from "styled-components"
 import {
   ButtonBack,
@@ -11,6 +11,11 @@ import {
 } from "pure-react-carousel"
 import "pure-react-carousel/dist/react-carousel.es.css"
 import Modal from "react-modal"
+
+Modal.setAppElement(`#___gatsby`)
+
+Modal.defaultStyles.overlay.zIndex = 999
+Modal.defaultStyles.overlay.backgroundColor = 'rgba(0,0,0,0.45)'
 
 const PortfolioDiv = styled.div`
   .portfolio-slider {
@@ -38,7 +43,7 @@ const PortfolioDiv = styled.div`
       width: 52px;
       height: 52px;
     }
-  
+
     .button-next {
       background-image: url(./images/nav.svg);
       position: absolute;
@@ -54,7 +59,7 @@ const PortfolioDiv = styled.div`
       position: absolute;
       top: 4rem;
       left: 4rem;
-      
+
       h3,
       p {
         color: #fff !important;
@@ -65,7 +70,7 @@ const PortfolioDiv = styled.div`
       }
 
       p {
-        font-size: 1.45rem
+        font-size: 1.45rem;
       }
     }
   }
@@ -110,6 +115,16 @@ const PortfolioDiv = styled.div`
 `
 
 const Portfolio = ({ data }) => {
+  const [modalIsOpen, setModalIsOpen] = useState(false)
+
+  const openModal = () => {
+    setModalIsOpen(true)
+  }
+
+  const closeModal = () => {
+    setModalIsOpen(false)
+  }
+
   useEffect(() => {
     let lastCarouselDot = document.querySelectorAll(".dot-group > button")
 
@@ -135,7 +150,13 @@ const Portfolio = ({ data }) => {
           <Slider className={`portfolio-slider`}>
             {data.caseStudies.map((val, index) => {
               return (
-                <Slide tag={`a`} key={index} index={index} className={`portfolio-slide`}>
+                <Slide
+                  tag={`a`}
+                  key={index}
+                  index={index}
+                  className={`portfolio-slide`}
+                  onClick={openModal}
+                >
                   <span className={`portfolio-item`}>
                     <h3>Portfolio Name #1</h3>
                     <p>Nature of Business</p>
@@ -153,6 +174,13 @@ const Portfolio = ({ data }) => {
           showAsSelectedForCurrentSlideOnly={true}
         />
       </CarouselProvider>
+      <Modal
+        isOpen={modalIsOpen}
+        onRequestClose={closeModal}
+        contentLabel={`Portfolio Item Modal`}
+      >
+        <button onClick={closeModal}>close</button>
+      </Modal>
     </PortfolioDiv>
   )
 }

@@ -62,3 +62,8 @@ body {
 .regular-red {
   color: $regular-red;
 }
+
+// React Modal
+.ReactModal__Body--open {
+  overflow: hidden;
+}
