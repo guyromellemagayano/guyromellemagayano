@@ -7,7 +7,7 @@ const DescriptionDiv = styled.span`
   font-weight: 400;
   letter-spacing: -0.7px;
   color: #707070;
-  line-height: 1.25;
+  line-height: 1.5;
 
   &.strong {
     font-weight: 700;
