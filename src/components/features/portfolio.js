@@ -15,7 +15,7 @@ import Modal from "react-modal"
 Modal.setAppElement(`#___gatsby`)
 
 Modal.defaultStyles.overlay.zIndex = 999
-Modal.defaultStyles.overlay.backgroundColor = 'rgba(0,0,0,0.45)'
+Modal.defaultStyles.overlay.backgroundColor = "rgba(0,0,0,0.45)"
 
 const PortfolioDiv = styled.div`
   .portfolio-slider {

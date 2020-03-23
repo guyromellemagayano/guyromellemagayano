@@ -19,7 +19,7 @@ const FormDiv = styled.div`
   }
 
   button[type="submit"] {
-    font-family: Source Sans Pro, sans-serif;
+    font-family: "Source Sans Pro", sans-serif;
     font-weight: 600;
     background-color: #4caf50;
     border-radius: 5px;
@@ -38,7 +38,7 @@ const FormDiv = styled.div`
 `
 
 const StyledErrorMessage = styled.span`
-  font-family: Source Sans Pro, sans-serif;
+  font-family: "Source Sans Pro", sans-serif;
   font-size: 1.25rem;
   font-stretch: normal;
   line-height: 1.67;
@@ -48,7 +48,7 @@ const StyledErrorMessage = styled.span`
 `
 
 const StyledLabel = styled.label`
-  font-family: Source Sans Pro, sans-serif;
+  font-family: "Source Sans Pro", sans-serif;
   font-stretch: normal;
   line-height: 1.67;
   letter-spacing: -0.6px;

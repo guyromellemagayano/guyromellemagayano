@@ -17,7 +17,7 @@ const CategoryDiv = styled.ul`
     }
 
     a {
-      font-family: Source Sans Pro, sans-serif;
+      font-family: "Source Sans Pro", sans-serif;
       font-weight: 700;
       font-size: 1.15rem;
       text-transform: uppercase;

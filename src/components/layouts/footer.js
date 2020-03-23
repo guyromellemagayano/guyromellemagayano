@@ -10,14 +10,14 @@ const FooterDiv = styled.footer`
   bottom: 0;
 
   h3 {
-    font-family: Lora, sans-serif;
+    font-family: "Lora", sans-serif;
     font-weight: 700;
     letter-spacing: -1.8px;
     color: #fff;
   }
 
   p {
-    font-family: Source Sans Pro, sans-serif;
+    font-family: "Source Sans Pro", sans-serif;
     font-weight: 600;
     color: #fff;
     letter-spacing: -1.25px;
@@ -40,7 +40,7 @@ const FooterDiv = styled.footer`
   ul {
     li {
       a {
-        font-family: Source Sans Pro, sans-serif;
+        font-family: "Source Sans Pro", sans-serif;
         font-weight: 700;
         color: #fff;
         letter-spacing: -1.2px;

@@ -18,7 +18,7 @@ const Wrapper = styled.article`
       border: none !important;
 
       a {
-        font-family: Source Sans Pro, sans-serif;
+        font-family: "Source Sans Pro", sans-serif;
         font-weight: 700;
         font-size: 1.5rem;
         letter-spacing: -0.7px;

@@ -11,7 +11,7 @@ const ListDiv = styled.ul`
   }
 
   li {
-    font-family: Source Sans Pro, sans-serif;
+    font-family: "Source Sans Pro", sans-serif;
     font-weight: 400;
     letter-spacing: -0.7px;
     color: #707070;

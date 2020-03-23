@@ -3,7 +3,7 @@ import styled from "styled-components"
 import ReactHtmlParser from "react-html-parser"
 
 const DescriptionDiv = styled.span`
-  font-family: Source Sans Pro, sans-serif;
+  font-family: "Source Sans Pro", sans-serif;
   font-weight: 400;
   letter-spacing: -0.7px;
   color: #707070;
@@ -25,7 +25,7 @@ const DescriptionDiv = styled.span`
   }
 
   blockquote {
-    font-family: Source Sans Pro, sans-serif;
+    font-family: "Source Sans Pro", sans-serif;
     font-weight: 400;
     font-style: italic;
     position: relative;
@@ -36,7 +36,7 @@ const DescriptionDiv = styled.span`
   &.title,
   .subtitle,
   .snippet {
-    font-family: Lora, sans-serif;
+    font-family: "Lora", sans-serif;
     font-weight: 700;
     letter-spacing: -1.8px;
   }

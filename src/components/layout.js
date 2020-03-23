@@ -28,8 +28,8 @@ const Layout = ({ children }) => {
   return (
     <StaticQuery
       query={graphql`
-        query SiteMenuLinks {
-          site {
+        query {
+          SiteMenuLinks: site {
             siteMetadata {
               socialLinks {
                 name
@@ -45,6 +45,23 @@ const Layout = ({ children }) => {
               }
             }
           }
+          AllImagesSharpQuery: allImageSharp {
+            edges {
+              node {
+                fluid {
+                  base64
+                  tracedSVG
+                  originalImg
+                  originalName
+                  presentationWidth
+                  presentationHeight
+                  src
+                  srcSet
+                  ...GatsbyImageSharpFluid
+                }
+              }
+            }
+          }
         }
       `}
       render={data => (
@@ -56,13 +73,18 @@ const Layout = ({ children }) => {
               { name: "keywords", content: "sample, something" },
             ]}
           ></Helmet>
-          <Header menuLinks={data.site.siteMetadata.menuLinks} />
+          <Header
+            menuLinks={data.SiteMenuLinks.siteMetadata.menuLinks}
+            images={data.AllImagesSharpQuery.edges.map(images => {
+              return images
+            })}
+          />
           <MainDiv className={`relative mb-32`}>
             <div className={`container mx-auto`}>
               <div className={`row mb-40`}>{children}</div>
             </div>
           </MainDiv>
-          <Footer socialLinks={data.site.siteMetadata.socialLinks} />
+          <Footer socialLinks={data.SiteMenuLinks.siteMetadata.socialLinks} />
         </React.Fragment>
       )}
     />

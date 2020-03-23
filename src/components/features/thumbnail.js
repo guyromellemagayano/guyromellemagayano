@@ -5,6 +5,8 @@ import { isMobile } from "react-device-detect"
 
 const ThumbnailDiv = styled.span`
   flex-basis: 5rem;
+  width: 100%;
+  height: auto;
 `
 
 const Thumbnail = props => {
