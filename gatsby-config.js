@@ -150,7 +150,7 @@ module.exports = {
           },
           {
             family: `Lora`,
-            variants: [`700`],
+            variants: `700`,
           },
         ],
       },
