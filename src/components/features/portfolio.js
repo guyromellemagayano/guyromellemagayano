@@ -10,6 +10,7 @@ import {
   Slider,
 } from "pure-react-carousel"
 import "pure-react-carousel/dist/react-carousel.es.css"
+import Modal from "react-modal"
 
 const PortfolioDiv = styled.div`
   .portfolio-slider {
