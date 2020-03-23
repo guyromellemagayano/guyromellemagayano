@@ -122,7 +122,7 @@ module.exports = {
     {
       resolve: "gatsby-plugin-page-transitions",
       options: {
-        transitionTime: 1000,
+        transitionTime: 500,
       },
     },
     {
@@ -210,6 +210,13 @@ module.exports = {
         sampleRate: 5,
         siteSpeedSampleRate: 10,
         cookieDomain: "guyromellemagayano.tech",
+      },
+    },
+    {
+      resolve: `gatsby-plugin-nprogress`,
+      options: {
+        color: `#4caf50`,
+        showSpinner: false,
       },
     },
   ],
