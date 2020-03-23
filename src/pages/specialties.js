@@ -1,6 +1,7 @@
 import React from "react"
 import { StaticQuery, graphql } from "gatsby"
 import { isMobile } from "react-device-detect"
+import PageTransition from "gatsby-plugin-page-transitions"
 
 import Layout from "../components/layout"
 import Info from "../components/features/info"
@@ -52,32 +53,34 @@ const SpecialitiesPage = () => (
     `}
     render={data => (
       <React.Fragment>
-        <Layout>
-          <SEO title="Specialties" />
-          {data.SpecialtiesQuery.edges
-            ? data.SpecialtiesQuery.edges.map((val, index) => {
-                if (val.node.section === "services-intro") {
-                  return (
-                    <Jumbotron
-                      key={index}
-                      data={val}
-                      className={`${isMobile ? "mt-8" : "mt-24"} mb-32`}
-                    />
-                  )
-                } else {
-                  return (
-                    <Info
-                      key={index}
-                      data={val}
-                      images={data.AllImagesSharpQuery.edges.map(images => {
-                        return images
-                      })}
-                    />
-                  )
-                }
-              })
-            : null}
-        </Layout>
+        <PageTransition>
+          <Layout>
+            <SEO title="Specialties" />
+            {data.SpecialtiesQuery.edges
+              ? data.SpecialtiesQuery.edges.map((val, index) => {
+                  if (val.node.section === "services-intro") {
+                    return (
+                      <Jumbotron
+                        key={index}
+                        data={val}
+                        className={`${isMobile ? "mt-8" : "mt-24"} mb-32`}
+                      />
+                    )
+                  } else {
+                    return (
+                      <Info
+                        key={index}
+                        data={val}
+                        images={data.AllImagesSharpQuery.edges.map(images => {
+                          return images
+                        })}
+                      />
+                    )
+                  }
+                })
+              : null}
+          </Layout>
+        </PageTransition>
       </React.Fragment>
     )}
   />

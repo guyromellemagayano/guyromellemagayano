@@ -1,6 +1,7 @@
 import React from "react"
 import { StaticQuery, graphql } from "gatsby"
 import { isMobile } from "react-device-detect"
+import PageTransition from "gatsby-plugin-page-transitions"
 
 import Layout from "../components/layout"
 import Info from "../components/features/info"
@@ -49,23 +50,25 @@ const BlogPage = () => (
     `}
     render={data => (
       <React.Fragment>
-        <Layout>
-          <SEO title="Blog" />
-          {data.BlogQuery.edges ? (
-            <React.Fragment>
-              {data.BlogQuery.edges.map((val, index) => {
-                return (
-                  <Jumbotron
-                    key={index}
-                    data={val}
-                    className={`${isMobile ? "mt-8 mb-16" : "mt-24 mb-16"}`}
-                  />
-                )
-              })}
-            </React.Fragment>
-          ) : null}
-          {data.PostsRemark ? <Info data={data.PostsRemark} /> : null}
-        </Layout>
+        <PageTransition>
+          <Layout>
+            <SEO title="Blog" />
+            {data.BlogQuery.edges ? (
+              <React.Fragment>
+                {data.BlogQuery.edges.map((val, index) => {
+                  return (
+                    <Jumbotron
+                      key={index}
+                      data={val}
+                      className={`${isMobile ? "mt-8 mb-16" : "mt-24 mb-16"}`}
+                    />
+                  )
+                })}
+              </React.Fragment>
+            ) : null}
+            {data.PostsRemark ? <Info data={data.PostsRemark} /> : null}
+          </Layout>
+        </PageTransition>
       </React.Fragment>
     )}
   />

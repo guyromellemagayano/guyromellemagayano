@@ -24,7 +24,6 @@ const Image = ({ className, imageDimensions, images }) => {
           <React.Fragment key={index}>
             <Thumbnail
               key={index}
-              className={`${isMobile ? "mr-0" : "mr-10"}`}
               src={matchImage.node.fluid}
               alt={data.alt}
               draggable={false}

@@ -120,6 +120,12 @@ module.exports = {
     `gatsby-plugin-styled-components`,
     `gatsby-plugin-offline`,
     {
+      resolve: "gatsby-plugin-page-transitions",
+      options: {
+        transitionTime: 1000,
+      },
+    },
+    {
       resolve: `gatsby-transformer-remark`,
       options: {
         plugins: [
