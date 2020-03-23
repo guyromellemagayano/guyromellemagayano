@@ -9,7 +9,7 @@ import Tags from "./tags"
 
 const JumbotronDiv = styled.section`
   h1 {
-    font-family: "Lora";
+    font-family: "Lora", sans-serif !important;
     font-weight: 700;
     color: #434e52;
     letter-spacing: -3.75px;

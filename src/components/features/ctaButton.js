@@ -3,7 +3,7 @@ import styled from "styled-components"
 import { Link } from "gatsby"
 
 const CtaButtonDiv = styled(Link)`
-  font-family: "Source Sans Pro", sans-serif;
+  font-family: "Source Sans Pro", sans-serif !important;
   font-weight: 600;
   border: 3px solid #4caf50;
   border-radius: 5px;

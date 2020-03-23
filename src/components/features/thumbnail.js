@@ -20,7 +20,7 @@ const Thumbnail = props => {
       draggable: false,
       style: {
         ...(props.style || {}),
-        minWidth: isMobile ? "25%" : "90%",
+        minWidth: isMobile ? "0" : "90%",
         maxWidth: props.src.presentationWidth,
         maxHeight: props.src.presentationHeight,
       },

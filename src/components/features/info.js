@@ -15,7 +15,7 @@ import Sepline from "./sepline"
 
 const InfoDiv = styled.section`
   h2 {
-    font-family: "Lora";
+    font-family: "Lora", sans-serif !important;
     font-size: 5rem;
     font-weight: 700;
     color: #434e52;
@@ -55,7 +55,7 @@ const Wrapper = styled.article`
       border: none !important;
 
       a {
-        font-family: "Source Sans Pro", sans-serif;
+        font-family: "Source Sans Pro", sans-serif !important;
         font-weight: 700;
         font-size: 1.5rem;
         letter-spacing: -0.7px;

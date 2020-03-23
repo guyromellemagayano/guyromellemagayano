@@ -2,7 +2,7 @@ import React from "react"
 import styled from "styled-components"
 
 const SubDetailDiv = styled.h4`
-  font-family: "Source Sans Pro", sans-serif;
+  font-family: "Source Sans Pro", sans-serif !important;
   font-weight: 700;
   letter-spacing: -0.7px;
 `

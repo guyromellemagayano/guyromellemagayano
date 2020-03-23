@@ -16,7 +16,7 @@ const Wrapper = styled.article`
   }
 
   p {
-    font-family: "Source Sans Pro", sans-serif;
+    font-family: "Source Sans Pro", sans-serif !important;
     font-weight: 400;
     letter-spacing: -0.7px;
     color: #707070;
@@ -48,7 +48,7 @@ const Wrapper = styled.article`
     &.title,
     .subtitle,
     .snippet {
-      font-family: "Lora", sans-serif;
+      font-family: "Lora", sans-serif !important;
       font-weight: 700;
       letter-spacing: -1.8px;
     }
@@ -84,7 +84,7 @@ const Wrapper = styled.article`
   }
 
   ul {
-    font-family: "Source Sans Pro", sans-serif;
+    font-family: "Source Sans Pro", sans-serif !important;
     font-weight: 400;
     letter-spacing: -0.7px;
     color: #707070;
@@ -106,7 +106,7 @@ const Wrapper = styled.article`
   }
 
   blockquote {
-    font-family: "Source Sans Pro", sans-serif;
+    font-family: "Source Sans Pro", sans-serif !important;
     font-weight: 400;
     font-style: italic;
     position: relative;

@@ -25,7 +25,7 @@ const PostsDiv = styled.article`
   }
 
   h3 {
-    font-family: "Lora", sans-serif;
+    font-family: "Lora", sans-serif !important;
     font-weight: 700;
     letter-spacing: -1.8px;
     color: #434e52;
@@ -42,7 +42,7 @@ const PostsDiv = styled.article`
   }
 
   p {
-    font-family: "Source Sans Pro", sans-serif;
+    font-family: "Source Sans Pro", sans-serif !important;
     font-weight: 400;
     letter-spacing: -0.7px;
     color: #707070;
@@ -50,7 +50,7 @@ const PostsDiv = styled.article`
 
   .read-more {
     a {
-      font-family: "Source Sans Pro", sans-serif;
+      font-family: "Source Sans Pro", sans-serif !important;
       font-weight: 700;
       letter-spacing: -0.7px;
       display: flex;
