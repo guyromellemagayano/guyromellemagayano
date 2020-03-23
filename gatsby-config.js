@@ -206,14 +206,5 @@ module.exports = {
         cookieDomain: "guyromellemagayano.tech",
       },
     },
-    {
-      resolve: `gatsby-plugin-netlify`,
-      options: {
-        mergeSecurityHeaders: false,
-        mergeLinkHeaders: false,
-        mergeCachingHeaders: false,
-        generateMatchPathRewrites: false,
-      },
-    },
   ],
 }
