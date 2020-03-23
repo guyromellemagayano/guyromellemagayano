@@ -5,10 +5,8 @@ import { isMobile } from "react-device-detect"
 
 const ThumbnailDiv = styled.span`
   flex-basis: 5rem;
-  width: auto;
-  height: auto;
-  max-width: 100%;
-  max-height: 100%;
+  width: 100%;
+  height: 100%;
 `
 
 const Thumbnail = props => {
@@ -22,10 +20,9 @@ const Thumbnail = props => {
       draggable: false,
       style: {
         ...(props.style || {}),
-        minWidth: props.src.presentationWidth,
-        minHeight: props.src.presentationHeight,
-        maxWidth: "100%",
-        maxHeight: "100%",
+        minWidth: isMobile ? "25%" : "90%",
+        maxWidth: props.src.presentationWidth,
+        maxHeight: props.src.presentationHeight,
       },
     }
   }
