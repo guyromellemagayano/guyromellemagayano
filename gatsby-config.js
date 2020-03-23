@@ -182,7 +182,7 @@ module.exports = {
         background_color: `#fff`,
         theme_color: `#4caf50`,
         display: `minimal-ui`,
-        icon: `${__dirname}/src/images/site-icon.png`,
+        icon: `${__dirname}/src/images/site-icon.svg`,
       },
     },
     {
