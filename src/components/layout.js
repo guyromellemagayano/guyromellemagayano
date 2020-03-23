@@ -69,8 +69,8 @@ const Layout = ({ children }) => {
           <Helmet
             title={"title"}
             meta={[
-              { name: "description", content: "Sample" },
-              { name: "keywords", content: "sample, something" },
+              { name: "description", content: "Full Stack Web Developer" },
+              { name: "keywords", content: "full, stack, web, developer, philippines, davao, city, guy, romelle, magayano" },
             ]}
           ></Helmet>
           <Header
