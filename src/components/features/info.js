@@ -205,8 +205,8 @@ const Info = ({ data, images }) => {
                     <div
                       className={`content ${
                         isMobile
-                          ? "flex-grow-0 flex-basis-1"
-                          : "flex-grow-1 flex-basis-0"
+                          ? "flex-grow-0 flex-basis-3"
+                          : "flex-grow-1 flex-basis-2"
                       }`}
                     >
                       {val.description.map((val2, index) => {

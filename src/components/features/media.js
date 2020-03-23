@@ -35,8 +35,8 @@ const Media = ({ imageDimensions, title, description, images }) => {
         )
       })}
       <div className={`flex flex-auto flex-wrap flex-row clear-both`}>
-        <Title text={title} className={`flex-none flex-basis-1`} />
-        <Description text={description} className={`flex-none flex-basis-1`} />
+        <Title text={title} className={`flex-none flex-basis-3`} />
+        <Description text={description} className={`flex-none flex-basis-3`} />
       </div>
     </MediaDiv>
   )

@@ -49,7 +49,7 @@ const List = ({ list }) => {
       {list.map(point => (
         <li
           key={point}
-          className={`flex flex-none flex-basis-1 flex-wrap mb-2 text-left text-2xl leading-tight`}
+          className={`flex flex-none flex-basis-3 flex-wrap mb-2 text-left text-2xl leading-tight`}
         >
           {ReactHtmlParser(point)}
         </li>
