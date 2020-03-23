@@ -212,12 +212,5 @@ module.exports = {
         cookieDomain: "guyromellemagayano.tech",
       },
     },
-    {
-      resolve: `gatsby-plugin-nprogress`,
-      options: {
-        color: `#4caf50`,
-        showSpinner: false,
-      },
-    },
   ],
 }
