@@ -5,6 +5,7 @@ import ReactHtmlParser from "react-html-parser"
 const ListDiv = styled.ul`
   list-style: none;
   padding-left: 3.5em;
+  margin-bottom: 3rem !important;
 
   @media only screen and (min-width: 320px) and (max-width: 1024px) {
     padding-left: 2em;
