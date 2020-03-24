@@ -3,7 +3,7 @@ import styled from "styled-components"
 import { Link } from "gatsby"
 import { isMobile } from "react-device-detect"
 
-import Thumbnail from "../features/thumbnail"
+import SiteLogoSVGImg from "../../images/site-icon.svg"
 
 const HeaderDiv = styled.header`
   background-color: #fff;
@@ -59,27 +59,13 @@ const HeaderDiv = styled.header`
   }
 `
 
-const Header = ({ menuLinks, images }) => {
-  const imageArr = []
-
-  images.map(val => {
-    return imageArr.push(val)
-  })
-
-  const matchImage = imageArr.find(
-    x => x.node.fluid.originalName === "site-logo.png"
-  )
-
+const Header = ({ menuLinks }) => {
   return (
     <HeaderDiv className={`w-full max-w-full`}>
       <div className={`${isMobile ? "mx-6" : "container mx-auto"}`}>
         <div className={`${isMobile ? "block" : "flex"} mt-10 mb-10`}>
           <Link to="/" className={`logo-link ${isMobile ? "mr-0 block" : "mr-3"}`}>
-            <Thumbnail
-              className={`${isMobile ? "mr-0" : "mr-10"}`}
-              src={matchImage.node.fluid}
-              draggable={false}
-            />
+            <img src={SiteLogoSVGImg} alt={`site-logo`} draggable={`false`} />
           </Link>
           <ul
             className={`${

@@ -45,23 +45,6 @@ const Layout = ({ children }) => {
               }
             }
           }
-          AllImagesSharpQuery: allImageSharp {
-            edges {
-              node {
-                fluid {
-                  base64
-                  tracedSVG
-                  originalImg
-                  originalName
-                  presentationWidth
-                  presentationHeight
-                  src
-                  srcSet
-                  ...GatsbyImageSharpFluid
-                }
-              }
-            }
-          }
         }
       `}
       render={data => (
@@ -79,9 +62,6 @@ const Layout = ({ children }) => {
           ></Helmet>
           <Header
             menuLinks={data.SiteMenuLinks.siteMetadata.menuLinks}
-            images={data.AllImagesSharpQuery.edges.map(images => {
-              return images
-            })}
           />
           <MainDiv className={`relative mb-32`}>
             <div className={`container mx-auto`}>
