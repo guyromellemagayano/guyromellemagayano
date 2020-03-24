@@ -166,10 +166,10 @@ const Info = ({ data, images }) => {
                               {
                                 <li>
                                   <Media
-                                    imageDimensions={val2.thumbnail}
+                                    fileName={val2.imgFileName}
+                                    alt={val2.imgAlt}
                                     title={val2.title}
                                     description={val2.description}
-                                    images={images}
                                   />
                                 </li>
                               }
