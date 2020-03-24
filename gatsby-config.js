@@ -141,18 +141,9 @@ module.exports = {
       },
     },
     {
-      resolve: `gatsby-plugin-prefetch-google-fonts`,
+      resolve: `gatsby-plugin-typography`,
       options: {
-        fonts: [
-          {
-            family: `Source Sans Pro`,
-            variants: [`400`, `400i`, `600`, `700`],
-          },
-          {
-            family: `Lora`,
-            variants: `700`,
-          },
-        ],
+        pathToConfigModule: `src/utils/typography`,
       },
     },
     {
