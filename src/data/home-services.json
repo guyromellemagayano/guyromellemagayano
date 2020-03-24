@@ -7,52 +7,32 @@
         "subtitle": "Helping businesses through design and development primarily using WordPress.",
         "skills": [
           {
-            "thumbnail": [
-              {
-                "src": "thumbnail-placeholder.png",
-                "alt": "sample-logo"
-              }
-            ],
+            "imgFileName": "web-design",
+            "imgAlt": "web-design-icon",
             "title": "Visual and UI Design",
             "description": "Resourceful and tech-savvy web developer with at least 5 years of progressive experience in WordPress both in front-end and back-end web development. I'm currently available for new projects."
           },
           {
-            "thumbnail": [
-              {
-                "src": "thumbnail-placeholder.png",
-                "alt": "sample-logo"
-              }
-            ],
+            "imgFileName": "web-app",
+            "imgAlt": "web-app-icon",
             "title": "Custom Web App Development",
             "description": "Resourceful and tech-savvy web developer with at least 5 years of progressive experience in WordPress both in front-end and back-end web development. I'm currently available for new projects."
           },
           {
-            "thumbnail": [
-              {
-                "src": "thumbnail-placeholder.png",
-                "alt": "sample-logo"
-              }
-            ],
+            "imgFileName": "web-site",
+            "imgAlt": "web-site-icon",
             "title": "Custom Website Development",
             "description": "Resourceful and tech-savvy web developer with at least 5 years of progressive experience in WordPress both in front-end and back-end web development. I'm currently available for new projects."
           },
           {
-            "thumbnail": [
-              {
-                "src": "thumbnail-placeholder.png",
-                "alt": "sample-logo"
-              }
-            ],
+            "imgFileName": "server-administration",
+            "imgAlt": "server-administration-icon",
             "title": "Server Deployment and Maintenance",
             "description": "Resourceful and tech-savvy web developer with at least 5 years of progressive experience in WordPress both in front-end and back-end web development. I'm currently available for new projects."
           },
           {
-            "thumbnail": [
-              {
-                "src": "thumbnail-placeholder.png",
-                "alt": "sample-logo"
-              }
-            ],
+            "imgFileName": "seo",
+            "imgAlt": "seo-icon",
             "title": "Search Engine Optimization (SEO)",
             "description": "Resourceful and tech-savvy web developer with at least 5 years of progressive experience in WordPress both in front-end and back-end web development. I'm currently available for new projects."
           }
