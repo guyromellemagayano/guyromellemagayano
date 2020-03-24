@@ -82,10 +82,10 @@ const Posts = ({ data, tags, category, pageContext }) => {
       {data.node ? (
         <PostsDiv className={`p-10`}>
           <header>
-            <Category
+            {/* <Category
               node={data.node.frontmatter.category}
               pageContext={pageContext}
-            />
+            /> */}
             <h3 className={`title text-3xl leading-10`}>
               <Link
                 to={data.node.fields.slug}
@@ -109,13 +109,13 @@ const Posts = ({ data, tags, category, pageContext }) => {
             <span className={`read-more block mb-8 text-2xl regular-green`}>
               <Link to={data.node.fields.slug}>Read More</Link>
             </span>
-            <Tags node={data.node.frontmatter.tags} pageContext={pageContext} />
+            {/* <Tags node={data.node.frontmatter.tags} pageContext={pageContext} /> */}
           </section>
         </PostsDiv>
       ) : (
         <PostsDiv className={`p-10`}>
           <header>
-            <Category node={category} pageContext={pageContext} />
+            {/* <Category node={category} pageContext={pageContext} /> */}
             <h3 className={`title text-3xl leading-10`}>
               <Link to={data.fields.slug} title={data.frontmatter.title}>
                 {data.frontmatter.title}
@@ -136,7 +136,7 @@ const Posts = ({ data, tags, category, pageContext }) => {
             <span className={`read-more block mb-8 text-2xl regular-green`}>
               <Link to={data.fields.slug}>Read More</Link>
             </span>
-            <Tags node={tags} pageContext={pageContext} />
+            {/* <Tags node={tags} pageContext={pageContext} /> */}
           </section>
         </PostsDiv>
       )}
