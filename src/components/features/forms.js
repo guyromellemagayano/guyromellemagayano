@@ -68,6 +68,10 @@ const StyledInput = styled.input`
   border: solid 3px #989c9f;
   border-radius: 10px;
   background-color: var(--white);
+
+  &.error-form {
+    border-color: #f44336;
+  }
 `
 
 const StyledTextarea = styled.textarea`
@@ -75,6 +79,10 @@ const StyledTextarea = styled.textarea`
   border-radius: 10px;
   min-height: 15rem;
   background-color: var(--white);
+
+  &.error-form {
+    border-color: #f44336;
+  }
 `
 
 const encode = data => {
@@ -98,7 +106,7 @@ const FormInput = ({ label, ...props }) => {
         <StyledInput
           className={`block form-input ${
             isMobile ? "w-full" : "w-5/6"
-          } h-20 p-6 ${meta.touched && meta.error ? "mb-3" : "mb-6"}`}
+          } h-20 p-6 ${meta.touched && meta.error ? "mb-3 error-form" : "mb-6"}`}
           {...field}
           {...props}
         />
@@ -126,7 +134,7 @@ const FormTextarea = ({ label, ...props }) => {
       <StyledTextarea
         className={`block form-input ${
           isMobile ? "w-full" : "w-5/6"
-        } h-48 p-6 ${meta.touched && meta.error ? "mb-3" : "mb-6"}`}
+        } h-48 p-6 ${meta.touched && meta.error ? "mb-3 error-form" : "mb-6"}`}
         {...field}
         {...props}
       />
