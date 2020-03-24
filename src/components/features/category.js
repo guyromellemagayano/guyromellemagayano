@@ -41,7 +41,7 @@ const CategoryDiv = styled.ul`
 
 const Category = ({ node, pageContext }) => {
   return (
-    <CategoryDiv className={`flex justify-start flex-wrap mt-2 mb-10 mx-2`}>
+    <CategoryDiv className={`flex justify-start flex-wrap mt-2 mb-10 -mx-2`}>
       {node.group
         ? node.group.map((val, index) => {
             return (

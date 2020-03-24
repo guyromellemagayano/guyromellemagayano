@@ -55,7 +55,7 @@ const TagsDiv = styled.ul`
 
 const Tags = ({ node, pageContext }) => {
   return (
-    <TagsDiv className={`flex justify-start flex-wrap mt-4 mx-2`}>
+    <TagsDiv className={`flex justify-start flex-wrap mt-4 -mx-2`}>
       {node.group
         ? node.group.map((val, index) => {
             return (
