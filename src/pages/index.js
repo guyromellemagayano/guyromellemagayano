@@ -113,10 +113,8 @@ const IndexPage = () => (
                 title
                 subtitle
                 skills {
-                  thumbnail {
-                    src
-                    alt
-                  }
+                  imgFileName
+                  imgAlt
                   title
                   description
                 }
@@ -182,15 +180,7 @@ const IndexPage = () => (
             : null}
           {data.HomeServicesQuery.edges
             ? data.HomeServicesQuery.edges.map((val, index) => {
-                return (
-                  <Info
-                    key={index}
-                    data={val}
-                    images={data.AllImagesSharpQuery.edges.map(images => {
-                      return images
-                    })}
-                  />
-                )
+                return <Info key={index} data={val} />
               })
             : null}
           {data.HomeWorkExperienceQuery.edges

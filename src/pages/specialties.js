@@ -20,10 +20,8 @@ const SpecialitiesPage = () => (
                 title
                 subtitle
                 skills {
-                  thumbnail {
-                    src
-                    alt
-                  }
+                  imgFileName
+                  imgAlt
                   title
                   description
                 }
@@ -65,15 +63,7 @@ const SpecialitiesPage = () => (
                     />
                   )
                 } else {
-                  return (
-                    <Info
-                      key={index}
-                      data={val}
-                      images={data.AllImagesSharpQuery.edges.map(images => {
-                        return images
-                      })}
-                    />
-                  )
+                  return <Info key={index} data={val} />
                 }
               })
             : null}
