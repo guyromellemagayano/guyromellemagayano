@@ -107,7 +107,7 @@ const Jumbotron = ({ className, data, pageContext }) => {
             return (
               <JumbotronDiv
                 key={index}
-                className={`clear-both ${className ? className : "mt-20"}`}
+                className={`clear-both ${className ? className : "mt-8"}`}
               >
                 <Wrapper className={`block clear-both mx-6 sm:mx-10 xl:mx-32`}>
                   {val.title ? (
