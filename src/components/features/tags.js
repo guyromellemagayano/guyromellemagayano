@@ -7,6 +7,7 @@ const _ = require("lodash")
 const TagsDiv = styled.ul`
   li {
     border: none !important;
+    margin-bottom: 0;
 
     &:not(.selected) {
       a {
@@ -54,7 +55,7 @@ const TagsDiv = styled.ul`
 
 const Tags = ({ node, pageContext }) => {
   return (
-    <TagsDiv className={`flex justify-start flex-wrap mt-4 -mx-2`}>
+    <TagsDiv className={`flex justify-start flex-wrap mt-4 mx-2`}>
       {node.group
         ? node.group.map((val, index) => {
             return (

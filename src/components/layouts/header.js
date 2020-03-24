@@ -83,7 +83,7 @@ const Header = ({ menuLinks, images }) => {
           </Link>
           <ul
             className={`${
-              isMobile ? "fixed bottom-0 left-0 py-5" : "relative ml-8"
+              isMobile ? "fixed bottom-0 left-0 pb-3 pt-5" : "relative ml-8"
             } flex items-center`}
           >
             {menuLinks.map((link, index) => {
