@@ -74,7 +74,7 @@ const Header = ({ menuLinks, images }) => {
     <HeaderDiv className={`w-full max-w-full`}>
       <div className={`${isMobile ? "mx-6" : "container mx-auto"}`}>
         <div className={`${isMobile ? "block" : "flex"} mt-10 mb-10`}>
-          <Link to="/" className={`logo-link ${isMobile ? "mr-0" : "mr-3"}`}>
+          <Link to="/" className={`logo-link ${isMobile ? "mr-0 block" : "mr-3"}`}>
             <Thumbnail
               className={`${isMobile ? "mr-0" : "mr-10"}`}
               src={matchImage.node.fluid}
