@@ -4,9 +4,9 @@ import Img from "gatsby-image"
 import { isMobile } from "react-device-detect"
 
 const ThumbnailDiv = styled.span`
-  flex-basis: 5rem;
-  width: ${isMobile ? 'auto' : '100%'};
-  height: ${isMobile ? 'auto' : '100%'};
+  flex-basis: 6rem;
+  width: ${isMobile ? "auto" : "100%"};
+  height: ${isMobile ? "auto" : "100%"};
 `
 
 const Thumbnail = props => {
@@ -20,7 +20,7 @@ const Thumbnail = props => {
       draggable: false,
       style: {
         ...(props.style || {}),
-        minWidth: isMobile ? "0" : "90%",
+        minWidth: isMobile ? "0" : "100%",
         maxWidth: props.src.presentationWidth,
         maxHeight: props.src.presentationHeight,
       },
