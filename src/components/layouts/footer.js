@@ -80,6 +80,7 @@ const Footer = ({ socialLinks }) => {
                   <a
                     href={data.link}
                     target={`_blank`}
+                    rel={`noopener`}
                     className={`text-4xl`}
                     title={data.name}
                   >
