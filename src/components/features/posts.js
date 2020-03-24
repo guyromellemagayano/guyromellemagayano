@@ -2,9 +2,9 @@ import React from "react"
 import styled from "styled-components"
 import { Link } from "gatsby"
 
-import Category from "./category"
+// import Category from "./category"
 import Description from "./description"
-import Tags from "./tags"
+// import Tags from "./tags"
 
 const PostsDiv = styled.article`
   border: none !important;
