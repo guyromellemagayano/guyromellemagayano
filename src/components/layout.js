@@ -70,7 +70,11 @@ const Layout = ({ children }) => {
             title={"title"}
             meta={[
               { name: "description", content: "Full Stack Web Developer" },
-              { name: "keywords", content: "full, stack, web, developer, philippines, davao, city, guy, romelle, magayano" },
+              {
+                name: "keywords",
+                content:
+                  "full, stack, web, developer, philippines, davao, city, guy, romelle, magayano",
+              },
             ]}
           ></Helmet>
           <Header

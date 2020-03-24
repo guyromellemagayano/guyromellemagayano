@@ -2,7 +2,6 @@ import React from "react"
 import styled from "styled-components"
 import { StaticQuery, graphql, Link } from "gatsby"
 import { isMobile } from "react-device-detect"
-import PageTransition from "gatsby-plugin-page-transitions"
 
 import Layout from "../components/layout"
 import Jumbotron from "../components/features/jumbotron"
@@ -97,50 +96,48 @@ const CategoriesPage = () => (
     `}
     render={data => (
       <React.Fragment>
-        <PageTransition>
-          <Layout>
-            <SEO title="Categories" />
-            {data.CategoriesTitleQuery.edges ? (
-              <React.Fragment>
-                {data.CategoriesTitleQuery.edges.map((val, index) => {
-                  return <Jumbotron key={index} data={val} />
-                })}
-              </React.Fragment>
-            ) : null}
-            {data.CategoriesListQuery.group ? (
-              <React.Fragment>
-                <CategoryPageDiv className={`mb-32 clear-both`}>
-                  <Wrapper
-                    className={`block clear-both max-w-full ${
-                      isMobile ? "mx-12" : "mx-32"
+        <Layout>
+          <SEO title="Categories" />
+          {data.CategoriesTitleQuery.edges ? (
+            <React.Fragment>
+              {data.CategoriesTitleQuery.edges.map((val, index) => {
+                return <Jumbotron key={index} data={val} />
+              })}
+            </React.Fragment>
+          ) : null}
+          {data.CategoriesListQuery.group ? (
+            <React.Fragment>
+              <CategoryPageDiv className={`mb-32 clear-both`}>
+                <Wrapper
+                  className={`block clear-both max-w-full ${
+                    isMobile ? "mx-12" : "mx-32"
+                  }`}
+                >
+                  <ul
+                    className={`${
+                      isMobile
+                        ? "category-links mt-10 mb-6"
+                        : "category-links grid grid-cols-3 mt-20 mb-12"
                     }`}
                   >
-                    <ul
-                      className={`${
-                        isMobile
-                          ? "category-links mt-10 mb-6"
-                          : "category-links grid grid-cols-3 mt-20 mb-12"
-                      }`}
-                    >
-                      {data.CategoriesListQuery.group.map((val, index) => {
-                        return (
-                          <li key={index} className={`m-2`}>
-                            <Link
-                              className={`capitalize`}
-                              to={`/category/${_.kebabCase(val.fieldValue)}/`}
-                            >
-                              {val.fieldValue} ({val.totalCount})
-                            </Link>
-                          </li>
-                        )
-                      })}
-                    </ul>
-                  </Wrapper>
-                </CategoryPageDiv>
-              </React.Fragment>
-            ) : null}
-          </Layout>
-        </PageTransition>
+                    {data.CategoriesListQuery.group.map((val, index) => {
+                      return (
+                        <li key={index} className={`m-2`}>
+                          <Link
+                            className={`capitalize`}
+                            to={`/category/${_.kebabCase(val.fieldValue)}/`}
+                          >
+                            {val.fieldValue} ({val.totalCount})
+                          </Link>
+                        </li>
+                      )
+                    })}
+                  </ul>
+                </Wrapper>
+              </CategoryPageDiv>
+            </React.Fragment>
+          ) : null}
+        </Layout>
       </React.Fragment>
     )}
   />

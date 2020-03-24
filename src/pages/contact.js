@@ -1,7 +1,6 @@
 import React from "react"
 import { StaticQuery, graphql } from "gatsby"
 import { isMobile } from "react-device-detect"
-import PageTransition from "gatsby-plugin-page-transitions"
 
 import Layout from "../components/layout"
 import Info from "../components/features/info"
@@ -39,26 +38,24 @@ const ContactPage = () => (
     `}
     render={data => (
       <React.Fragment>
-        <PageTransition>
-          <Layout>
-            <SEO title="Contact" />
-            {data.ContactQuery.edges
-              ? data.ContactQuery.edges.map((val, index) => {
-                  if (val.node.section === "contact-intro") {
-                    return (
-                      <Jumbotron
-                        key={index}
-                        data={val}
-                        className={`${isMobile ? "mt-8" : "mt-24"} mb-32`}
-                      />
-                    )
-                  } else {
-                    return <Info key={index} data={val} />
-                  }
-                })
-              : null}
-          </Layout>
-        </PageTransition>
+        <Layout>
+          <SEO title="Contact" />
+          {data.ContactQuery.edges
+            ? data.ContactQuery.edges.map((val, index) => {
+                if (val.node.section === "contact-intro") {
+                  return (
+                    <Jumbotron
+                      key={index}
+                      data={val}
+                      className={`${isMobile ? "mt-8" : "mt-24"} mb-32`}
+                    />
+                  )
+                } else {
+                  return <Info key={index} data={val} />
+                }
+              })
+            : null}
+        </Layout>
       </React.Fragment>
     )}
   />
