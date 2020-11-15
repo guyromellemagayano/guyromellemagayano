@@ -43,16 +43,6 @@ module.exports = {
         link: "https://www.linkedin.com/in/mguyromelle",
       },
       {
-        name: "Twitter",
-        icon: [
-          {
-            style: "fab",
-            type: "twitter",
-          },
-        ],
-        link: "https://twitter.com/mguyromelle",
-      },
-      {
         name: "WordPress.ORG",
         icon: [
           {
@@ -194,7 +184,7 @@ module.exports = {
         optimizeId: "GTM-P36KGZX",
         sampleRate: 5,
         siteSpeedSampleRate: 10,
-        cookieDomain: "guyromellemagayano.tech",
+        cookieDomain: "guyromellemagayano.dev",
       },
     },
   ],
