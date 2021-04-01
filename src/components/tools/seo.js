@@ -66,6 +66,10 @@ function SEO({ description, lang, meta, title }) {
           name: `twitter:description`,
           content: metaDescription,
         },
+        {
+          name: `epic-crawl-id`,
+          content: `05466cd7-35c3-4158-969a-b9b32717b8f2`,
+        },
       ].concat(meta)}
     />
   )
