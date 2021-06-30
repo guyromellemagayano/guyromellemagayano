@@ -170,7 +170,6 @@ module.exports = {
       resolve: `gatsby-plugin-sass`,
       options: {
         postCssPlugins: [require("tailwindcss")],
-        precision: 8,
       },
     },
     {
