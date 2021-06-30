@@ -68,7 +68,7 @@ function SEO({ description, lang, meta, title }) {
         },
         {
           name: `epic-crawl-id`,
-          content: `a7eeddbd-ada8-4b56-9091-4dabebfb011f`,
+          content: `189b7e04-18e3-42a4-a023-78a3f40a5091`,
         },
       ].concat(meta)}
     />
