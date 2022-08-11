@@ -167,9 +167,18 @@ module.exports = {
       },
     },
     {
-      resolve: `gatsby-plugin-sass`,
+      resolve: "gatsby-plugin-sass",
       options: {
-        postCssPlugins: [require("tailwindcss")],
+        postCssPlugins: [
+          require("tailwindcss"),
+          require("tailwindcss/nesting")(require("postcss-nesting")),
+          require("autoprefixer"),
+          require("postcss-import"),
+          require("postcss-preset-env")({
+            features: { "nesting-rules": false },
+            stage: 0,
+          }),
+        ],
       },
     },
     {
