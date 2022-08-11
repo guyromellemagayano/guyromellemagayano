@@ -105,7 +105,6 @@ module.exports = {
     ],
   },
   plugins: [
-    `gatsby-plugin-react-helmet`,
     `gatsby-plugin-sitemap`,
     `gatsby-plugin-styled-components`,
     `gatsby-plugin-offline`,
@@ -167,9 +166,18 @@ module.exports = {
       },
     },
     {
-      resolve: `gatsby-plugin-sass`,
+      resolve: "gatsby-plugin-sass",
       options: {
-        postCssPlugins: [require("tailwindcss")],
+        postCssPlugins: [
+          require("tailwindcss"),
+          require("tailwindcss/nesting")(require("postcss-nesting")),
+          require("autoprefixer"),
+          require("postcss-import"),
+          require("postcss-preset-env")({
+            features: { "nesting-rules": false },
+            stage: 0,
+          }),
+        ],
       },
     },
     {
