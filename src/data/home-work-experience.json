@@ -7,6 +7,28 @@
         "subtitle": "Everyone once started somewhere. Everyday is a chance to learn something new.",
         "workHistory": [
           {
+            "company": "Epic Design Labs",
+            "employmentDate": "April 2020 – January 2023",
+            "position": "Full Stack Developer",
+            "description": "Hired as a full-stack developer to maintain internal projects and some client projects.",
+            "keyContributions": [
+              "Maintain some BigCommerce client websites",
+              "Developed custom automation scripts with Python for multiple clients",
+              "Led the development of a custom site crawler app and in charge of the overall front-end development",
+              "Led the development of a custom mobile app for wine social networking business",
+              "Led multiple headless e-commerce sites development and in charge of overall development both frontend and backend"
+            ]
+          },
+          {
+            "company": "MultiplyMii",
+            "employmentDate": "April 2020 – September 2021",
+            "position": "Multiplier/Full Stack Developer",
+            "description": "Hired as a full-stack developer for their internal projects including their company website, multiplymii.com among others.",
+            "keyContributions": [
+              "Maintain their company webiste, multiplymii.com, along with a small dev team among other internal projects."
+            ]
+          },
+          {
             "company": "MAKE Interactive / ZUID Creatives",
             "employmentDate": "April 2019 – February 2020",
             "position": "Full Stack WordPress Developer and Front-End Developer",
