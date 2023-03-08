@@ -527,15 +527,15 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@netlify/sentry@npm:^0.0.6":
-  version: 0.0.6
-  resolution: "@netlify/sentry@npm:0.0.6"
+"@netlify/sentry@npm:^0.0.7":
+  version: 0.0.7
+  resolution: "@netlify/sentry@npm:0.0.7"
   dependencies:
-    "@amplitude/analytics-node": "npm:1.0.3-beta.0"
-    "@netlify/integrations": "npm:^0.5.0"
-    "@sentry/serverless": "npm:^7.32.1"
-    node-fetch: "npm:^3.3.0"
-  checksum: 7ae273ac074b13b613e7197717c00344dd99302d9166c1368f608bd030a1847789a7bf3be96f64aadf12603a3ab0af80bfcef17370d961adf471940cc7f6a4a6
+    "@amplitude/analytics-node": 1.0.3-beta.0
+    "@netlify/integrations": ^0.5.0
+    "@sentry/serverless": ^7.32.1
+    node-fetch: ^3.3.0
+  checksum: f367c417af91e5777955cd76678adc7976d108323a6368a28cdd2338b3e45894cdb930e4bb8ce7e574ef3c93808cb09b2a1a19e08229d06dcb20e8f27f00a2a2
   languageName: node
   linkType: hard
 
@@ -9256,7 +9256,7 @@ __metadata:
     "@netlify/integrations": ^0.5.0
     "@netlify/plugin-nextjs": ^4.30.4
     "@netlify/plugin-sitemap": ^0.8.1
-    "@netlify/sentry": ^0.0.6
+    "@netlify/sentry": ^0.0.7
     "@next/mdx": ^13.2.3
     "@sentry/nextjs": ^7.41.0
     "@tailwindcss/typography": ^0.5.9
