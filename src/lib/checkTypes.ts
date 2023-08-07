@@ -21,11 +21,11 @@ export const isBooleanType = (e: boolean): boolean => isNotNullOrUndefined(e) &&
 
 // Check if the given valid value is empty
 export const isEmpty = (e: any): boolean => {
-  if (isStringType(e) || isArrayType(e) || isObjectType(e)) {
-    return _.size(e) === 0
-  } else if (isNumberType(e)) {
-    return e === 0
-  } else {
-    return true
-  }
+    if (isStringType(e) || isArrayType(e) || isObjectType(e)) {
+        return _.size(e) === 0
+    } else if (isNumberType(e)) {
+        return e === 0
+    } else {
+        return true
+    }
 }

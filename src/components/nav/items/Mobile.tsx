@@ -4,11 +4,11 @@ import Link from 'next/link'
 
 // Mobile navigation item component
 const MobileNavItem = ({ href, children }: IMobileNavItemProps): React.ReactNode => {
-  return (
-    <Popover.Button as={Link} href={href} className="block py-2">
-      {children}
-    </Popover.Button>
-  )
+    return (
+        <Popover.Button as={Link} href={href} className="block py-2">
+            {children}
+        </Popover.Button>
+    )
 }
 
 export default MobileNavItem
