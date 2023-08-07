@@ -1,30 +1,30 @@
-import rehypePrism from "@mapbox/rehype-prism";
-import nextMDX from "@next/mdx";
+import { getWpHostname, withFaust } from "@faustwp/core";
 import { withSentryConfig } from "@sentry/nextjs";
-import remarkGfm from "remark-gfm";
 
 /** @type {import('next').NextConfig} */
-const nextConfig = {
-	pageExtensions: ["js", "jsx", "ts", "tsx", "mdx"],
+const faustConfig = {
 	reactStrictMode: true,
+	pageExtensions: ["js", "jsx", "ts", "tsx"],
+	sassOptions: {
+		includePaths: ['node_modules'],
+	},
+	images: {
+		domains: [getWpHostname()],
+	},
 	experimental: {
 		scrollRestoration: true
 	},
 	sentry: {
 		hideSourceMaps: true
-	}
+	},
+	i18n: {
+		locales: ['en'],
+		defaultLocale: 'en',
+	},
 };
-
-const withMDX = nextMDX({
-	extension: /\.mdx?$/,
-	options: {
-		remarkPlugins: [remarkGfm],
-		rehypePlugins: [rehypePrism]
-	}
-});
 
 const sentryWebpackPluginOptions = {
 	silent: true
 };
 
-export default withSentryConfig(withMDX(nextConfig), sentryWebpackPluginOptions);
+export default withSentryConfig(withFaust(faustConfig), sentryWebpackPluginOptions);
