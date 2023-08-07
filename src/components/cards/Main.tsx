@@ -7,7 +7,7 @@ import {
     ICardLinkProps,
     ICardProps,
     ICardTitleProps,
-} from '@/interfaces/components'
+} from '@/interfaces'
 import clsx from 'clsx'
 import Link from 'next/link'
 

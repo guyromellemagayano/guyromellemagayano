@@ -1,14 +1,8 @@
 /* eslint-disable @typescript-eslint/no-unused-vars */
-import Container from '@/components/containers/Main'
-import Seo from '@/components/Seo'
-// import Newsletter from "@/components/layouts/Newsletter";
-import { MainArticle } from '@/components/articles'
-import Photos from '@/components/layouts/Photos'
-import Resume from '@/components/layouts/Resume'
-import SocialLink from '@/components/links/Social'
+import { Container, MainArticle, PhotosLayout, ResumeLayout, Seo, SocialLink } from '@/components'
 import HomeData from '@/data/home'
 import socialLinksData from '@/data/social-links'
-import { IArticlesProps } from '@/interfaces/pages'
+import { IArticlesProps } from '@/interfaces'
 import { generateRssFeed } from '@/lib/generateRssFeed'
 import { getAllArticles } from '@/lib/getAllArticles'
 import type { NextPage } from 'next'
@@ -50,7 +44,7 @@ const Home: NextPage = ({ articles }: IArticlesProps): React.ReactNode => {
                 </div>
             </Container>
 
-            <Photos data={slidePhotos} />
+            <PhotosLayout data={slidePhotos} />
 
             <Container className="mt-24 md:mt-28">
                 <div className="mx-auto grid max-w-xl grid-cols-1 gap-y-20 lg:max-w-none lg:grid-cols-2">
@@ -58,8 +52,8 @@ const Home: NextPage = ({ articles }: IArticlesProps): React.ReactNode => {
                         {articles?.map((article) => <MainArticle key={article.slug} {...article} />)}
                     </div>
                     <div className="space-y-10 lg:pl-16 xl:pl-24">
-                        {/* <Newsletter /> */}
-                        <Resume data={updatedResumeData} />
+                        {/* <NewsletterLayout /> */}
+                        <ResumeLayout data={updatedResumeData} />
                     </div>
                 </div>
             </Container>

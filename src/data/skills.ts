@@ -1,4 +1,4 @@
-import { ISkillsData } from '@/interfaces/data'
+import { ISkillsData } from '@/interfaces'
 
 const SkillsData = (): ISkillsData => {
     const meta = {

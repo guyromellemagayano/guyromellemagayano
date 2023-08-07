@@ -1,4 +1,4 @@
-import { IWorkData } from '@/interfaces/data'
+import { IWorkData } from '@/interfaces'
 
 const WorkData = (): IWorkData => {
     const meta = {

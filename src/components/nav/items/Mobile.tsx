@@ -1,4 +1,4 @@
-import { IMobileNavItemProps } from '@/interfaces/components'
+import { IMobileNavItemProps } from '@/interfaces'
 import { Popover } from '@headlessui/react'
 import Link from 'next/link'
 

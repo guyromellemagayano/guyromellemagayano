@@ -1,6 +1,6 @@
 import logoDjango from '@/images/logos/django.png'
 // import logoGithub from '@/images/logos/github.png'
-import { IProjectsData } from '@/interfaces/data'
+import { IProjectsData } from '@/interfaces'
 
 const ProjectsData = (): IProjectsData => {
     const meta = {

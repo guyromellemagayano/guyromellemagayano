@@ -1,5 +1,5 @@
 /* eslint-disable @typescript-eslint/no-explicit-any */
-import { IAvatarContainerProps } from '@/interfaces/components'
+import { IAvatarContainerProps } from '@/interfaces'
 import clsx from 'clsx'
 
 // Avatar container component

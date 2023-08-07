@@ -1,5 +1,5 @@
 import RotationsData from '@/data/rotations'
-import { IPhotosProps } from '@/interfaces/components'
+import { IPhotosProps } from '@/interfaces'
 import clsx from 'clsx'
 import Image from 'next/image'
 

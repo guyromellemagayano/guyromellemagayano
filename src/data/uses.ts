@@ -1,4 +1,4 @@
-import { IUsesData } from '@/interfaces/data'
+import { IUsesData } from '@/interfaces'
 
 const UsesData = (): IUsesData => {
     const meta = {

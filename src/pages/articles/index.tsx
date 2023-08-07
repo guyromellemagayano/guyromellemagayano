@@ -1,9 +1,7 @@
 /* eslint-disable @typescript-eslint/no-unused-vars */
-import Seo from '@/components/Seo'
-import SimpleLayout from '@/components/layouts/Simple'
-import { ArticlesList, ArticlesListCards } from '@/components/lists/List'
+import { ArticlesList, ArticlesListCards, Seo, SimpleLayout } from '@/components'
 import ArticlesData from '@/data/articles'
-import { IArticlesProps } from '@/interfaces/pages'
+import { IArticlesProps } from '@/interfaces'
 import { getAllArticles } from '@/lib/getAllArticles'
 import type { NextPage } from 'next'
 

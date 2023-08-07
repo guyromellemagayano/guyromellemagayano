@@ -1,5 +1,5 @@
 import { Card } from '@/components'
-import { IArticleProps } from '@/interfaces/components'
+import { IArticleProps } from '@/interfaces'
 import { formatDate } from '@/lib/formatDate'
 
 // Article component

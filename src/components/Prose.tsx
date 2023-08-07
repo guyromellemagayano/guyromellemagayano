@@ -1,4 +1,4 @@
-import { IProseProps } from '@/interfaces/components'
+import { IProseProps } from '@/interfaces'
 import clsx from 'clsx'
 
 // Prose component

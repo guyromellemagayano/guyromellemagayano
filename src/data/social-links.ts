@@ -1,6 +1,6 @@
 import { GitHubSvgIcon, LinkedInSvgIcon, TwitterSvgIcon } from '@/components/icons/social'
 import MailSvgIcon from '@/components/icons/svg/Mail'
-import { ISocialLinksData } from '@/interfaces/data'
+import { ISocialLinksData } from '@/interfaces'
 
 const socialLinksData = [
     {

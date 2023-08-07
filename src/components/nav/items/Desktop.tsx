@@ -1,4 +1,4 @@
-import { INavItemProps } from '@/interfaces/components'
+import { INavItemProps } from '@/interfaces'
 import clsx from 'clsx'
 import Link from 'next/link'
 import { useRouter } from 'next/router'

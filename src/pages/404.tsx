@@ -1,6 +1,5 @@
 // Create a custom 404 page
-import Seo from '@/components/Seo'
-import SimpleLayout from '@/components/layouts/Simple'
+import { Seo, SimpleLayout } from '@/components'
 import NotFoundPageData from '@/data/404'
 
 // 404 page

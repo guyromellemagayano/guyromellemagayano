@@ -5,8 +5,9 @@ import {
     IChildrenProps,
     IProjectListCardProps,
     ISkillsListCardsProps,
-} from '@/interfaces/components'
-import { IUsesToolsItemsData, IWorkListData } from '@/interfaces/data'
+    IUsesToolsItemsData,
+    IWorkListData,
+} from '@/interfaces'
 import { isEmpty } from '@/lib/checkTypes'
 import { formatDate } from '@/lib/formatDate'
 import Image from 'next/image'

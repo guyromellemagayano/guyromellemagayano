@@ -1,5 +1,5 @@
 /* eslint-disable @typescript-eslint/no-explicit-any */
-import { IContainerProps } from '@/interfaces/components'
+import { IContainerProps } from '@/interfaces'
 import clsx from 'clsx'
 import React from 'react'
 

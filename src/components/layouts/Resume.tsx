@@ -1,5 +1,5 @@
 import { ArrowDownSvgIcon, BriefcaseSvgIcon, MainButton } from '@/components'
-import { IResumeProps } from '@/interfaces/components'
+import { IResumeProps } from '@/interfaces'
 import Image from 'next/image'
 
 // Resume component

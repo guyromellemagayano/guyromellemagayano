@@ -1,6 +1,4 @@
-import Seo from '@/components/Seo'
-import SimpleLayout from '@/components/layouts/Simple'
-import { WorkList, WorkListCards } from '@/components/lists/List'
+import { Seo, SimpleLayout, WorkList, WorkListCards } from '@/components'
 import WorkData from '@/data/work'
 import { NextPage } from 'next'
 

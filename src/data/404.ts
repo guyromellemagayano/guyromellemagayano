@@ -1,4 +1,4 @@
-import { INotFoundPageData } from '@/interfaces/data'
+import { INotFoundPageData } from '@/interfaces'
 
 const NotFoundPageData = (): INotFoundPageData => {
     const meta = {

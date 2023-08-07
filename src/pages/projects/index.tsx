@@ -1,6 +1,4 @@
-import Seo from '@/components/Seo'
-import SimpleLayout from '@/components/layouts/Simple'
-import { ProjectsList, ProjectsListCards } from '@/components/lists/List'
+import { ProjectsList, ProjectsListCards, Seo, SimpleLayout } from '@/components'
 import ProjectsData from '@/data/projects'
 import type { NextPage } from 'next'
 

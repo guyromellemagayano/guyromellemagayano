@@ -1,4 +1,4 @@
-import { ISectionProps } from '@/interfaces/components'
+import { ISectionProps } from '@/interfaces'
 import clsx from 'clsx'
 import React from 'react'
 

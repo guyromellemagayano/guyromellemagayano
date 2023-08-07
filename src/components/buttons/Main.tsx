@@ -1,4 +1,4 @@
-import { IMainButtonProps } from '@/interfaces/components'
+import { IMainButtonProps } from '@/interfaces'
 import clsx from 'clsx'
 import Link from 'next/link'
 

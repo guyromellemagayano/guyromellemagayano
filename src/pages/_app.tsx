@@ -1,5 +1,4 @@
-import Footer from '@/components/layouts/Footer'
-import Header from '@/components/layouts/Header'
+import { FooterLayout, HeaderLayout } from '@/components'
 import usePrevious from '@/hooks/usePrevious'
 import '@/styles/tailwind.css'
 import { FaustProvider } from '@faustwp/core'
@@ -23,11 +22,11 @@ const App = ({ Component, pageProps, router }: AppProps): React.ReactNode => {
             </div>
 
             <div className="relative">
-                <Header />
+                <HeaderLayout />
                 <main>
                     <Component {...extendedPageProps} key={router.asPath} />
                 </main>
-                <Footer />
+                <FooterLayout />
             </div>
         </FaustProvider>
     )

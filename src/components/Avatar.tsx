@@ -1,6 +1,6 @@
 /* eslint-disable @typescript-eslint/no-explicit-any */
 import avatarImage from '@/images/avatar.jpg'
-import { IAvatarProps } from '@/interfaces/components'
+import { IAvatarProps } from '@/interfaces'
 import clsx from 'clsx'
 import Image from 'next/image'
 import Link from 'next/link'

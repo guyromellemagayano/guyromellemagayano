@@ -1,4 +1,4 @@
-import { ISocialLinkProps } from '@/interfaces/components'
+import { ISocialLinkProps } from '@/interfaces'
 import clsx from 'clsx'
 
 // Social link component

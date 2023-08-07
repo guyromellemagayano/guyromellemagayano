@@ -1,5 +1,5 @@
 import { Container } from '@/components'
-import { ISimpleLayoutProps } from '@/interfaces/components'
+import { ISimpleLayoutProps } from '@/interfaces'
 
 // Simple layout component
 const SimpleLayout = ({ title, intro, children }: ISimpleLayoutProps): React.ReactNode => {

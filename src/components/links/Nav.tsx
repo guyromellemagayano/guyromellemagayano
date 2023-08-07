@@ -1,4 +1,4 @@
-import { INavLinkProps } from '@/interfaces/components'
+import { INavLinkProps } from '@/interfaces'
 import Link from 'next/link'
 
 // Navigation link component

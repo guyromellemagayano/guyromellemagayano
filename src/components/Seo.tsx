@@ -1,4 +1,4 @@
-import { ISeoProps } from '@/interfaces/components'
+import { ISeoProps } from '@/interfaces'
 import Head from 'next/head'
 
 // SEO component

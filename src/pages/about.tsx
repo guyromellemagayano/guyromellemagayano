@@ -1,6 +1,4 @@
-import Seo from '@/components/Seo'
-import Container from '@/components/containers/Main'
-import SocialLink from '@/components/links/Social'
+import { Container, Seo, SocialLink } from '@/components'
 import AboutData from '@/data/about'
 import socialLinksData from '@/data/social-links'
 import portraitImage from '@/images/portrait.jpg'

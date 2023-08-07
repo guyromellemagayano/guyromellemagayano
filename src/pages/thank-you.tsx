@@ -1,5 +1,4 @@
-import Seo from '@/components/Seo'
-import SimpleLayout from '@/components/layouts/Simple'
+import { Seo, SimpleLayout } from '@/components'
 import ThankYouData from '@/data/thank-you'
 import type { NextPage } from 'next'
 

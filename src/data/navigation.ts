@@ -1,5 +1,5 @@
 import PagesData from '@/data/pages'
-import { INavigationData } from '@/interfaces/data'
+import { INavigationData } from '@/interfaces'
 
 const NavigationData = (): INavigationData => {
     const menu = []

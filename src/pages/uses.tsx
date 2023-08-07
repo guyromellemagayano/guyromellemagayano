@@ -1,6 +1,4 @@
-import Seo from '@/components/Seo'
-import SimpleLayout from '@/components/layouts/Simple'
-import { ToolsList, ToolsListCards } from '@/components/lists/List'
+import { Seo, SimpleLayout, ToolsList, ToolsListCards } from '@/components'
 import UsesData from '@/data/uses'
 import type { NextPage } from 'next'
 

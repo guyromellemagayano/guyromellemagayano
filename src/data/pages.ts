@@ -1,4 +1,4 @@
-import { IPagesData } from '@/interfaces/data'
+import { IPagesData } from '@/interfaces'
 
 const PagesData = (): IPagesData => {
     const pages = [
