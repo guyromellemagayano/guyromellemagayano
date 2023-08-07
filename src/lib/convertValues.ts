@@ -1,7 +1,7 @@
 /* eslint-disable @typescript-eslint/no-explicit-any */
+import { isEmpty } from '@/lib'
 import _ from 'lodash'
 import React from 'react'
-import { isEmpty } from './checkTypes'
 
 // Convert string to lowercase
 export const convertStringToLowercase = (e: string): string => (!isEmpty(e) ? _.toLower(e) : e)

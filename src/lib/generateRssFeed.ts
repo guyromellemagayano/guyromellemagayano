@@ -1,8 +1,8 @@
 import ArticlesData from '@/data/articles'
+import { getAllArticles } from '@/lib'
 import { Feed } from 'feed'
 import { mkdir, writeFile } from 'fs/promises'
 import ReactDOMServer from 'react-dom/server'
-import { getAllArticles } from './getAllArticles'
 
 // This function is used to generate the RSS feed
 export const generateRssFeed = async (): Promise<void> => {
