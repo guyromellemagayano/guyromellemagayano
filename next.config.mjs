@@ -23,8 +23,18 @@ const faustConfig = {
 	},
 };
 
-const sentryWebpackPluginOptions = {
-	silent: true
+const sentryConfig = {
+	disableLogger: true,
+	hideSourceMaps: true,
+	org: "guy-romelle-magayano",
+	org: "guy-romelle-magayano",
+	project: "guyromellemagayano",
+	project: "guyromellemagayano",
+	silent: true,
+	silent: true,
+	transpileClientSDK: true,
+	tunnelRoute: "/monitoring",
+	widenClientFileUpload: true,
 };
 
-export default withSentryConfig(withFaust(faustConfig), sentryWebpackPluginOptions);
+export default withSentryConfig(withFaust(faustConfig), sentryConfig);
