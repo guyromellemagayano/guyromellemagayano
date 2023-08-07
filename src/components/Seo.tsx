@@ -5,9 +5,10 @@ import Head from 'next/head'
 const Seo = ({ meta }: ISeoProps): React.ReactNode => {
   return (
     <Head>
-      <title>{meta?.title || ''}</title>
-      <meta name="description" content={meta?.description || ''} />
-      <meta name="keywords" content={meta?.keywords || ''} />
+      {meta?.title && <title>{meta.title}</title>}
+      {meta?.description && <meta property="description" content={meta.description} />}
+      {meta?.keywords && <meta name="keywords" content={meta.keywords} />}
+      {/* TODO: Twitter and Open Graph meta tags */}
     </Head>
   )
 }
