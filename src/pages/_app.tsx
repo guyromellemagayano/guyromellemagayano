@@ -5,7 +5,7 @@ import { FaustProvider } from '@faustwp/core'
 import '@faustwp/core/dist/css/toolbar.css'
 import 'focus-visible'
 import { AppProps } from 'next/app'
-import '../../faust.config.mjs'
+import '../../faust.config'
 
 const App = ({ Component, pageProps, router }: AppProps): React.ReactNode => {
     const previousPathname = usePrevious(router.pathname)
