@@ -4,7 +4,7 @@ const config: CodegenConfig = {
     schema: 'https://faustexample.wpengine.com/graphql',
     documents: ['src/**/*.{tsx,ts}'],
     generates: {
-        '@/__generated__/': {
+        './src/__generated__/': {
             preset: 'client',
             plugins: [],
             presetConfig: {
