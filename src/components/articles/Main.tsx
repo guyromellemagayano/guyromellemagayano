@@ -1,6 +1,6 @@
 import { Card } from '@/components'
 import { IArticleProps } from '@/interfaces'
-import { formatDate } from '@/lib/formatDate'
+import { formatDate } from '@/lib'
 
 // Article component
 const Article = ({ slug, meta: { title, date, description } }: IArticleProps): React.ReactNode => {

@@ -1,5 +1,5 @@
 import { ArrowLeftSvgIcon, Container, Prose } from '@/components'
-import { formatDate } from '@/lib/formatDate'
+import { formatDate } from '@/lib'
 import { useRouter } from 'next/router'
 import Seo from '../Seo'
 

@@ -1,6 +1,6 @@
 /* eslint-disable @typescript-eslint/no-explicit-any */
 import { Avatar, AvatarContainer, Container, DesktopNav, MobileNav, ToggleDarkMode } from '@/components'
-import clamp from '@/utils/clamp'
+import { clamp } from '@/utils'
 import { useRouter } from 'next/router'
 import React from 'react'
 

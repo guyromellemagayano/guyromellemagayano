@@ -3,8 +3,6 @@ import { Container, MainArticle, PhotosLayout, ResumeLayout, Seo, SocialLink } f
 import HomeData from '@/data/home'
 import socialLinksData from '@/data/social-links'
 import { IArticlesProps } from '@/interfaces'
-import { generateRssFeed } from '@/lib/generateRssFeed'
-import { getAllArticles } from '@/lib/getAllArticles'
 import type { NextPage } from 'next'
 
 // Home page
@@ -59,18 +57,6 @@ const Home: NextPage = ({ articles }: IArticlesProps): React.ReactNode => {
             </Container>
         </>
     )
-}
-
-export const getStaticProps = async (): Promise<object> => {
-    if (process.env.NODE_ENV === 'production') {
-        await generateRssFeed()
-    }
-
-    return {
-        props: {
-            articles: (await getAllArticles()).slice(0, 4).map(({ component, ...meta }) => meta),
-        },
-    }
 }
 
 export default Home

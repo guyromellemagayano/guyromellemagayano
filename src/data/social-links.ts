@@ -1,4 +1,4 @@
-import { GitHubSvgIcon, LinkedInSvgIcon, TwitterSvgIcon } from '@/components/icons/social'
+import { GithubSvgIcon, LinkedinSvgIcon, TwitterSvgIcon } from '@/components'
 import MailSvgIcon from '@/components/icons/svg/Mail'
 import { ISocialLinksData } from '@/interfaces'
 
@@ -11,12 +11,12 @@ const socialLinksData = [
     {
         url: 'https://github.com/guyromellemagayano',
         ariaLabel: 'Follow on GitHub',
-        icon: GitHubSvgIcon,
+        icon: GithubSvgIcon,
     },
     {
         url: 'https://www.linkedin.com/in/mguyromelle/',
         ariaLabel: 'Follow on LinkedIn',
-        icon: LinkedInSvgIcon,
+        icon: LinkedinSvgIcon,
     },
     {
         url: 'mailto:aspiredtechie2010@gmail.com',

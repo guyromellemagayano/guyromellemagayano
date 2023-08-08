@@ -1,5 +1,5 @@
 /* eslint-disable @typescript-eslint/no-explicit-any */
-import { Section } from '@/components'
+import { Card, LinkSvgIcon, Section } from '@/components'
 import {
     IArticleListCardProps,
     IChildrenProps,
@@ -8,11 +8,8 @@ import {
     IUsesToolsItemsData,
     IWorkListData,
 } from '@/interfaces'
-import { isEmpty } from '@/lib/checkTypes'
-import { formatDate } from '@/lib/formatDate'
+import { formatDate, isEmpty } from '@/lib'
 import Image from 'next/image'
-import Card from '../cards/Main'
-import LinkSvgIcon from '../icons/svg/Link'
 
 // Skills list component
 const SkillsList = ({ children, ...rest }: IChildrenProps & any): React.ReactNode => {

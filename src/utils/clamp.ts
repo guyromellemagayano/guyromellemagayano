@@ -1,4 +1,4 @@
-import { IClampProps } from '@/interfaces/utils'
+import { IClampProps } from '@/interfaces'
 
 // Return a number between min and max
 const clamp = ({ number, a, b }: IClampProps): number => {

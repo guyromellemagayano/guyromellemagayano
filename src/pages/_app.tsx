@@ -1,11 +1,11 @@
 import { FooterLayout, HeaderLayout } from '@/components'
-import usePrevious from '@/hooks/usePrevious'
+import { usePrevious } from '@/hooks'
 import '@/styles/tailwind.css'
 import { FaustProvider } from '@faustwp/core'
 import '@faustwp/core/dist/css/toolbar.css'
-import 'faust.config.mjs'
 import 'focus-visible'
 import { AppProps } from 'next/app'
+import '../../faust.config.mjs'
 
 const App = ({ Component, pageProps, router }: AppProps): React.ReactNode => {
     const previousPathname = usePrevious(router.pathname)

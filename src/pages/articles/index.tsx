@@ -2,7 +2,6 @@
 import { ArticlesList, ArticlesListCards, Seo, SimpleLayout } from '@/components'
 import ArticlesData from '@/data/articles'
 import { IArticlesProps } from '@/interfaces'
-import { getAllArticles } from '@/lib/getAllArticles'
 import type { NextPage } from 'next'
 
 // Articles page
@@ -21,23 +20,6 @@ const Articles: NextPage = ({ articles }: IArticlesProps): React.ReactNode => {
             </SimpleLayout>
         </>
     )
-}
-
-export const getStaticProps = async (): Promise<object> => {
-    try {
-        const allArticles = await getAllArticles()
-
-        return {
-            props: {
-                articles: allArticles.map(({ component, ...meta }) => meta),
-            },
-        }
-    } catch (error) {
-        console.error('Failed to retrieve articles:', error)
-
-        // You can return some default props in case of an error
-        return { props: { articles: [] } }
-    }
 }
 
 export default Articles

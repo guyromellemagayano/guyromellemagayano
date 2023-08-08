@@ -1,5 +1,3 @@
 export * from './checkTypes'
 export * from './convertValues'
 export * from './formatDate'
-export * from './generateRssFeed'
-export * from './getAllArticles'
