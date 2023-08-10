@@ -8,5 +8,5 @@ export interface ISeoMetaCommonProps {
 // Hero component common props
 export interface IHeroCommonProps {
     heading: string
-    description: string[]
+    description: string
 }

@@ -1,7 +1,7 @@
 import { Container, PhotosLayout, ResumeLayout, Seo, SocialLink } from '@/components'
 import HomeData from '@/data/home'
 import socialLinksData from '@/data/social-links'
-import { ISeoMetaCommonProps } from '@/interfaces'
+import { IHeroCommonProps, ISeoMetaCommonProps } from '@/interfaces'
 import { FaustTemplate } from '@faustwp/core'
 import { gql } from '../__generated__'
 import { GetHomePageQuery } from '../__generated__/graphql'
@@ -11,14 +11,24 @@ const Component: FaustTemplate<GetHomePageQuery> = (props) => {
 
     console.log(props)
 
+    // Meta data
     const meta: ISeoMetaCommonProps = {
-        title: props.data?.generalSettings?.title || 'Untitled',
+        title:
+            props.data?.generalSettings?.title + ' - ' + props.data?.generalSettings?.description ||
+            'No description' ||
+            'Untitled',
         description: props.data?.generalSettings?.description || 'No description',
         keywords: '',
     }
 
     // Destructure the data from the HomeData function
-    const { hero, slidePhotos, cvFile, workExperiences } = HomeData()
+    const { slidePhotos, cvFile, workExperiences } = HomeData()
+
+    // Hero data
+    const hero: IHeroCommonProps = {
+        heading: props.data?.page?.title || 'No title',
+        description: props.data?.page?.content || 'No content',
+    }
 
     // Update the work experience data
     const updatedResumeData = {
@@ -36,13 +46,10 @@ const Component: FaustTemplate<GetHomePageQuery> = (props) => {
                         {hero.heading}
                     </h1>
                     <p className="mt-6 text-base space-y-7 text-zinc-600 dark:text-zinc-400">
-                        {hero.description.map((paragraph, index) => {
-                            return (
-                                <span key={index} className="space-y-7">
-                                    {paragraph}
-                                </span>
-                            )
-                        })}
+                        <span
+                            dangerouslySetInnerHTML={{ __html: hero.description }}
+                            className="flex space-y-7 flex-col"
+                        />
                     </p>
                     <div className="mt-6 flex gap-6">
                         {socialLinksData.map((link) => {
@@ -70,23 +77,12 @@ const Component: FaustTemplate<GetHomePageQuery> = (props) => {
 Component.query = gql(`
   query GetHomePage {
     generalSettings {
-      title
-      description
+        title
+        description
     }
-    primaryMenuItems: menuItems(where: { location: PRIMARY }) {
-      nodes {
-        id
-        uri
-        path
-        label
-        parentId
-        cssClasses
-        menu {
-          node {
-            name
-          }
-        }
-      }
+    page(id: "cG9zdDoxMQ==") {
+        content(format: RENDERED)
+        title(format: RENDERED)
     }
   }
 `)
