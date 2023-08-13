@@ -72,9 +72,5 @@
     "ts-jest": "^29.1.1",
     "typescript": "^5.1.6"
   },
-  "packageManager": "yarn@3.4.1",
-  "engines": {
-    "node": ">=16",
-    "npm": ">=8"
-  }
+  "packageManager": "yarn@3.4.1"
 }
