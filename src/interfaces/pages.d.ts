@@ -1,11 +1,11 @@
-import { IArticleProps } from "./components";
+import { IArticleProps } from './components'
 
 // Home page props
 export interface IHomeProps {
-	articles: IArticleProps[];
+    articles: IArticleProps[]
 }
 
 // Articles page props
 export interface IArticlesProps {
-	articles: IArticleProps[];
+    articles: IArticleProps[]
 }

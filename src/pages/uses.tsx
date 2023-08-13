@@ -6,26 +6,34 @@ import type { NextPage } from 'next'
 
 // Uses page
 const Uses: NextPage = (): React.ReactNode => {
-  // Destructure the data from the UsesData function
-  const { meta, hero, tools } = UsesData()
+    // Destructure the data from the UsesData function
+    const { meta, hero, tools } = UsesData()
 
-  return (
-    <>
-      <Seo meta={meta} />
+    return (
+        <>
+            <Seo meta={meta} />
 
-      <SimpleLayout id="hero" title={hero.heading} intro={hero.description}>
-        <div className="space-y-20">
-          {tools.map((tool) => (
-            <ToolsList key={tool.name} title={tool.name}>
-              {tool.items?.map((item) => (
-                <ToolsListCards key={item.title} title={item.title} description={item.description} />
-              ))}
-            </ToolsList>
-          ))}
-        </div>
-      </SimpleLayout>
-    </>
-  )
+            <SimpleLayout
+                id="hero"
+                title={hero.heading}
+                intro={hero.description}
+            >
+                <div className="space-y-20">
+                    {tools.map((tool) => (
+                        <ToolsList key={tool.name} title={tool.name}>
+                            {tool.items?.map((item) => (
+                                <ToolsListCards
+                                    key={item.title}
+                                    title={item.title}
+                                    description={item.description}
+                                />
+                            ))}
+                        </ToolsList>
+                    ))}
+                </div>
+            </SimpleLayout>
+        </>
+    )
 }
 
 export default Uses

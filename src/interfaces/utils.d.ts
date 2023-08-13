@@ -1,6 +1,6 @@
 // Clamp utils props
 export interface IClampProps {
-	number: number;
-	a: number;
-	b: number;
+    number: number
+    a: number
+    b: number
 }

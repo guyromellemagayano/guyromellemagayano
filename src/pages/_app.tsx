@@ -7,30 +7,30 @@ import 'focus-visible'
 import { AppProps } from 'next/app'
 
 const App = ({ Component, pageProps, router }: AppProps): React.ReactNode => {
-  const previousPathname = usePrevious(router.pathname)
+    const previousPathname = usePrevious(router.pathname)
 
-  // Add the previousPathname to pageProps
-  const extendedPageProps = { ...pageProps, previousPathname }
+    // Add the previousPathname to pageProps
+    const extendedPageProps = { ...pageProps, previousPathname }
 
-  return (
-    <>
-      <div className="fixed inset-0 flex justify-center sm:px-8 bg-white dark:bg-zinc-900">
-        <div className="flex w-full max-w-7xl lg:px-8">
-          <div className="w-full" />
-        </div>
-      </div>
+    return (
+        <>
+            <div className="fixed inset-0 flex justify-center sm:px-8 bg-white dark:bg-zinc-900">
+                <div className="flex w-full max-w-7xl lg:px-8">
+                    <div className="w-full" />
+                </div>
+            </div>
 
-      <div className="relative">
-        <Header />
-        <main>
-          <Component {...extendedPageProps} />
-        </main>
-        <Footer />
-      </div>
+            <div className="relative">
+                <Header />
+                <main>
+                    <Component {...extendedPageProps} />
+                </main>
+                <Footer />
+            </div>
 
-      <Analytics />
-    </>
-  )
+            <Analytics />
+        </>
+    )
 }
 
 export default App
