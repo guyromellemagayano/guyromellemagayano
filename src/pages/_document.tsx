@@ -45,12 +45,12 @@ const Document = (): React.ReactNode => {
                 <link
                     rel="alternate"
                     type="application/rss+xml"
-                    href={`${process.env.NEXT_PUBLIC_SITE_URL}/rss/feed.xml`}
+                    href={`${process.env.NEXT_PUBLIC_WORDPRESS_URL}/rss/feed.xml`}
                 />
                 <link
                     rel="alternate"
                     type="application/feed+json"
-                    href={`${process.env.NEXT_PUBLIC_SITE_URL}/rss/feed.json`}
+                    href={`${process.env.NEXT_PUBLIC_WORDPRESS_URL}/rss/feed.json`}
                 />
 
                 <Script strategy="afterInteractive" src="https://www.googletagmanager.com/gtag/js?id=G-FBL98FXS6D" />
@@ -62,7 +62,7 @@ const Document = (): React.ReactNode => {
               window.dataLayer = window.dataLayer || [];
               function gtag(){dataLayer.push(arguments);}
               gtag('js', new Date());
-              gtag('config', 'G-FBL98FXS6D');
+              gtag('config', '${process.env.NEXT_PUBLIC_GA_MEASUREMENT_ID}}');
             `,
                     }}
                 />
