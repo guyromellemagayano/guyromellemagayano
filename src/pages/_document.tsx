@@ -38,6 +38,8 @@ const modeScript = `
 `
 
 const Document = (): React.ReactNode => {
+    const gtmSrc = `https://www.googletagmanager.com/gtag/js?id=${process.env.NEXT_PUBLIC_GA_MEASUREMENT_ID}`
+
     return (
         <Html className="h-full antialiased" lang="en">
             <Head>
@@ -53,10 +55,7 @@ const Document = (): React.ReactNode => {
                     href={`${process.env.NEXT_PUBLIC_SITE_URL}/rss/feed.json`}
                 />
 
-                <Script
-                    strategy="afterInteractive"
-                    src="https://www.googletagmanager.com/gtag/js?id=G-FBL98FXS6D"
-                />
+                <Script strategy="afterInteractive" src={gtmSrc} />
                 <Script
                     id="google-analytics"
                     strategy="afterInteractive"
