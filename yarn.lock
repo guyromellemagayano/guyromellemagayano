@@ -1109,9 +1109,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@faustwp/core@npm:1.0.3":
-  version: 1.0.3
-  resolution: "@faustwp/core@npm:1.0.3"
+"@faustwp/core@npm:1.1.0":
+  version: 1.1.0
+  resolution: "@faustwp/core@npm:1.1.0"
   dependencies:
     "@wordpress/hooks": ^3.14.0
     chalk: ^4.1.2
@@ -1127,7 +1127,7 @@ __metadata:
     next: ">=12.1.6"
     react: ">=17.0.2"
     react-dom: ">=17.0.2"
-  checksum: 1fadb33d22ad7fb67aa3f92b5ae2504cda5fa99edfee80a14ae9f6fcac946e65f0fb787ec09d72068a93b2bd13908566ad8b91f7589d08d4e3e1f195dce6d8aa
+  checksum: de020eb39af52e6581a74f81b433abc251ec4df07d157da9e784d0c48a289923501b09cda264a880cafa388ad56565ad615a66515489f301a62c5988ce4d2f32
   languageName: node
   linkType: hard
 
@@ -13949,7 +13949,7 @@ __metadata:
   dependencies:
     "@apollo/client": ^3.6.6
     "@faustwp/cli": 1.0.1
-    "@faustwp/core": 1.0.3
+    "@faustwp/core": 1.1.0
     "@graphql-codegen/cli": ^3.2.2
     "@graphql-codegen/client-preset": ^2.1.1
     "@headlessui/react": ^1.7.16
