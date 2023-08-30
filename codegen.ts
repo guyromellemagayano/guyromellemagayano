@@ -1,18 +1,18 @@
-import { CodegenConfig } from "@graphql-codegen/cli";
+import { CodegenConfig } from '@graphql-codegen/cli'
 
 const config: CodegenConfig = {
-  schema: "http://localhost:3000/graphql",
-  documents: ["src/**/*.{tsx,ts}"],
-  generates: {
-    "./src/__generated__/": {
-      preset: "client",
-      plugins: [],
-      presetConfig: {
-        gqlTagName: "gql",
-      },
+    schema: process.env.NEXT_PUBLIC_WORDPRESS_URL + '/graphql',
+    documents: ['src/**/*.{tsx,ts}'],
+    generates: {
+        './src/__generated__/': {
+            preset: 'client',
+            plugins: [],
+            presetConfig: {
+                gqlTagName: 'gql',
+            },
+        },
     },
-  },
-  ignoreNoDocuments: true,
-};
+    ignoreNoDocuments: true,
+}
 
-export default config;
+export default config
