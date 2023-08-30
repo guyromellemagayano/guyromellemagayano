@@ -31,7 +31,7 @@
     "@types/react-dom": "^18.2.7",
     "@vercel/analytics": "^1.0.2",
     "@wordpress/base-styles": "^4.31.1",
-    "@wordpress/block-library": "^7.19.0",
+    "@wordpress/block-library": "^8.17.0",
     "autoprefixer": "^10.4.15",
     "classnames": "^2.3.2",
     "clsx": "^2.0.0",
