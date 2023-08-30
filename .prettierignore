@@ -1,4 +1,5 @@
 .next
+components
 node_modules
-yarn.lock
 public
+yarn.lock
