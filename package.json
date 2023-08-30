@@ -5,7 +5,7 @@
   "scripts": {
     "build": "faust build",
     "codegen": "graphql-codegen",
-    "dev": "npm run generate && concurrently \"faust dev\" \"npm run watch-codegen\"",
+    "dev": "yarn generate && concurrently \"faust dev\" \"yarn watch-codegen\"",
     "generate": "faust generatePossibleTypes",
     "lint": "next lint",
     "postbuild": "next-sitemap",
