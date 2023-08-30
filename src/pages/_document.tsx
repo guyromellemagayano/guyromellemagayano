@@ -55,19 +55,23 @@ const Document = (): React.ReactNode => {
                     href={`${process.env.NEXT_PUBLIC_SITE_URL}/rss/feed.json`}
                 />
 
-                <Script strategy="afterInteractive" src={gtmSrc} />
-                <Script
-                    id="google-analytics"
-                    strategy="afterInteractive"
-                    dangerouslySetInnerHTML={{
-                        __html: `
-              window.dataLayer = window.dataLayer || [];
-              function gtag(){dataLayer.push(arguments);}
-              gtag('js', new Date());
-              gtag('config', ${process.env.NEXT_PUBLIC_GA_MEASUREMENT_ID});
-            `,
-                    }}
-                />
+                {process.env.NODE_ENV === 'production' && (
+                    <>
+                        <Script strategy="afterInteractive" src={gtmSrc} />
+                        <Script
+                            id="google-analytics"
+                            strategy="afterInteractive"
+                            dangerouslySetInnerHTML={{
+                                __html: `
+                          window.dataLayer = window.dataLayer || [];
+                          function gtag(){dataLayer.push(arguments);}
+                          gtag('js', new Date());
+                          gtag('config', ${process.env.NEXT_PUBLIC_GA_MEASUREMENT_ID});
+                        `,
+                            }}
+                        />
+                    </>
+                )}
             </Head>
 
             <body className="flex h-full flex-col bg-zinc-50 dark:bg-black">
