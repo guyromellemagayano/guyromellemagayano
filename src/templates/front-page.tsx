@@ -14,15 +14,13 @@ import socialLinksData from '@/data/social-links'
 
 const Component: FaustTemplate<GetHomePageQuery> = (props): React.ReactNode => {
     // Destructure the data from the HomeData function
-    const { meta, hero, slidePhotos, cvFile, workExperiences } = HomeData()
+    const { meta, hero, slidePhotos, cvFile, workExperiences } = HomeData(props)
 
     // Update the work experience data
     const updatedResumeData = {
         work: workExperiences,
         file: cvFile,
     }
-
-    console.log(props)
 
     return (
         <>
@@ -34,13 +32,12 @@ const Component: FaustTemplate<GetHomePageQuery> = (props): React.ReactNode => {
                         {hero.heading}
                     </h1>
                     <p className="mt-6 text-base space-y-7 text-zinc-600 dark:text-zinc-400">
-                        {hero.description.map((paragraph, index) => {
-                            return (
-                                <span key={index} className="space-y-7">
-                                    {paragraph}
-                                </span>
-                            )
-                        })}
+                        <span
+                            className="space-y-7"
+                            dangerouslySetInnerHTML={{
+                                __html: hero.description,
+                            }}
+                        />
                     </p>
                     <div className="mt-6 flex gap-6">
                         {socialLinksData.map((link) => {
@@ -68,27 +65,16 @@ const Component: FaustTemplate<GetHomePageQuery> = (props): React.ReactNode => {
 }
 
 Component.query = gql(`
-  query GetHomePage {
-    generalSettings {
-      title
-      description
-    }
-    primaryMenuItems: menuItems(where: { location: PRIMARY }) {
-      nodes {
-        id
-        uri
-        path
-        label
-        parentId
-        cssClasses
-        menu {
-          node {
-            name
-          }
+    query GetHomePage {
+        generalSettings {
+            title
+            description
         }
-      }
+        page(id: "cG9zdDo3") {
+            content(format: RENDERED)
+            title
+        }
     }
-  }
 `)
 
 export default Component
