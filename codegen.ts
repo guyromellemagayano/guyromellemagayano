@@ -1,7 +1,7 @@
 import { CodegenConfig } from '@graphql-codegen/cli'
 
 const config: CodegenConfig = {
-    schema: process.env.NEXT_PUBLIC_WORDPRESS_URL + '/graphql',
+    schema: 'https://cms.guyromellemagayano.dev/graphql',
     documents: ['src/**/*.{tsx,ts}'],
     generates: {
         './src/__generated__/': {
