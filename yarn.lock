@@ -3692,10 +3692,10 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@wordpress/base-styles@npm:^4.31.1":
-  version: 4.31.1
-  resolution: "@wordpress/base-styles@npm:4.31.1"
-  checksum: 82509f28e698e8c168844e7e7bcb340f35e839678c6ad5c9109c475992e1d952c8109ab6b14f83bad58f696d9bb054b49366cfc0603171806fff13a4edaf6326
+"@wordpress/base-styles@npm:^4.32.0":
+  version: 4.32.0
+  resolution: "@wordpress/base-styles@npm:4.32.0"
+  checksum: d0233353bf1670a849e053df09091999aa7a26f07b56c020d96017ee2d8121dc77db0dd0e146bdc18dffbf09c739542f442923a0e625001b4045ed096672082d
   languageName: node
   linkType: hard
 
@@ -14298,7 +14298,7 @@ __metadata:
     "@typescript-eslint/eslint-plugin": ^6.5.0
     "@typescript-eslint/parser": ^6.5.0
     "@vercel/analytics": ^1.0.2
-    "@wordpress/base-styles": ^4.31.1
+    "@wordpress/base-styles": ^4.32.0
     "@wordpress/block-library": ^7.19.0
     autoprefixer: ^10.4.15
     classnames: ^2.3.2
