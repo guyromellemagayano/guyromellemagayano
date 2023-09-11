@@ -26,7 +26,7 @@
     "@mdx-js/react": "^2.3.0",
     "@next/mdx": "^13.4.19",
     "@sentry/nextjs": "^7.65.0",
-    "@tailwindcss/typography": "^0.5.9",
+    "@tailwindcss/typography": "^0.5.10",
     "@types/lodash": "^4.14.197",
     "@types/react-dom": "^18.2.7",
     "@vercel/analytics": "^1.0.2",
