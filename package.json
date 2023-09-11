@@ -17,7 +17,7 @@
   },
   "browserslist": "defaults, not ie <= 11",
   "dependencies": {
-    "@apollo/client": "^3.8.1",
+    "@apollo/client": "^3.8.3",
     "@faustwp/cli": "1.1.1",
     "@faustwp/core": "1.1.1",
     "@headlessui/react": "^1.7.17",
