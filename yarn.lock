@@ -2093,7 +2093,7 @@ __metadata:
     "@types/react-dom": "npm:^18.2.15"
     "@types/react-is": "npm:18.2.4"
     "@types/react-transition-group": "npm:^4.4.9"
-    "@types/styled-components": "npm:5.1.30"
+    "@types/styled-components": "npm:5.1.32"
     "@types/webpack-env": "npm:^1.18.4"
     "@typescript-eslint/eslint-plugin": "npm:^6.11.0"
     "@typescript-eslint/parser": "npm:^6.11.0"
@@ -4820,14 +4820,14 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/styled-components@npm:5.1.30":
-  version: 5.1.30
-  resolution: "@types/styled-components@npm:5.1.30"
+"@types/styled-components@npm:5.1.32":
+  version: 5.1.32
+  resolution: "@types/styled-components@npm:5.1.32"
   dependencies:
     "@types/hoist-non-react-statics": "npm:*"
     "@types/react": "npm:*"
     csstype: "npm:^3.0.2"
-  checksum: 1e7ecedb13a527b88ce45acf338daf1a446cbf4c740141822aa4737ce9cde5c6c6386c81345effcf3ced6cc6c53fecd8dee787b3000acdeb6d55d0e8da1d9fc8
+  checksum: eae113f504a5c3803cac2be32c04c1e447603b4cd41ee013545aa4932a32b787622650a84f800dd491ecd2bc3c0289481cfa87fc379439517df48bf2b474d348
   languageName: node
   linkType: hard
 
