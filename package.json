@@ -38,7 +38,7 @@
     "graphql": "^16.8.1",
     "intersection-observer": "^0.12.2",
     "lodash": "^4.17.21",
-    "next": "^14.0.4",
+    "next": "^14.1.0",
     "next-auth": "^4.24.5",
     "next-pwa": "^5.6.0",
     "next-sitemap": "^4.2.3",
