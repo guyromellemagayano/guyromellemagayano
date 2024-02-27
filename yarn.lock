@@ -1617,12 +1617,13 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@commitlint/config-conventional@npm:^18.6.0":
-  version: 18.6.0
-  resolution: "@commitlint/config-conventional@npm:18.6.0"
+"@commitlint/config-conventional@npm:^19.0.0":
+  version: 19.0.0
+  resolution: "@commitlint/config-conventional@npm:19.0.0"
   dependencies:
+    "@commitlint/types": "npm:^19.0.0"
     conventional-changelog-conventionalcommits: "npm:^7.0.2"
-  checksum: 656ad2d64468da3087f46abeaf09574de7b2a649eac14f4710d06cbd3d6a6085aacb0c498a8b2ac86ca66503774344fa3b2cb2070d66eac5a3c0c5adc91e132e
+  checksum: 7f99741f2c872fa6bf80ef2f7d69c8923e74a115d85dc99ececf4c8fae65b6efc87700f27e4568ccb146d6b2809b2584d5009c131fee6f5e66ae2ecc2f00dd0c
   languageName: node
   linkType: hard
 
@@ -1846,6 +1847,15 @@ __metadata:
   dependencies:
     chalk: "npm:^4.1.0"
   checksum: 5728f5cb62bcaad5158dd8982ab5d44c1ea1aee9ac251026cd91b9a4795bb912505c904f75cbd3ae0d1bb7b4dd1e5d84990b76093230018166af8e111b658685
+  languageName: node
+  linkType: hard
+
+"@commitlint/types@npm:^19.0.0":
+  version: 19.0.0
+  resolution: "@commitlint/types@npm:19.0.0"
+  dependencies:
+    chalk: "npm:^5.3.0"
+  checksum: fee7ab32b16e69d7e9ebbc54369cd0a11e4170adedfb8c23a45b89f38c2914d8fb3a5f7415e53666220c09ecb4c9a57fa0aeb10e63fca2e5094d590a4eebc50e
   languageName: node
   linkType: hard
 
@@ -2128,7 +2138,7 @@ __metadata:
     "@apollo/client": "npm:^3.9.5"
     "@apollo/experimental-nextjs-app-support": "npm:^0.8.0"
     "@commitlint/cli": "npm:^18.6.1"
-    "@commitlint/config-conventional": "npm:^18.6.0"
+    "@commitlint/config-conventional": "npm:^19.0.0"
     "@emotion/react": "npm:^11.11.3"
     "@emotion/styled": "npm:^11.11.0"
     "@headlessui/react": "npm:^1.7.18"
@@ -7020,7 +7030,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"chalk@npm:5.3.0":
+"chalk@npm:5.3.0, chalk@npm:^5.3.0":
   version: 5.3.0
   resolution: "chalk@npm:5.3.0"
   checksum: 8297d436b2c0f95801103ff2ef67268d362021b8210daf8ddbe349695333eb3610a71122172ff3b0272f1ef2cf7cc2c41fdaa4715f52e49ffe04c56340feed09
