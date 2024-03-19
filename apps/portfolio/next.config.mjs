@@ -1,7 +1,8 @@
-//@ts-check
+// @ts-nocheck
 
 import rehypePrism from '@mapbox/rehype-prism'
-import nextMDX from '@next/mdx'
+import withBundleAnalyzer from '@next/bundle-analyzer'
+import createMDX from '@next/mdx'
 import { composePlugins, withNx } from '@nx/next'
 import { withSentryConfig } from '@sentry/nextjs'
 import remarkGfm from 'remark-gfm'
@@ -15,7 +16,7 @@ const nextConfig = {
     // See: https://github.com/gregberge/svgr
     svgr: false
   },
-  pageExtensions: ['js', 'jsx', 'ts', 'tsx', 'mdx'],
+  pageExtensions: ['js', 'mdx', 'ts', 'tsx'],
   env: {
     NEXT_PUBLIC_GA_MEASUREMENT_ID:
       process.env.NEXT_PUBLIC_GA_MEASUREMENT_ID || '',
@@ -27,13 +28,16 @@ const nextConfig = {
     SENTRY_PROJECT: process.env.SENTRY_PROJECT || '',
     SENTRY_ENVIRONMENT: process.env.SENTRY_ENVIRONMENT || ''
   },
-  reactStrictMode: true,
   compiler: {
-    // For other options, see https://styled-components.com/docs/tooling#babel-plugin
-    styledComponents: true
+    removeConsole: {
+      exclude: ['error']
+    }
   },
   sentry: {
-    hideSourceMaps: true
+    disableServerWebpackPlugin: process.env.NODE_ENV === 'development',
+    disableClientWebpackPlugin: process.env.NODE_ENV === 'development',
+    hideSourceMaps: process.env.NODE_ENV === 'production',
+    automaticVercelMonitors: process.env.NODE_ENV === 'production'
   }
 }
 
@@ -41,11 +45,10 @@ const sentryWebpackPluginOptions = {
   org: process.env.SENTRY_ORG || '',
   project: process.env.SENTRY_PROJECT || '',
   authToken: process.env.SENTRY_AUTH_TOKEN || '',
-  silent: true
+  silent: process.env.NODE_ENV === 'development'
 }
 
-const withMDX = nextMDX({
-  extension: /\.mdx?$/,
+const withMDX = createMDX({
   options: {
     remarkPlugins: [remarkGfm],
     rehypePlugins: [rehypePrism]
@@ -55,7 +58,10 @@ const withMDX = nextMDX({
 const plugins = [
   // Add more Next.js plugins to this list if needed.
   withNx,
-  withMDX
+  withMDX,
+  withBundleAnalyzer({
+    enabled: process.env.ANALYZE === 'true'
+  })
 ]
 
 export default withSentryConfig(
