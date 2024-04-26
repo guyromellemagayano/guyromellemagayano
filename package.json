@@ -50,7 +50,7 @@
     "@nx/eslint": "18.3.3",
     "@nx/eslint-plugin": "18.3.3",
     "@nx/jest": "18.3.3",
-    "@nx/next": "18.3.3",
+    "@nx/next": "18.3.4",
     "@nx/node": "18.3.3",
     "@nx/react": "18.3.3",
     "@nx/workspace": "18.3.3",
