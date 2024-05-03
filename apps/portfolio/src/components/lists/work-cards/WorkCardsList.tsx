@@ -6,7 +6,7 @@ import {
   Card,
   type CardProps,
   type CardRef
-} from '@guy-romelle-magayano/portfolio/components/Card'
+} from '@guy-romelle-magayano/portfolio/components/card'
 import { WorkExperienceData } from '@guy-romelle-magayano/portfolio/types'
 import {
   isArrayType,

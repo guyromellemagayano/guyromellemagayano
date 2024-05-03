@@ -12,8 +12,8 @@ import {
   isStringType
 } from '@guy-romelle-magayano/react-utils'
 
-import { NavigationListItem } from '@guy-romelle-magayano/portfolio/components/Lists/Items/Navigation'
-import { NavigationList } from '@guy-romelle-magayano/portfolio/components/Lists/Navigation'
+import { NavigationListItem } from '@guy-romelle-magayano/portfolio/components/lists/items/Navigation'
+import { NavigationList } from '@guy-romelle-magayano/portfolio/components/lists/navigation'
 import { PagesData } from '@guy-romelle-magayano/portfolio/types'
 
 export type DesktopNavigationRef = NavigationRef

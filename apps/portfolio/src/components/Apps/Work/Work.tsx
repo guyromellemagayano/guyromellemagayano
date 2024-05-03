@@ -9,8 +9,8 @@ import {
 } from '@guy-romelle-magayano/react-utils'
 
 import { ContentLayout } from '@guy-romelle-magayano/portfolio/components/layouts/content'
-import { WorkList } from '@guy-romelle-magayano/portfolio/components/Lists/Work'
-import { WorkCardsList } from '@guy-romelle-magayano/portfolio/components/Lists/WorkCards'
+import { WorkList } from '@guy-romelle-magayano/portfolio/components/lists/work'
+import { WorkCardsList } from '@guy-romelle-magayano/portfolio/components/lists/work-cards'
 import {
   WorkExperienceData,
   WorkPageData

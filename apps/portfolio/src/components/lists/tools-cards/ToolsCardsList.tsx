@@ -5,22 +5,22 @@ import dynamic from 'next/dynamic'
 import {
   CardProps,
   CardRef
-} from '@guy-romelle-magayano/portfolio/components/Card'
+} from '@guy-romelle-magayano/portfolio/components/card'
 import { ToolsItemsData } from '@guy-romelle-magayano/portfolio/types'
 
 // Dynamic imports
 const Card = dynamic(() =>
-  import('@guy-romelle-magayano/portfolio/components/Card').then(
+  import('@guy-romelle-magayano/portfolio/components/card').then(
     mod => mod.Card
   )
 )
 const CardTitle = dynamic(() =>
-  import('@guy-romelle-magayano/portfolio/components/Card').then(
+  import('@guy-romelle-magayano/portfolio/components/card').then(
     mod => mod.Card.Title
   )
 )
 const CardDescription = dynamic(() =>
-  import('@guy-romelle-magayano/portfolio/components/Card').then(
+  import('@guy-romelle-magayano/portfolio/components/card').then(
     mod => mod.Card.Description
   )
 )
