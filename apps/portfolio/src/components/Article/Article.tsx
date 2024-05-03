@@ -7,32 +7,32 @@ import { formatDate } from '@guy-romelle-magayano/react-utils'
 import {
   CardProps,
   CardRef
-} from '@guy-romelle-magayano/portfolio/components/Card'
+} from '@guy-romelle-magayano/portfolio/components/card'
 import { ArticlesData } from '@guy-romelle-magayano/portfolio/types/data'
 
 // Dynamic imports
 const Card = dynamic(() =>
-  import('@guy-romelle-magayano/portfolio/components/Card').then(
+  import('@guy-romelle-magayano/portfolio/components/card').then(
     mod => mod.Card
   )
 )
 const CardEyebrow = dynamic(() =>
-  import('@guy-romelle-magayano/portfolio/components/Card').then(
+  import('@guy-romelle-magayano/portfolio/components/card').then(
     mod => mod.Card.Eyebrow
   )
 )
 const CardTitle = dynamic(() =>
-  import('@guy-romelle-magayano/portfolio/components/Card').then(
+  import('@guy-romelle-magayano/portfolio/components/card').then(
     mod => mod.Card.Title
   )
 )
 const CardDescription = dynamic(() =>
-  import('@guy-romelle-magayano/portfolio/components/Card').then(
+  import('@guy-romelle-magayano/portfolio/components/card').then(
     mod => mod.Card.Description
   )
 )
 const CardCta = dynamic(() =>
-  import('@guy-romelle-magayano/portfolio/components/Card').then(
+  import('@guy-romelle-magayano/portfolio/components/card').then(
     mod => mod.Card.Cta
   )
 )
