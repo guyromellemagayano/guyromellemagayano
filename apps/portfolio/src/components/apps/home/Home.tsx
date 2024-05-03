@@ -15,12 +15,12 @@ import {
 } from '@guy-romelle-magayano/react-utils'
 
 import { BaseContainer } from '@guy-romelle-magayano/portfolio/components/containers/base'
-import { ArticleLayout } from '@guy-romelle-magayano/portfolio/components/Layouts/Article'
-import { ContentLayout } from '@guy-romelle-magayano/portfolio/components/Layouts/Content'
-import { NewsletterLayout } from '@guy-romelle-magayano/portfolio/components/Layouts/Newsletter'
-import { PhotoLayout } from '@guy-romelle-magayano/portfolio/components/Layouts/Photo'
-import { ResumeLayout } from '@guy-romelle-magayano/portfolio/components/Layouts/Resume'
-import { SocialLinksLayout } from '@guy-romelle-magayano/portfolio/components/Layouts/SocialLinks'
+import { ArticleLayout } from '@guy-romelle-magayano/portfolio/components/layouts/article'
+import { ContentLayout } from '@guy-romelle-magayano/portfolio/components/layouts/content'
+import { NewsletterLayout } from '@guy-romelle-magayano/portfolio/components/layouts/newsletter'
+import { PhotoLayout } from '@guy-romelle-magayano/portfolio/components/layouts/photo'
+import { ResumeLayout } from '@guy-romelle-magayano/portfolio/components/layouts/resume'
+import { SocialLinksLayout } from '@guy-romelle-magayano/portfolio/components/layouts/social-links'
 import {
   type ArticlesData,
   type HomePageData,

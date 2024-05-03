@@ -6,7 +6,7 @@ import {
   isStringType
 } from '@guy-romelle-magayano/react-utils'
 
-import { ContentLayout } from '@guy-romelle-magayano/portfolio/components/layouts/Content'
+import { ContentLayout } from '@guy-romelle-magayano/portfolio/components/layouts/content'
 import { ArticleCardsList } from '@guy-romelle-magayano/portfolio/components/lists/article-cards'
 import { ArticlesList } from '@guy-romelle-magayano/portfolio/components/lists/articles'
 import {

@@ -8,7 +8,7 @@ import {
   isStringType
 } from '@guy-romelle-magayano/react-utils'
 
-import { ContentLayout } from '@guy-romelle-magayano/portfolio/components/layouts/Content'
+import { ContentLayout } from '@guy-romelle-magayano/portfolio/components/layouts/content'
 import { ToolsList } from '@guy-romelle-magayano/portfolio/components/lists/tools'
 import { ToolsCardsList } from '@guy-romelle-magayano/portfolio/components/lists/tools-cards'
 import {

@@ -14,7 +14,7 @@ import {
 import { cn, isArrayType, isEmpty } from '@guy-romelle-magayano/react-utils'
 
 import { BaseContainer } from '@guy-romelle-magayano/portfolio/components/containers/base'
-import { NavigationLink } from '@guy-romelle-magayano/portfolio/components/links/navigation'
+import { NavigationLink } from '@guy-romelle-magayano/portfolio/components/Links/Navigation'
 import { PagesData } from '@guy-romelle-magayano/portfolio/types/data'
 
 export type FooterLayoutRef = FooterRef

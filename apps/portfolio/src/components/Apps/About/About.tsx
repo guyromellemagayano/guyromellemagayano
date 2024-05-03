@@ -11,7 +11,7 @@ import {
 } from '@guy-romelle-magayano/react-utils'
 
 import { BaseContainer } from '@guy-romelle-magayano/portfolio/components/containers/base'
-import { ContentLayout } from '@guy-romelle-magayano/portfolio/components/Layouts/Content'
+import { ContentLayout } from '@guy-romelle-magayano/portfolio/components/layouts/content'
 import {
   AboutPageData,
   SocialLinksData
