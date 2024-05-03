@@ -26,7 +26,7 @@ import {
 } from '@guy-romelle-magayano/react-utils'
 
 import { AppContext } from '@guy-romelle-magayano/portfolio/app/providers'
-import { Article as HomeArticleLayout } from '@guy-romelle-magayano/portfolio/components/Article'
+import { Article as HomeArticleLayout } from '@guy-romelle-magayano/portfolio/components/article'
 import { BaseContainer } from '@guy-romelle-magayano/portfolio/components/Containers/Base'
 import { Prose } from '@guy-romelle-magayano/portfolio/components/Prose'
 import ArrowLeftSvg from '@guy-romelle-magayano/portfolio/components/SVG/ArrowLeft'
