@@ -21,7 +21,7 @@ import {
   LinkedInSvg,
   MailSvg,
   TwitterSvg
-} from '@guy-romelle-magayano/portfolio/components/SVG'
+} from '@guy-romelle-magayano/portfolio/components/svg'
 import { SocialLinksData } from '@guy-romelle-magayano/portfolio/types/data'
 
 export type SocialLinkRef = HyperlinkRef

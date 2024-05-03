@@ -22,7 +22,7 @@ import { CommonComponentsProps } from '@guy-romelle-magayano/react-components/ty
 
 import { cn, isEmpty } from '@guy-romelle-magayano/react-utils'
 
-import { ChevronRightSvg } from '@guy-romelle-magayano/portfolio/components/SVG'
+import { ChevronRightSvg } from '@guy-romelle-magayano/portfolio/components/svg'
 
 export type CardRef = Ref<any>
 export type CardProps = CommonComponentsProps & {

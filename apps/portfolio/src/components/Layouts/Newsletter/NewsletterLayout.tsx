@@ -5,9 +5,9 @@ import { forwardRef } from 'react'
 import {
   Button,
   Form,
+  Input,
   type FormProps,
-  type FormRef,
-  Input
+  type FormRef
 } from '@guy-romelle-magayano/react-components'
 import {
   Div,
@@ -18,7 +18,7 @@ import {
 
 import { cn } from '@guy-romelle-magayano/react-utils'
 
-import { MailSvg } from '@guy-romelle-magayano/portfolio/components/SVG'
+import { MailSvg } from '@guy-romelle-magayano/portfolio/components/svg'
 
 export type NewsletterLayoutRef = FormRef
 export type NewsletterLayoutProps = FormProps

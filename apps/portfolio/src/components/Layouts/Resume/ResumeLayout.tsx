@@ -27,7 +27,7 @@ import {
 import {
   ArrowDownSvg,
   BriefcaseSvg
-} from '@guy-romelle-magayano/portfolio/components/SVG'
+} from '@guy-romelle-magayano/portfolio/components/svg'
 import {
   HomePageData,
   WorkExperienceData

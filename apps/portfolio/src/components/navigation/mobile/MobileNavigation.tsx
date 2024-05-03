@@ -21,7 +21,7 @@ import {
 import {
   ChevronDownSvg,
   CloseSvg
-} from '@guy-romelle-magayano/portfolio/components/SVG'
+} from '@guy-romelle-magayano/portfolio/components/svg'
 import { PagesData } from '@guy-romelle-magayano/portfolio/types'
 import Link from 'next/link'
 
