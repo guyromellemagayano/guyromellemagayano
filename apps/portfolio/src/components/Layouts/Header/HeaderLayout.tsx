@@ -20,7 +20,7 @@ import {
   isEmpty
 } from '@guy-romelle-magayano/react-utils'
 
-import { Avatar } from '@guy-romelle-magayano/portfolio/components/Avatar'
+import { Avatar } from '@guy-romelle-magayano/portfolio/components/avatar'
 import { DarkModeButton } from '@guy-romelle-magayano/portfolio/components/Buttons/DarkMode'
 import { AvatarContainer } from '@guy-romelle-magayano/portfolio/components/Containers/Avatar'
 import { BaseContainer } from '@guy-romelle-magayano/portfolio/components/Containers/Base'
