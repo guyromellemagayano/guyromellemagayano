@@ -28,7 +28,7 @@ import {
 import { AppContext } from '@guy-romelle-magayano/portfolio/app/providers'
 import { Article as HomeArticleLayout } from '@guy-romelle-magayano/portfolio/components/article'
 import { BaseContainer } from '@guy-romelle-magayano/portfolio/components/containers/base'
-import { Prose } from '@guy-romelle-magayano/portfolio/components/Prose'
+import { Prose } from '@guy-romelle-magayano/portfolio/components/prose'
 import ArrowLeftSvg from '@guy-romelle-magayano/portfolio/components/SVG/ArrowLeft'
 import { ArticlesData } from '@guy-romelle-magayano/portfolio/types/data'
 
