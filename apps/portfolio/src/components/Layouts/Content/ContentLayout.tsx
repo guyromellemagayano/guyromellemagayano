@@ -28,7 +28,7 @@ import {
   isStringType
 } from '@guy-romelle-magayano/react-utils'
 
-import { BaseContainer } from '@guy-romelle-magayano/portfolio/components/Containers/Base'
+import { BaseContainer } from '@guy-romelle-magayano/portfolio/components/containers/base'
 
 export type ContentLayoutRef = DivisionRef
 export type ContentLayoutProps = DivisionProps & {

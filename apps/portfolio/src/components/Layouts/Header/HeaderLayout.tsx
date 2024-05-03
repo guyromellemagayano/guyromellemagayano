@@ -22,8 +22,8 @@ import {
 
 import { Avatar } from '@guy-romelle-magayano/portfolio/components/avatar'
 import { DarkModeButton } from '@guy-romelle-magayano/portfolio/components/buttons/dark-mode'
-import { AvatarContainer } from '@guy-romelle-magayano/portfolio/components/Containers/Avatar'
-import { BaseContainer } from '@guy-romelle-magayano/portfolio/components/Containers/Base'
+import { AvatarContainer } from '@guy-romelle-magayano/portfolio/components/containers/avatar'
+import { BaseContainer } from '@guy-romelle-magayano/portfolio/components/containers/base'
 import { DesktopNavigation } from '@guy-romelle-magayano/portfolio/components/Navigation/Desktop'
 import { MobileNavigation } from '@guy-romelle-magayano/portfolio/components/Navigation/Mobile'
 import { PagesData } from '@guy-romelle-magayano/portfolio/types/data'

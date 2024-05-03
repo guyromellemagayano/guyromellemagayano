@@ -14,7 +14,7 @@ import {
   isStringType
 } from '@guy-romelle-magayano/react-utils'
 
-import { BaseContainer } from '@guy-romelle-magayano/portfolio/components/Containers/Base'
+import { BaseContainer } from '@guy-romelle-magayano/portfolio/components/containers/base'
 import { ArticleLayout } from '@guy-romelle-magayano/portfolio/components/Layouts/Article'
 import { ContentLayout } from '@guy-romelle-magayano/portfolio/components/Layouts/Content'
 import { NewsletterLayout } from '@guy-romelle-magayano/portfolio/components/Layouts/Newsletter'
