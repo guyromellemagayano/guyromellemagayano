@@ -21,7 +21,7 @@ import {
 } from '@guy-romelle-magayano/react-utils'
 
 import { Avatar } from '@guy-romelle-magayano/portfolio/components/avatar'
-import { DarkModeButton } from '@guy-romelle-magayano/portfolio/components/Buttons/DarkMode'
+import { DarkModeButton } from '@guy-romelle-magayano/portfolio/components/buttons/dark-mode'
 import { AvatarContainer } from '@guy-romelle-magayano/portfolio/components/Containers/Avatar'
 import { BaseContainer } from '@guy-romelle-magayano/portfolio/components/Containers/Base'
 import { DesktopNavigation } from '@guy-romelle-magayano/portfolio/components/Navigation/Desktop'
