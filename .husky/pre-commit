@@ -1,3 +1,2 @@
-yarn validate-branch-name
-yarn lint-staged --allow-empty
-yarn nx affected -t lint --verbose --uncommitted
+pnpm exec validate-branch-name
+pnpm exec lint-staged --allow-empty
