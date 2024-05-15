@@ -1,106 +1,107 @@
 # Custom
 contentful.config.secret.json
-dist
+dist/
 
 # Paw
 *.paw
 
 # Linux
-*~
-.fuse_hidden*
 .directory
+.fuse_hidden*
 .Trash-*
+*~
 
 # OSX
-*.DS_Store
-.AppleDouble
-.LSOverride
-Icon
 ._*
+.apdisk
+.AppleDB
+.AppleDesktop
+.AppleDouble
+.com.apple.timemachine.donotpresent
 .DocumentRevisions-V100
 .fseventsd
+.LSOverride
 .Spotlight-V100
 .TemporaryItems
 .Trashes
 .VolumeIcon.icns
-.com.apple.timemachine.donotpresent
-.AppleDB
-.AppleDesktop
+*.DS_Store
+Icon
 Network Trash Folder
 Temporary Items
-.apdisk
 
 # VisualStudioCode
 .vscode/*
+!.vscode/extensions.json
+!.vscode/launch.json
 !.vscode/settings.json
 !.vscode/tasks.json
-!.vscode/launch.json
-!.vscode/extensions.json
 
 # SublimeText
-*.tmlanguage.cache
-*.tmPreferences.cache
 *.stTheme.cache
 *.sublime-workspace
-sftp-config.json
-Package Control.last-run
-Package Control.ca-list
-Package Control.ca-bundle
-Package Control.system-ca-bundle
-Package Control.cache/
-Package Control.ca-certs/
+*.tmlanguage.cache
+*.tmPreferences.cache
 bh_unicode_properties.cache
 GitHub.sublime-settings
+Package Control.ca-bundle
+Package Control.ca-certs/
+Package Control.ca-list
+Package Control.cache/
+Package Control.last-run
+Package Control.system-ca-bundle
+sftp-config.json
 
 # Intellij
+.idea_modules/
 .idea/
-.idea/workspace.xml
-.idea/tasks.xml
-.idea/dictionaries
-.idea/vcs.xml
-.idea/jsLibraryMappings.xml
 .idea/dataSources.ids
-.idea/dataSources.xml
 .idea/dataSources.local.xml
-.idea/sqlDataSources.xml
+.idea/dataSources.xml
+.idea/dictionaries
 .idea/dynamic.xml
-.idea/uiDesigner.xml
 .idea/gradle.xml
+.idea/jsLibraryMappings.xml
 .idea/libraries
 .idea/mongoSettings.xml
+.idea/sqlDataSources.xml
+.idea/tasks.xml
+.idea/uiDesigner.xml
+.idea/vcs.xml
+.idea/workspace.xml
 *.iws
-out/
-.idea_modules/
 atlassian-ide-plugin.xml
 com_crashlytics_export_strings.xml
-crashlytics.properties
 crashlytics-build.properties
+crashlytics.properties
 fabric.properties
+out/
 
 # Node
-logs
-*.log
-npm-debug.log*
-pids
-*.pid
-*.seed
-*.pid.lock
-lib-cov
-coverage
-.nyc_output
 .grunt
 .lock-wscript
-build/Release
-node_modules
-jspm_packages
-.npm
 .node_repl_history
+.npm
+.nyc_output
+.pnp
+.pnp.js
+*.log
+*.pid
+*.pid.lock
+*.seed
+coverage
+jspm_packages
+lib-cov
+logs
+node_modules
+npm-debug.log*
+pids
 
 # Bower
-bower_components
 .bower-cache
 .bower-registry
 .bower-tmp
+bower_components
 public/data/mind.json
 
 # Install artifacts
@@ -108,9 +109,6 @@ package-lock.json
 
 # Testing
 coverage/
-
-# Next.js
-.next/
 
 # Production
 build/
@@ -151,10 +149,10 @@ pb_data/
 analyze/
 
 # PWA & Workbox
-public/sw.js
-public/sw.js.map
-public/workbox-*.js
-public/workbox-*.js.map
+**/public/sw.js
+**/public/sw.js.map
+**/public/workbox-*.js
+**/public/workbox-*.js.map
 
 # Bak files
 *.bak
@@ -164,11 +162,11 @@ tmp
 out-tsc/
 
 # IDEs and editors
-.project
-.classpath
 .c9/
-*.launch
+.classpath
+.project
 .settings/
+*.launch
 
 # Misc
 .sass-cache
@@ -180,12 +178,11 @@ typings/
 # System files
 Thumbs.db
 
-# NX
-**/.nx/cache
-apps/*-server-*/
-
 # Next.js
-.next
+.next/
 
 # Sentry Config File
 .sentryclirc
+
+# Turborepo
+.turbo
