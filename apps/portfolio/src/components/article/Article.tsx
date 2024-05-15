@@ -2,14 +2,14 @@
 
 import { ReactNode, forwardRef } from 'react'
 
-import { formatDate } from '@guy-romelle-magayano/react-utils'
+import { formatDate } from '@guyromellemagayano/react-utils'
 
 import {
   Card,
   CardProps,
   CardRef
-} from '@guy-romelle-magayano/portfolio/components/card'
-import { ArticlesData } from '@guy-romelle-magayano/portfolio/types/data'
+} from '@guyromellemagayano/portfolio/components/card'
+import { ArticlesData } from '@guyromellemagayano/portfolio/types/data'
 
 export type ArticleRef = CardRef
 export type ArticleProps = CardProps & ArticlesData

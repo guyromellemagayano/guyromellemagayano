@@ -1,19 +1,19 @@
 import { forwardRef, memo } from 'react'
 
-import { Div, Heading, Li } from '@guy-romelle-magayano/react-components/server'
+import { Div, Heading, Li } from '@guyromellemagayano/react-components/server'
 
 import {
   isArrayType,
   isEmpty,
   isStringType
-} from '@guy-romelle-magayano/react-utils'
+} from '@guyromellemagayano/react-utils'
 
 import {
   Card,
   type CardProps,
   type CardRef
-} from '@guy-romelle-magayano/portfolio/components/card'
-import { WorkExperienceData } from '@guy-romelle-magayano/portfolio/types'
+} from '@guyromellemagayano/portfolio/components/card'
+import { WorkExperienceData } from '@guyromellemagayano/portfolio/types'
 
 export type WorkCardsListRef = CardRef
 export type WorkCardsListProps = CardProps &

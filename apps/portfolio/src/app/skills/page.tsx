@@ -1,10 +1,10 @@
 import { Metadata } from 'next'
 
-import { SkillsApp } from '@guy-romelle-magayano/portfolio/components/apps/skills'
+import { SkillsApp } from '@guyromellemagayano/portfolio/components/apps/skills'
 import {
   skillsAppData,
   skillsPageData
-} from '@guy-romelle-magayano/portfolio/utils/server'
+} from '@guyromellemagayano/portfolio/utils/server'
 
 /**
  * Generates the metadata for the skills page.

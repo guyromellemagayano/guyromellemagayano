@@ -1,7 +1,7 @@
 import { glob } from 'fast-glob'
 import * as path from 'path'
 
-import { ProjectsData } from '@guy-romelle-magayano/portfolio/types'
+import { ProjectsData } from '@guyromellemagayano/portfolio/types'
 
 /**
  * Imports the project data.
@@ -9,7 +9,7 @@ import { ProjectsData } from '@guy-romelle-magayano/portfolio/types'
  */
 export const importProject = async (fileName: string) => {
   const { meta, default: component } = await import(
-    `@guy-romelle-magayano/portfolio/app/projects/${fileName}`
+    `@guyromellemagayano/portfolio/app/projects/${fileName}`
   )
 
   return { slug: fileName.replace(/(\/page)?\.mdx$/, ''), ...meta, component }

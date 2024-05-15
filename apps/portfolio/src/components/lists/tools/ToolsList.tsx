@@ -1,14 +1,14 @@
 import { forwardRef } from 'react'
 
-import { Ul } from '@guy-romelle-magayano/react-components/server'
+import { Ul } from '@guyromellemagayano/react-components/server'
 
-import { isEmpty } from '@guy-romelle-magayano/react-utils'
+import { isEmpty } from '@guyromellemagayano/react-utils'
 
 import {
   SectionLayout,
   type SectionLayoutProps,
   type SectionLayoutRef
-} from '@guy-romelle-magayano/portfolio/components/layouts/section'
+} from '@guyromellemagayano/portfolio/components/layouts/section'
 
 export type ToolsListRef = SectionLayoutRef
 export type ToolsListProps = SectionLayoutProps

@@ -4,17 +4,17 @@ import {
   Nav,
   type NavigationProps,
   type NavigationRef
-} from '@guy-romelle-magayano/react-components/server'
+} from '@guyromellemagayano/react-components/server'
 
 import {
   isArrayType,
   isEmpty,
   isStringType
-} from '@guy-romelle-magayano/react-utils'
+} from '@guyromellemagayano/react-utils'
 
-import { NavigationListItem } from '@guy-romelle-magayano/portfolio/components/lists/items/navigation'
-import { NavigationList } from '@guy-romelle-magayano/portfolio/components/lists/navigation'
-import { PagesData } from '@guy-romelle-magayano/portfolio/types'
+import { NavigationListItem } from '@guyromellemagayano/portfolio/components/lists/items/navigation'
+import { NavigationList } from '@guyromellemagayano/portfolio/components/lists/navigation'
+import { PagesData } from '@guyromellemagayano/portfolio/types'
 
 export type DesktopNavigationRef = NavigationRef
 export type DesktopNavigationProps = NavigationProps & {

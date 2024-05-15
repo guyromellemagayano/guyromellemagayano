@@ -8,9 +8,9 @@ import {
   Span,
   type ListItemProps,
   type ListItemRef
-} from '@guy-romelle-magayano/react-components/server'
+} from '@guyromellemagayano/react-components/server'
 
-import { cn, isEmpty } from '@guy-romelle-magayano/react-utils'
+import { cn, isEmpty } from '@guyromellemagayano/react-utils'
 
 export type NavigationListItemRef = ListItemRef
 export type NavigationListItemProps = ListItemProps & {

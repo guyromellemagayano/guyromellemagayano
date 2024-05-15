@@ -1,20 +1,20 @@
 'use client'
 
-import { Div } from '@guy-romelle-magayano/react-components/server'
+import { Div } from '@guyromellemagayano/react-components/server'
 
 import {
   isArrayType,
   isEmpty,
   isStringType
-} from '@guy-romelle-magayano/react-utils'
+} from '@guyromellemagayano/react-utils'
 
-import { ContentLayout } from '@guy-romelle-magayano/portfolio/components/layouts/content'
-import { WorkList } from '@guy-romelle-magayano/portfolio/components/lists/work'
-import { WorkCardsList } from '@guy-romelle-magayano/portfolio/components/lists/work-cards'
+import { ContentLayout } from '@guyromellemagayano/portfolio/components/layouts/content'
+import { WorkList } from '@guyromellemagayano/portfolio/components/lists/work'
+import { WorkCardsList } from '@guyromellemagayano/portfolio/components/lists/work-cards'
 import {
   WorkExperienceData,
   WorkPageData
-} from '@guy-romelle-magayano/portfolio/types'
+} from '@guyromellemagayano/portfolio/types'
 
 export type WorkAppProps = WorkPageData
 

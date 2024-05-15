@@ -4,14 +4,14 @@ import {
   Div,
   type DivisionProps,
   type DivisionRef
-} from '@guy-romelle-magayano/react-components/server'
+} from '@guyromellemagayano/react-components/server'
 
-import { isArrayType, isEmpty } from '@guy-romelle-magayano/react-utils'
+import { isArrayType, isEmpty } from '@guyromellemagayano/react-utils'
 
 import {
   SocialLink,
   type SocialLinkProps
-} from '@guy-romelle-magayano/portfolio/components/links/social'
+} from '@guyromellemagayano/portfolio/components/links/social'
 
 export type SocialLinksLayoutRef = DivisionRef
 export type SocialLinksLayoutProps = DivisionProps & {

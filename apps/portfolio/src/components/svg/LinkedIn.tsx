@@ -1,4 +1,4 @@
-import { Path, Svg, SvgProps } from '@guy-romelle-magayano/react-components'
+import { Path, Svg, SvgProps } from '@guyromellemagayano/react-components'
 
 /**
  * Renders an SVG image of the LinkedIn logo.

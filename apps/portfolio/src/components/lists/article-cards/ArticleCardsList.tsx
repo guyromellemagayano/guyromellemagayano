@@ -4,17 +4,17 @@ import {
   Article,
   type ArticleProps,
   type ArticleRef
-} from '@guy-romelle-magayano/react-components/server'
+} from '@guyromellemagayano/react-components/server'
 
 import {
   cn,
   formatDate,
   isEmpty,
   isStringType
-} from '@guy-romelle-magayano/react-utils'
+} from '@guyromellemagayano/react-utils'
 
-import { Card } from '@guy-romelle-magayano/portfolio/components/card'
-import { ArticlesData } from '@guy-romelle-magayano/portfolio/types'
+import { Card } from '@guyromellemagayano/portfolio/components/card'
+import { ArticlesData } from '@guyromellemagayano/portfolio/types'
 
 export type ArticleCardsListRef = ArticleRef
 export type ArticleCardsListProps = ArticleProps &

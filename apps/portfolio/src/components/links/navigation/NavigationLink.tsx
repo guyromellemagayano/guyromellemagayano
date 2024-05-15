@@ -1,13 +1,13 @@
 import Link, { LinkProps } from 'next/link'
 
-import { HyperlinkProps } from '@guy-romelle-magayano/react-components/server'
+import { HyperlinkProps } from '@guyromellemagayano/react-components/server'
 
 import {
   cn,
   isEmpty,
   isObjectType,
   isStringType
-} from '@guy-romelle-magayano/react-utils'
+} from '@guyromellemagayano/react-utils'
 
 export type NavigationLinkProps = LinkProps & HyperlinkProps
 

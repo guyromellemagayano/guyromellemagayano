@@ -1,10 +1,10 @@
 import { Metadata } from 'next'
 
-import { HomeApp } from '@guy-romelle-magayano/portfolio/components/apps/home'
+import { HomeApp } from '@guyromellemagayano/portfolio/components/apps/home'
 import {
   homeAppData,
   homePageData
-} from '@guy-romelle-magayano/portfolio/utils/server'
+} from '@guyromellemagayano/portfolio/utils/server'
 
 /**
  * Generates the metadata for the home page.

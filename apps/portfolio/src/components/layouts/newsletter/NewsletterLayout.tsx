@@ -8,17 +8,17 @@ import {
   Input,
   type FormProps,
   type FormRef
-} from '@guy-romelle-magayano/react-components'
+} from '@guyromellemagayano/react-components'
 import {
   Div,
   Heading,
   P,
   Span
-} from '@guy-romelle-magayano/react-components/server'
+} from '@guyromellemagayano/react-components/server'
 
-import { cn } from '@guy-romelle-magayano/react-utils'
+import { cn } from '@guyromellemagayano/react-utils'
 
-import { MailSvg } from '@guy-romelle-magayano/portfolio/components/svg'
+import { MailSvg } from '@guyromellemagayano/portfolio/components/svg'
 
 export type NewsletterLayoutRef = FormRef
 export type NewsletterLayoutProps = FormProps

@@ -2,20 +2,20 @@
 
 import Image from 'next/image'
 
-import { Div } from '@guy-romelle-magayano/react-components/server'
+import { Div } from '@guyromellemagayano/react-components/server'
 
 import {
   isArrayType,
   isEmpty,
   isStringType
-} from '@guy-romelle-magayano/react-utils'
+} from '@guyromellemagayano/react-utils'
 
-import { BaseContainer } from '@guy-romelle-magayano/portfolio/components/containers/base'
-import { ContentLayout } from '@guy-romelle-magayano/portfolio/components/layouts/content'
+import { BaseContainer } from '@guyromellemagayano/portfolio/components/containers/base'
+import { ContentLayout } from '@guyromellemagayano/portfolio/components/layouts/content'
 import {
   AboutPageData,
   SocialLinksData
-} from '@guy-romelle-magayano/portfolio/types'
+} from '@guyromellemagayano/portfolio/types'
 
 export type AboutAppProps = AboutPageData & {
   social?: Array<SocialLinksData>

@@ -18,12 +18,12 @@ import {
   type DivisionRef,
   type ParagraphProps,
   type ParagraphRef
-} from '@guy-romelle-magayano/react-components/server'
-import { CommonComponentsProps } from '@guy-romelle-magayano/react-components/types'
+} from '@guyromellemagayano/react-components/server'
+import { CommonComponentsProps } from '@guyromellemagayano/react-components/types'
 
-import { cn, isEmpty } from '@guy-romelle-magayano/react-utils'
+import { cn, isEmpty } from '@guyromellemagayano/react-utils'
 
-import { ChevronRightSvg } from '@guy-romelle-magayano/portfolio/components/svg'
+import { ChevronRightSvg } from '@guyromellemagayano/portfolio/components/svg'
 
 export type CardRef = Ref<any>
 export type CardProps = CommonComponentsProps & {

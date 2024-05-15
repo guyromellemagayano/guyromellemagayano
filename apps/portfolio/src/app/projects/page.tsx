@@ -1,10 +1,10 @@
 import { Metadata } from 'next'
 
-import { ProjectsApp } from '@guy-romelle-magayano/portfolio/components/apps/projects'
+import { ProjectsApp } from '@guyromellemagayano/portfolio/components/apps/projects'
 import {
   projectsAppData,
   projectsPageData
-} from '@guy-romelle-magayano/portfolio/utils/server'
+} from '@guyromellemagayano/portfolio/utils/server'
 
 /**
  * Generates the metadata for the projects page.

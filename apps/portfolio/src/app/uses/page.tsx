@@ -1,10 +1,10 @@
 import { Metadata } from 'next'
 
-import { UsesApp } from '@guy-romelle-magayano/portfolio/components/apps/uses'
+import { UsesApp } from '@guyromellemagayano/portfolio/components/apps/uses'
 import {
   usesAppData,
   usesPageData
-} from '@guy-romelle-magayano/portfolio/utils/server'
+} from '@guyromellemagayano/portfolio/utils/server'
 
 /**
  * Generates the metadata for the uses page.

@@ -4,9 +4,9 @@ import {
   Ul,
   UnorderedListProps,
   UnorderedListRef
-} from '@guy-romelle-magayano/react-components/server'
+} from '@guyromellemagayano/react-components/server'
 
-import { isEmpty } from '@guy-romelle-magayano/react-utils'
+import { isEmpty } from '@guyromellemagayano/react-utils'
 
 export type NavigationListRef = UnorderedListRef
 export type NavigationListProps = UnorderedListProps

@@ -10,19 +10,19 @@ import {
   Ul,
   type NavigationProps,
   type NavigationRef
-} from '@guy-romelle-magayano/react-components/server'
+} from '@guyromellemagayano/react-components/server'
 
 import {
   isArrayType,
   isEmpty,
   isStringType
-} from '@guy-romelle-magayano/react-utils'
+} from '@guyromellemagayano/react-utils'
 
 import {
   ChevronDownSvg,
   CloseSvg
-} from '@guy-romelle-magayano/portfolio/components/svg'
-import { PagesData } from '@guy-romelle-magayano/portfolio/types'
+} from '@guyromellemagayano/portfolio/components/svg'
+import { PagesData } from '@guyromellemagayano/portfolio/types'
 
 export type MobileNavigationRef = NavigationRef
 export type MobileNavigationProps = NavigationProps & {

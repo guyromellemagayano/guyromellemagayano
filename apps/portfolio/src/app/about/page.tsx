@@ -1,10 +1,10 @@
 import { Metadata } from 'next'
 
-import { AboutApp } from '@guy-romelle-magayano/portfolio/components/apps/about'
+import { AboutApp } from '@guyromellemagayano/portfolio/components/apps/about'
 import {
   aboutAppData,
   aboutPageData
-} from '@guy-romelle-magayano/portfolio/utils/server'
+} from '@guyromellemagayano/portfolio/utils/server'
 
 /**
  * Generates the metadata for the about page.

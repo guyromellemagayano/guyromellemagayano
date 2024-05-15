@@ -7,17 +7,17 @@ import {
   Heading,
   P,
   Span
-} from '@guy-romelle-magayano/react-components/server'
+} from '@guyromellemagayano/react-components/server'
 
-import { isEmpty, isStringType } from '@guy-romelle-magayano/react-utils'
+import { isEmpty, isStringType } from '@guyromellemagayano/react-utils'
 
 import {
   Card,
   type CardProps,
   type CardRef
-} from '@guy-romelle-magayano/portfolio/components/card'
-import { LinkSvg } from '@guy-romelle-magayano/portfolio/components/svg'
-import { ProjectsData } from '@guy-romelle-magayano/portfolio/types'
+} from '@guyromellemagayano/portfolio/components/card'
+import { LinkSvg } from '@guyromellemagayano/portfolio/components/svg'
+import { ProjectsData } from '@guyromellemagayano/portfolio/types'
 
 export type ProjectsCardsListRef = CardRef
 export type ProjectsCardsListProps = CardProps &

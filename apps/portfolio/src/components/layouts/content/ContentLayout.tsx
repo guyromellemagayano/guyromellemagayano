@@ -18,16 +18,16 @@ import {
   Span,
   type DivisionProps,
   type DivisionRef
-} from '@guy-romelle-magayano/react-components/server'
+} from '@guyromellemagayano/react-components/server'
 
 import {
   cn,
   isArrayType,
   isEmpty,
   isStringType
-} from '@guy-romelle-magayano/react-utils'
+} from '@guyromellemagayano/react-utils'
 
-import { BaseContainer } from '@guy-romelle-magayano/portfolio/components/containers/base'
+import { BaseContainer } from '@guyromellemagayano/portfolio/components/containers/base'
 
 export type ContentLayoutRef = DivisionRef
 export type ContentLayoutProps = DivisionProps & {

@@ -4,9 +4,9 @@ import {
   Div,
   type DivisionProps,
   type DivisionRef
-} from '@guy-romelle-magayano/react-components/server'
+} from '@guyromellemagayano/react-components/server'
 
-import { cn, isEmpty } from '@guy-romelle-magayano/react-utils'
+import { cn, isEmpty } from '@guyromellemagayano/react-utils'
 
 export type ProseRef = DivisionRef
 export type ProseProps = DivisionProps

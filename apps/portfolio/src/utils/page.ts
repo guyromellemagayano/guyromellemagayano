@@ -1,4 +1,4 @@
-import { apiUrls } from '@guy-romelle-magayano/portfolio/configs'
+import { apiUrls } from '@guyromellemagayano/portfolio/configs'
 import {
   AboutPageData,
   ArticlesAppData,
@@ -11,15 +11,12 @@ import {
   SkillsPageData,
   UsesPageData,
   WorkPageData
-} from '@guy-romelle-magayano/portfolio/types'
-import {
-  articlesData,
-  projectsData
-} from '@guy-romelle-magayano/portfolio/utils'
+} from '@guyromellemagayano/portfolio/types'
+import { articlesData, projectsData } from '@guyromellemagayano/portfolio/utils'
 import {
   fullServerUrl,
   socialData
-} from '@guy-romelle-magayano/portfolio/utils/server'
+} from '@guyromellemagayano/portfolio/utils/server'
 
 /**
  * Returns the full server URL with its protocol, host, and pathname.

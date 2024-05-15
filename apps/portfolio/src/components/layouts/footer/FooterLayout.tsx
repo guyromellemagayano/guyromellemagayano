@@ -8,13 +8,13 @@ import {
   P,
   type FooterProps,
   type FooterRef
-} from '@guy-romelle-magayano/react-components/server'
+} from '@guyromellemagayano/react-components/server'
 
-import { cn, isArrayType, isEmpty } from '@guy-romelle-magayano/react-utils'
+import { cn, isArrayType, isEmpty } from '@guyromellemagayano/react-utils'
 
-import { BaseContainer } from '@guy-romelle-magayano/portfolio/components/containers/base'
-import { NavigationLink } from '@guy-romelle-magayano/portfolio/components/links/navigation'
-import { PagesData } from '@guy-romelle-magayano/portfolio/types/data'
+import { BaseContainer } from '@guyromellemagayano/portfolio/components/containers/base'
+import { NavigationLink } from '@guyromellemagayano/portfolio/components/links/navigation'
+import { PagesData } from '@guyromellemagayano/portfolio/types/data'
 
 export type FooterLayoutRef = FooterRef
 export type FooterLayoutProps = FooterProps & {

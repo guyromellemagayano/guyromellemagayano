@@ -1,14 +1,14 @@
 import { forwardRef } from 'react'
 
-import { Div } from '@guy-romelle-magayano/react-components/server'
+import { Div } from '@guyromellemagayano/react-components/server'
 
-import { isEmpty } from '@guy-romelle-magayano/react-utils'
+import { isEmpty } from '@guyromellemagayano/react-utils'
 
 import {
   SectionLayout,
   type SectionLayoutProps,
   type SectionLayoutRef
-} from '@guy-romelle-magayano/portfolio/components/layouts/section'
+} from '@guyromellemagayano/portfolio/components/layouts/section'
 
 export type WorkListRef = SectionLayoutRef
 export type WorkListProps = SectionLayoutProps

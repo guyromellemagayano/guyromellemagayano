@@ -6,9 +6,9 @@ import {
   Section,
   type SectionProps,
   type SectionRef
-} from '@guy-romelle-magayano/react-components/server'
+} from '@guyromellemagayano/react-components/server'
 
-import { cn, isEmpty, isStringType } from '@guy-romelle-magayano/react-utils'
+import { cn, isEmpty, isStringType } from '@guyromellemagayano/react-utils'
 
 export type SectionLayoutRef = SectionRef
 export type SectionLayoutProps = SectionProps & {

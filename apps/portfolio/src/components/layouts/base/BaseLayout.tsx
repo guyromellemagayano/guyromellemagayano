@@ -10,19 +10,19 @@ import {
   Head,
   Html,
   Main
-} from '@guy-romelle-magayano/react-components/server'
+} from '@guyromellemagayano/react-components/server'
 
-import { Providers } from '@guy-romelle-magayano/portfolio/app/providers'
-import { FooterLayout } from '@guy-romelle-magayano/portfolio/components/layouts/footer'
-import { HeaderLayout } from '@guy-romelle-magayano/portfolio/components/layouts/header'
+import { Providers } from '@guyromellemagayano/portfolio/app/providers'
+import { FooterLayout } from '@guyromellemagayano/portfolio/components/layouts/footer'
+import { HeaderLayout } from '@guyromellemagayano/portfolio/components/layouts/header'
 import {
   GOOGLE_ADSENSE_MEASUREMENT_URL,
   GOOGLE_ANALYTICS_MEASUREMENT_ID,
   GOOGLE_ANALYTICS_MEASUREMENT_URL
-} from '@guy-romelle-magayano/portfolio/configs'
-import { navigationData } from '@guy-romelle-magayano/portfolio/utils/server'
+} from '@guyromellemagayano/portfolio/configs'
+import { navigationData } from '@guyromellemagayano/portfolio/utils/server'
 
-import '@guy-romelle-magayano/portfolio/styles/tailwind.css'
+import '@guyromellemagayano/portfolio/styles/tailwind.css'
 
 import 'focus-visible'
 

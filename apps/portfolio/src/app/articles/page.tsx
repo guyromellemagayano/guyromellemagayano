@@ -1,10 +1,10 @@
 import { Metadata } from 'next'
 
-import { ArticlesApp } from '@guy-romelle-magayano/portfolio/components/apps/articles'
+import { ArticlesApp } from '@guyromellemagayano/portfolio/components/apps/articles'
 import {
   articlesAppData,
   articlesPageData
-} from '@guy-romelle-magayano/portfolio/utils/server'
+} from '@guyromellemagayano/portfolio/utils/server'
 
 /**
  * Generates the metadata for the articles page.

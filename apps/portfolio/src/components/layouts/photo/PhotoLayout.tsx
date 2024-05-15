@@ -6,16 +6,16 @@ import {
   Div,
   type DivisionProps,
   type DivisionRef
-} from '@guy-romelle-magayano/react-components/server'
+} from '@guyromellemagayano/react-components/server'
 
 import {
   cn,
   isArrayType,
   isEmpty,
   isStringType
-} from '@guy-romelle-magayano/react-utils'
+} from '@guyromellemagayano/react-utils'
 
-import { SlidePhotosData } from '@guy-romelle-magayano/portfolio/types/data'
+import { SlidePhotosData } from '@guyromellemagayano/portfolio/types/data'
 
 export type PhotoLayoutRef = DivisionRef
 export type PhotoLayoutProps = DivisionProps & {

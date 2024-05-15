@@ -4,8 +4,8 @@ import {
   Card,
   CardProps,
   CardRef
-} from '@guy-romelle-magayano/portfolio/components/card'
-import { ToolsItemsData } from '@guy-romelle-magayano/portfolio/types'
+} from '@guyromellemagayano/portfolio/components/card'
+import { ToolsItemsData } from '@guyromellemagayano/portfolio/types'
 
 export type ToolsCardsListRef = CardRef
 export type ToolsCardsListProps = CardProps & ToolsItemsData

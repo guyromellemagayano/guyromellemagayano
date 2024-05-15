@@ -1,27 +1,27 @@
 import { FC, forwardRef } from 'react'
 
-import { SvgProps } from '@guy-romelle-magayano/react-components'
+import { SvgProps } from '@guyromellemagayano/react-components'
 import {
   A,
   Span,
   type HyperlinkProps,
   type HyperlinkRef
-} from '@guy-romelle-magayano/react-components/server'
+} from '@guyromellemagayano/react-components/server'
 
 import {
   cn,
   convertStringToLowercase,
   isEmpty,
   isStringType
-} from '@guy-romelle-magayano/react-utils'
+} from '@guyromellemagayano/react-utils'
 
 import {
   GithubSvg,
   LinkedInSvg,
   MailSvg,
   TwitterSvg
-} from '@guy-romelle-magayano/portfolio/components/svg'
-import { SocialLinksData } from '@guy-romelle-magayano/portfolio/types/data'
+} from '@guyromellemagayano/portfolio/components/svg'
+import { SocialLinksData } from '@guyromellemagayano/portfolio/types/data'
 
 export type SocialLinkRef = HyperlinkRef
 export type SocialLinkProps = HyperlinkProps &

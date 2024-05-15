@@ -2,20 +2,20 @@ import { forwardRef, memo } from 'react'
 
 import Link from 'next/link'
 
-import { Div, Li, Span } from '@guy-romelle-magayano/react-components/server'
+import { Div, Li, Span } from '@guyromellemagayano/react-components/server'
 
 import {
   isArrayType,
   isEmpty,
   isStringType
-} from '@guy-romelle-magayano/react-utils'
+} from '@guyromellemagayano/react-utils'
 
 import {
   Card,
   type CardProps,
   type CardRef
-} from '@guy-romelle-magayano/portfolio/components/card'
-import { SkillsItemData } from '@guy-romelle-magayano/portfolio/types'
+} from '@guyromellemagayano/portfolio/components/card'
+import { SkillsItemData } from '@guyromellemagayano/portfolio/types'
 
 export type SkillsCardsListRef = CardRef
 export type SkillsCardsListProps = CardProps &

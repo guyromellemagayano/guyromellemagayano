@@ -1,10 +1,10 @@
-import { apiUrls } from '@guy-romelle-magayano/portfolio/configs'
+import { apiUrls } from '@guyromellemagayano/portfolio/configs'
 import {
   NavigationData,
   PagesData,
   SocialLinksData
-} from '@guy-romelle-magayano/portfolio/types'
-import { fetchPageData } from '@guy-romelle-magayano/portfolio/utils/server'
+} from '@guyromellemagayano/portfolio/types'
+import { fetchPageData } from '@guyromellemagayano/portfolio/utils/server'
 
 /**
  * Fetches the pages data.

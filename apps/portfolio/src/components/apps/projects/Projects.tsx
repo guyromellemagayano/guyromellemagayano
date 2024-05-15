@@ -4,15 +4,15 @@ import {
   isArrayType,
   isEmpty,
   isStringType
-} from '@guy-romelle-magayano/react-utils'
+} from '@guyromellemagayano/react-utils'
 
-import { ContentLayout } from '@guy-romelle-magayano/portfolio/components/layouts/content'
-import { ProjectsList } from '@guy-romelle-magayano/portfolio/components/lists/projects'
-import { ProjectsCardsList } from '@guy-romelle-magayano/portfolio/components/lists/projects-cards'
+import { ContentLayout } from '@guyromellemagayano/portfolio/components/layouts/content'
+import { ProjectsList } from '@guyromellemagayano/portfolio/components/lists/projects'
+import { ProjectsCardsList } from '@guyromellemagayano/portfolio/components/lists/projects-cards'
 import type {
   ProjectsData,
   ProjectsPageData
-} from '@guy-romelle-magayano/portfolio/types'
+} from '@guyromellemagayano/portfolio/types'
 
 export type ProjectsAppProps = ProjectsPageData & {
   projects?: Array<ProjectsData>

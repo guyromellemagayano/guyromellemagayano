@@ -5,28 +5,28 @@ import {
   Div,
   Heading,
   Section
-} from '@guy-romelle-magayano/react-components/server'
+} from '@guyromellemagayano/react-components/server'
 
 import {
   cn,
   isArrayType,
   isEmpty,
   isStringType
-} from '@guy-romelle-magayano/react-utils'
+} from '@guyromellemagayano/react-utils'
 
-import { BaseContainer } from '@guy-romelle-magayano/portfolio/components/containers/base'
-import { ArticleLayout } from '@guy-romelle-magayano/portfolio/components/layouts/article'
-import { ContentLayout } from '@guy-romelle-magayano/portfolio/components/layouts/content'
-import { NewsletterLayout } from '@guy-romelle-magayano/portfolio/components/layouts/newsletter'
-import { PhotoLayout } from '@guy-romelle-magayano/portfolio/components/layouts/photo'
-import { ResumeLayout } from '@guy-romelle-magayano/portfolio/components/layouts/resume'
-import { SocialLinksLayout } from '@guy-romelle-magayano/portfolio/components/layouts/social-links'
+import { BaseContainer } from '@guyromellemagayano/portfolio/components/containers/base'
+import { ArticleLayout } from '@guyromellemagayano/portfolio/components/layouts/article'
+import { ContentLayout } from '@guyromellemagayano/portfolio/components/layouts/content'
+import { NewsletterLayout } from '@guyromellemagayano/portfolio/components/layouts/newsletter'
+import { PhotoLayout } from '@guyromellemagayano/portfolio/components/layouts/photo'
+import { ResumeLayout } from '@guyromellemagayano/portfolio/components/layouts/resume'
+import { SocialLinksLayout } from '@guyromellemagayano/portfolio/components/layouts/social-links'
 import {
   type ArticlesData,
   type HomePageData,
   type ProjectsData,
   type SocialLinksData
-} from '@guy-romelle-magayano/portfolio/types'
+} from '@guyromellemagayano/portfolio/types'
 
 export type HomeAppProps = HomePageData & {
   links?: Array<SocialLinksData>

@@ -1,4 +1,4 @@
-import { Div, P } from '@guy-romelle-magayano/react-components/server'
+import { Div, P } from '@guyromellemagayano/react-components/server'
 
 /**
  * Render the loading page.

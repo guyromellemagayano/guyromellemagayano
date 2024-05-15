@@ -4,7 +4,7 @@ import { forwardRef, memo, useContext } from 'react'
 
 import { useRouter } from 'next/navigation'
 
-import { Button } from '@guy-romelle-magayano/react-components'
+import { Button } from '@guyromellemagayano/react-components'
 import {
   Article,
   Div,
@@ -14,7 +14,7 @@ import {
   Time,
   type DivisionProps,
   type DivisionRef
-} from '@guy-romelle-magayano/react-components/server'
+} from '@guyromellemagayano/react-components/server'
 
 import {
   cn,
@@ -22,14 +22,14 @@ import {
   isArrayType,
   isEmpty,
   isStringType
-} from '@guy-romelle-magayano/react-utils'
+} from '@guyromellemagayano/react-utils'
 
-import { AppContext } from '@guy-romelle-magayano/portfolio/app/providers'
-import { Article as HomeArticleLayout } from '@guy-romelle-magayano/portfolio/components/article'
-import { BaseContainer } from '@guy-romelle-magayano/portfolio/components/containers/base'
-import { Prose } from '@guy-romelle-magayano/portfolio/components/prose'
-import { ArrowLeftSvg } from '@guy-romelle-magayano/portfolio/components/svg'
-import { ArticlesData } from '@guy-romelle-magayano/portfolio/types/data'
+import { AppContext } from '@guyromellemagayano/portfolio/app/providers'
+import { Article as HomeArticleLayout } from '@guyromellemagayano/portfolio/components/article'
+import { BaseContainer } from '@guyromellemagayano/portfolio/components/containers/base'
+import { Prose } from '@guyromellemagayano/portfolio/components/prose'
+import { ArrowLeftSvg } from '@guyromellemagayano/portfolio/components/svg'
+import { ArticlesData } from '@guyromellemagayano/portfolio/types/data'
 
 export type ArticleLayoutRef = DivisionRef
 export type ArticleLayoutProps = DivisionProps & {

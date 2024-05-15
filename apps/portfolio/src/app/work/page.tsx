@@ -1,10 +1,10 @@
 import { Metadata } from 'next'
 
-import { WorkApp } from '@guy-romelle-magayano/portfolio/components/apps/work'
+import { WorkApp } from '@guyromellemagayano/portfolio/components/apps/work'
 import {
   workAppData,
   workPageData
-} from '@guy-romelle-magayano/portfolio/utils/server'
+} from '@guyromellemagayano/portfolio/utils/server'
 
 /**
  * Generates the metadata for the work page.

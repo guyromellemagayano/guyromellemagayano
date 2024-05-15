@@ -10,22 +10,22 @@ import {
   type DivisionRef,
   type HeaderProps,
   type HeaderRef
-} from '@guy-romelle-magayano/react-components/server'
+} from '@guyromellemagayano/react-components/server'
 
 import {
   clamp,
   cn,
   isArrayType,
   isEmpty
-} from '@guy-romelle-magayano/react-utils'
+} from '@guyromellemagayano/react-utils'
 
-import { Avatar } from '@guy-romelle-magayano/portfolio/components/avatar'
-import { DarkModeButton } from '@guy-romelle-magayano/portfolio/components/buttons/dark-mode'
-import { AvatarContainer } from '@guy-romelle-magayano/portfolio/components/containers/avatar'
-import { BaseContainer } from '@guy-romelle-magayano/portfolio/components/containers/base'
-import { DesktopNavigation } from '@guy-romelle-magayano/portfolio/components/navigation/desktop'
-import { MobileNavigation } from '@guy-romelle-magayano/portfolio/components/navigation/mobile'
-import { PagesData } from '@guy-romelle-magayano/portfolio/types/data'
+import { Avatar } from '@guyromellemagayano/portfolio/components/avatar'
+import { DarkModeButton } from '@guyromellemagayano/portfolio/components/buttons/dark-mode'
+import { AvatarContainer } from '@guyromellemagayano/portfolio/components/containers/avatar'
+import { BaseContainer } from '@guyromellemagayano/portfolio/components/containers/base'
+import { DesktopNavigation } from '@guyromellemagayano/portfolio/components/navigation/desktop'
+import { MobileNavigation } from '@guyromellemagayano/portfolio/components/navigation/mobile'
+import { PagesData } from '@guyromellemagayano/portfolio/types/data'
 
 export type HeaderLayoutRef = HeaderRef
 export type HeaderLayoutProps = HeaderProps & {

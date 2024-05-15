@@ -8,9 +8,9 @@ import Link from 'next/link'
 import {
   HyperlinkProps,
   HyperlinkRef
-} from '@guy-romelle-magayano/react-components/server'
+} from '@guyromellemagayano/react-components/server'
 
-import { cn } from '@guy-romelle-magayano/react-utils'
+import { cn } from '@guyromellemagayano/react-utils'
 
 export type AvatarRef = HyperlinkRef
 export type AvatarProps = HyperlinkProps & {

@@ -3,7 +3,7 @@ import { forwardRef, memo } from 'react'
 import Image from 'next/image'
 import { useRouter } from 'next/navigation'
 
-import { Button } from '@guy-romelle-magayano/react-components'
+import { Button } from '@guyromellemagayano/react-components'
 import {
   Div,
   Dl,
@@ -13,22 +13,22 @@ import {
   Span,
   type DivisionProps,
   type DivisionRef
-} from '@guy-romelle-magayano/react-components/server'
+} from '@guyromellemagayano/react-components/server'
 
 import {
   isArrayType,
   isEmpty,
   isStringType
-} from '@guy-romelle-magayano/react-utils'
+} from '@guyromellemagayano/react-utils'
 
 import {
   ArrowDownSvg,
   BriefcaseSvg
-} from '@guy-romelle-magayano/portfolio/components/svg'
+} from '@guyromellemagayano/portfolio/components/svg'
 import {
   HomePageData,
   WorkExperienceData
-} from '@guy-romelle-magayano/portfolio/types/data'
+} from '@guyromellemagayano/portfolio/types/data'
 
 export type ResumeLayoutRef = DivisionRef
 export type ResumeLayoutProps = DivisionProps & {

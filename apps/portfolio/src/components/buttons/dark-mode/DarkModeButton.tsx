@@ -8,11 +8,11 @@ import {
   Button,
   type ButtonProps,
   type ButtonRef
-} from '@guy-romelle-magayano/react-components'
+} from '@guyromellemagayano/react-components'
 
-import { cn } from '@guy-romelle-magayano/react-utils'
+import { cn } from '@guyromellemagayano/react-utils'
 
-import { MoonSvg, SunSvg } from '@guy-romelle-magayano/portfolio/components/svg'
+import { MoonSvg, SunSvg } from '@guyromellemagayano/portfolio/components/svg'
 
 export type DarkModeButtonRef = ButtonRef
 export type DarkModeButtonProps = ButtonProps

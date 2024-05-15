@@ -4,9 +4,9 @@ import {
   Div,
   type DivisionProps,
   type DivisionRef
-} from '@guy-romelle-magayano/react-components/server'
+} from '@guyromellemagayano/react-components/server'
 
-import { cn } from '@guy-romelle-magayano/react-utils'
+import { cn } from '@guyromellemagayano/react-utils'
 
 export type AvatarContainerRef = DivisionRef
 export type AvatarContainerProps = DivisionProps
