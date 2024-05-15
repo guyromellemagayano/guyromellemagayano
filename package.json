@@ -9,7 +9,7 @@
   "scripts": {
     "build": "turbo build",
     "dev": "turbo dev",
-    "format": "prettier --write \"**/*.{ts?(x),js,md?(x)}\"",
+    "format": "prettier --write \"**/*.{ts?(x),md?(x),js}\"",
     "lint": "turbo lint",
     "postinstall": "husky",
     "precommit": "lint-staged"
@@ -170,7 +170,7 @@
     }
   },
   "lint-staged": {
-    "*.{ts,tsx,json}": [
+    "*.{ts?(x),md?(x),js}": [
       "pnpm run format"
     ]
   }
