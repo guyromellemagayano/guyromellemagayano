@@ -1,8 +1,9 @@
 {
   "$schema": "https://json.schemastore.org/tsconfig",
   "display": "Default",
+  "compileOnSave": false,
   "compilerOptions": {
-    "declaration": true,
+    "declaration": false,
     "declarationMap": true,
     "esModuleInterop": true,
     "incremental": false,
@@ -14,7 +15,34 @@
     "noUncheckedIndexedAccess": true,
     "resolveJsonModule": true,
     "skipLibCheck": true,
+    "sourceMap": true,
     "strict": true,
-    "target": "ES2022"
-  }
+    "target": "ES2022",
+    "paths": {
+      "@guyromellemagayano/portfolio/*": ["apps/portfolio/src/*"],
+      "@guyromellemagayano/coin-colorful/*": ["apps/coin-colorful/src/*"],
+      "@guyromellemagayano/react-components": [
+        "packages/react/components/src/index.ts"
+      ],
+      "@guyromellemagayano/react-components/server": [
+        "packages/react/components/src/server.ts"
+      ],
+      "@guyromellemagayano/react-components/types": [
+        "packages/react/components/src/components.d.ts"
+      ],
+      "@guyromellemagayano/react-hooks": ["packages/react/hooks/src/index.ts"],
+      "@guyromellemagayano/react-hooks/server": [
+        "packages/react/hooks/src/server.ts"
+      ],
+      "@guyromellemagayano/react-libs": ["packages/react/libs/src/index.ts"],
+      "@guyromellemagayano/react-libs/server": [
+        "packages/react/libs/src/server.ts"
+      ],
+      "@guyromellemagayano/react-utils": ["packages/react/utils/src/index.ts"],
+      "@guyromellemagayano/react-utils/server": [
+        "packages/react/utils/src/server.ts"
+      ]
+    }
+  },
+  "ts-node": { "swc": true }
 }
