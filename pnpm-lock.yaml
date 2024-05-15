@@ -288,9 +288,6 @@ importers:
       '@typescript-eslint/parser':
         specifier: ^7.9.0
         version: 7.9.0(eslint@9.2.0)(typescript@5.4.5)
-      '@vercel/remote-nx':
-        specifier: ^2.0.0
-        version: 2.0.0(nx@19.0.3(@swc-node/register@1.9.1(@swc/core@1.5.7(@swc/helpers@0.5.11))(@swc/types@0.1.7)(typescript@5.4.5))(@swc/core@1.5.7(@swc/helpers@0.5.11)))
       autoprefixer:
         specifier: ^10.4.19
         version: 10.4.19(postcss@8.4.38)
@@ -3701,12 +3698,6 @@ packages:
       react:
         optional: true
 
-  '@vercel/remote-nx@2.0.0':
-    resolution: {integrity: sha512-lO5zIXnfg6Igi3Zpsf6uzSPXassO7j4udA5Jn++qKyUTqtzpn0rUav5VmNxDTS4nEDJhrYyRJwx7oUNp7yQyTQ==}
-
-  '@vercel/remote@1.0.1':
-    resolution: {integrity: sha512-5iUXUO/DBsNPFPq1tuIndhq+x14Nec1lyj0F2IelWm/cVFl7q8dnXsAPtMnr1129RD8hbOTqI2XgXKo8orAlpA==}
-
   '@vercel/speed-insights@1.0.10':
     resolution: {integrity: sha512-4uzdKB0RW6Ff2FkzshzjZ+RlJfLPxgm/00i0XXgxfMPhwnnsk92YgtqsxT9OcPLdJUyVU1DqFlSWWjIQMPkh0g==}
     peerDependencies:
@@ -4575,10 +4566,6 @@ packages:
 
   concat-map@0.0.1:
     resolution: {integrity: sha512-/Srv4dswyQNBfohGpz9o6Yb3Gz3SrUDqBH5rTuhGR7ahtlbYKnVxw2bCFMRljaA7EXHaXZ8wsHdodFvbkhKmqg==}
-
-  concat-stream@2.0.0:
-    resolution: {integrity: sha512-MWufYdFw53ccGjCA+Ol7XJYpAlW6/prSMzuPOTRnJGcGzuhLn4Scrz7qf6o8bROZ514ltazcIFJZevcfbo0x7A==}
-    engines: {'0': node >= 6.0}
 
   confusing-browser-globals@1.0.11:
     resolution: {integrity: sha512-JsPKdmh8ZkmnHxDk55FZ1TqVLvEQTvoByJZRN9jzI0UjxK/QgAmsphz7PGtqgPieQZ/CQcHWXCR7ATDNhGe+YA==}
@@ -7582,11 +7569,6 @@ packages:
     resolution: {integrity: sha512-Aq1vQD8yBIdb5jLVpzsqmu8yDmMvRVdjaM30Pp1hghhlSvorGBlpTwY+TccZJv/hBtVO+SpXK8SnnegRZMrxdw==}
     hasBin: true
 
-  nx-remotecache-custom@17.1.1:
-    resolution: {integrity: sha512-p9ccy0piga2rAb22ULV1ZyRaC6No2hIh3UIN2uQJ7WP1kM+NF7Gk3K2hQo4urnYxSF6QzQI71KcKS5DVLsqOLQ==}
-    peerDependencies:
-      nx: ^17.0.0
-
   nx@19.0.3:
     resolution: {integrity: sha512-FJ+HhKHecKvc027iA4fjWGEv2DjKj4f4UrXpDEEKUoiOiip7dKXWmZPVGkmgZC+nCD4Nbw5WvkuXGFkEf5D/SA==}
     hasBin: true
@@ -9599,9 +9581,6 @@ packages:
 
   typed-assert@1.0.9:
     resolution: {integrity: sha512-KNNZtayBCtmnNmbo5mG47p1XsCyrx6iVqomjcZnec/1Y5GGARaxPs6r49RnSPeUP3YjNYiU9sQHAtY4BBvnZwg==}
-
-  typedarray@0.0.6:
-    resolution: {integrity: sha512-/aCDEGatGvZ2BIk+HmLf4ifCJFwvKFNb9/JeZPMulfgFracn9QFcAf5GO8B/mweUjSoblS5In0cWhqpfs/5PQA==}
 
   typescript@5.4.5:
     resolution: {integrity: sha512-vcI4UpRgg81oIRUFwR0WSIHKt11nJ7SAVlYNIu+QpqeyXP+gpQJy/Z4+F0aGxSE4MqwjyXvW/TzgkLAx2AGHwQ==}
@@ -14709,24 +14688,6 @@ snapshots:
       next: 14.2.3(@babel/core@7.24.5)(@opentelemetry/api@1.8.0)(babel-plugin-macros@3.1.0)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(sass@1.77.1)
       react: 18.3.1
 
-  '@vercel/remote-nx@2.0.0(nx@19.0.3(@swc-node/register@1.9.1(@swc/core@1.5.7(@swc/helpers@0.5.11))(@swc/types@0.1.7)(typescript@5.4.5))(@swc/core@1.5.7(@swc/helpers@0.5.11)))':
-    dependencies:
-      '@vercel/remote': 1.0.1
-      chalk: 4.1.2
-      nx-remotecache-custom: 17.1.1(nx@19.0.3(@swc-node/register@1.9.1(@swc/core@1.5.7(@swc/helpers@0.5.11))(@swc/types@0.1.7)(typescript@5.4.5))(@swc/core@1.5.7(@swc/helpers@0.5.11)))
-    transitivePeerDependencies:
-      - encoding
-      - nx
-
-  '@vercel/remote@1.0.1':
-    dependencies:
-      ci-info: 3.9.0
-      concat-stream: 2.0.0
-      node-fetch: 2.7.0
-      raw-body: 2.5.2
-    transitivePeerDependencies:
-      - encoding
-
   '@vercel/speed-insights@1.0.10(next@14.2.3(@babel/core@7.24.5)(@opentelemetry/api@1.8.0)(babel-plugin-macros@3.1.0)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(sass@1.77.1))(react@18.3.1)':
     optionalDependencies:
       next: 14.2.3(@babel/core@7.24.5)(@opentelemetry/api@1.8.0)(babel-plugin-macros@3.1.0)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(sass@1.77.1)
@@ -15717,13 +15678,6 @@ snapshots:
       - supports-color
 
   concat-map@0.0.1: {}
-
-  concat-stream@2.0.0:
-    dependencies:
-      buffer-from: 1.1.2
-      inherits: 2.0.4
-      readable-stream: 3.6.2
-      typedarray: 0.0.6
 
   confusing-browser-globals@1.0.11: {}
 
@@ -19619,13 +19573,6 @@ snapshots:
     transitivePeerDependencies:
       - debug
 
-  nx-remotecache-custom@17.1.1(nx@19.0.3(@swc-node/register@1.9.1(@swc/core@1.5.7(@swc/helpers@0.5.11))(@swc/types@0.1.7)(typescript@5.4.5))(@swc/core@1.5.7(@swc/helpers@0.5.11))):
-    dependencies:
-      chalk: 4.1.2
-      dotenv: 16.4.5
-      nx: 19.0.3(@swc-node/register@1.9.1(@swc/core@1.5.7(@swc/helpers@0.5.11))(@swc/types@0.1.7)(typescript@5.4.5))(@swc/core@1.5.7(@swc/helpers@0.5.11))
-      tar: 6.2.1
-
   nx@19.0.3(@swc-node/register@1.9.1(@swc/core@1.5.7(@swc/helpers@0.5.11))(@swc/types@0.1.7)(typescript@5.4.5))(@swc/core@1.5.7(@swc/helpers@0.5.11)):
     dependencies:
       '@nrwl/tao': 19.0.3(@swc-node/register@1.9.1(@swc/core@1.5.7(@swc/helpers@0.5.11))(@swc/types@0.1.7)(typescript@5.4.5))(@swc/core@1.5.7(@swc/helpers@0.5.11))
@@ -21787,8 +21734,6 @@ snapshots:
       possible-typed-array-names: 1.0.0
 
   typed-assert@1.0.9: {}
-
-  typedarray@0.0.6: {}
 
   typescript@5.4.5: {}
 
