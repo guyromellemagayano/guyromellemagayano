@@ -11,7 +11,7 @@ export type BaseSeoData = {
 // Base type for hero components
 export type BaseHeroData = {
   heading?: string
-  description?: string[]
+  description?: string | string[]
 }
 
 // Base type for page data
@@ -192,6 +192,6 @@ export type AboutAppData = CommonPageAppData
 
 // Navigation data
 export type NavigationData = {
-  headerMenu: PagesData[]
-  footerMenu: PagesData[]
+  headerMenu: Array<PagesData>
+  footerMenu: Array<PagesData>
 }
