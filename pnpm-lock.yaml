@@ -194,8 +194,8 @@ devDependencies:
     specifier: 19.1.0
     version: 19.1.0(@swc-node/register@1.9.1)(@swc/core@1.5.7)(@types/node@20.12.12)(nx@19.0.4)(ts-node@10.9.2)(typescript@5.4.5)
   '@nx/js':
-    specifier: 19.0.4
-    version: 19.0.4(@swc-node/register@1.9.1)(@swc/core@1.5.7)(@types/node@20.12.12)(nx@19.0.4)(typescript@5.4.5)
+    specifier: 19.1.0
+    version: 19.1.0(@swc-node/register@1.9.1)(@swc/core@1.5.7)(@types/node@20.12.12)(nx@19.0.4)(typescript@5.4.5)
   '@nx/next':
     specifier: 19.0.4
     version: 19.0.4(@babel/core@7.24.5)(@swc-node/register@1.9.1)(@swc/core@1.5.7)(@types/node@20.12.12)(next@14.2.3)(nx@19.0.4)(typescript@5.4.5)(webpack@5.91.0)
@@ -4335,6 +4335,14 @@ packages:
       - nx
     dev: true
 
+  /@nrwl/devkit@19.1.0(nx@19.1.0):
+    resolution: {integrity: sha512-n4YxtAMSdlXAmwcSKcLEX48kpcPGI/sX7lCfDeoSnTKud8Y1tlNeD8rf0YZV3ae+srE6j4lxfoJrRCpWweMcEQ==}
+    dependencies:
+      '@nx/devkit': 19.1.0(nx@19.1.0)
+    transitivePeerDependencies:
+      - nx
+    dev: true
+
   /@nrwl/eslint-plugin-nx@19.0.4(@swc-node/register@1.9.1)(@swc/core@1.5.7)(@types/node@20.12.12)(@typescript-eslint/parser@7.10.0)(eslint-config-prettier@9.1.0)(eslint@8.57.0)(nx@19.0.4)(typescript@5.4.5):
     resolution: {integrity: sha512-2N0tVl43kA4icV2f8+jx5ayL3ApuxDbInkExFZ7pd1pVAkAj6dBD6CDrnrBoWnUE2lL/C/rTBPqgZic2YmK8hw==}
     dependencies:
@@ -4668,7 +4676,7 @@ packages:
     peerDependencies:
       nx: '>= 17 <= 20'
     dependencies:
-      '@nrwl/devkit': 19.1.0(nx@19.0.4)
+      '@nrwl/devkit': 19.1.0(nx@19.1.0)
       ejs: 3.1.10
       enquirer: 2.3.6
       ignore: 5.3.1
@@ -7965,6 +7973,7 @@ packages:
   /acorn@8.11.3:
     resolution: {integrity: sha512-Y9rRfJG5jcKOE0CLisYbojUjIrIEE7AGMzA/Sm4BslANhbS+cDMpgBdcPT91oJ7OuJ9hYJBx59RjbhxVnrF8Xg==}
     engines: {node: '>=0.4.0'}
+    hasBin: true
 
   /address@1.2.2:
     resolution: {integrity: sha512-4B/qKCfeE/ODUaAUpSwfzazo5x29WD4r3vXiWsB7I2mSDAihwEqKO+g8GELZUQSSAo5e1XTYh3ZVfLyxBc12nA==}
@@ -10071,6 +10080,7 @@ packages:
   /detect-port@1.6.1:
     resolution: {integrity: sha512-CmnVc+Hek2egPx1PeTFVta2W78xy2K/9Rkf6cC4T59S50tVnzKj+tnx5mmx5lwvCkujZ4uRrpRSuV+IVs3f90Q==}
     engines: {node: '>= 4.0.0'}
+    hasBin: true
     dependencies:
       address: 1.2.2
       debug: 4.3.4(supports-color@8.1.1)
@@ -13531,6 +13541,7 @@ packages:
 
   /jsesc@0.5.0:
     resolution: {integrity: sha512-uZz5UnB7u4T9LvwmFqXii7pZSouaRPorGs5who1Ip7VO0wxanFvBL7GkM6dTHlgX+jhBApRetaWpnDabOeTcnA==}
+    hasBin: true
 
   /jsesc@2.5.2:
     resolution: {integrity: sha512-OYu7XEzjkCQ3C5Ps3QIZsQfNpqoJyZZA99wd9aWd05NCtC5pWOkShK2mkL6HXQR6/Cy2lbNdPlZBpuQHXE63gA==}
@@ -16804,6 +16815,7 @@ packages:
 
   /regjsparser@0.9.1:
     resolution: {integrity: sha512-dQUtn90WanSNl+7mQKcXAgZxvUe7Z0SqXlgzv0za4LwiUhyzBC58yQO3liFoUgu8GiJVInAhJjkj1N0EtQ5nkQ==}
+    hasBin: true
     dependencies:
       jsesc: 0.5.0
 
