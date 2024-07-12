@@ -76,7 +76,7 @@
     "@nx/react": "19.4.2",
     "@nx/workspace": "^19.4.2",
     "@parcel/watcher": "^2.4.1",
-    "@swc-node/register": "^1.10.3",
+    "@swc-node/register": "^1.10.4",
     "@swc/core": "^1.6.13",
     "@swc/helpers": "^0.5.11",
     "@swc/types": "^0.1.9",
