@@ -102,7 +102,7 @@
     "@nx/next": "^17.0.0",
     "@nx/node": "^17.0.0",
     "@nx/playwright": "^17.0.0",
-    "@nx/react": "^17.0.0",
+    "@nx/react": "^19.8.0",
     "@nx/workspace": "^17.0.0",
     "@parcel/watcher": "^2.4.1",
     "@playwright/test": "^1.46.1",
