@@ -95,7 +95,7 @@
     "@graphql-codegen/typescript-operations": "^4.2.3",
     "@graphql-codegen/typescript-react-query": "^6.1.0",
     "@nx/cypress": "^17.0.0",
-    "@nx/eslint": "^17.0.0",
+    "@nx/eslint": "^19.8.1",
     "@nx/eslint-plugin": "^17.0.0",
     "@nx/jest": "^17.0.0",
     "@nx/js": "^17.0.0",
