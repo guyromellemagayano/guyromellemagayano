@@ -96,7 +96,7 @@
     "@graphql-codegen/typescript-react-query": "^6.1.0",
     "@parcel/watcher": "^2.4.1",
     "@playwright/test": "^1.47.2",
-    "@sentry/utils": "^8.33.0",
+    "@sentry/utils": "^8.33.1",
     "@spotlightjs/overlay": "^2.5.2",
     "@swc-node/register": "^1.10.9",
     "@swc/cli": "0.4.1-nightly.20240914",
