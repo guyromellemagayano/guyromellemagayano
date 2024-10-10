@@ -245,8 +245,8 @@ devDependencies:
     specifier: ^1.47.2
     version: 1.47.2
   '@sentry/utils':
-    specifier: ^8.33.0
-    version: 8.33.0
+    specifier: ^8.34.0
+    version: 8.34.0
   '@spotlightjs/overlay':
     specifier: ^2.5.2
     version: 2.5.2
@@ -6265,12 +6265,26 @@ packages:
   /@sentry/types@8.33.0:
     resolution: {integrity: sha512-V/A+72ZdnfGtXeXIpz1kUo3LRdq3WKEYYFUR2RKpCdPh9yeOrHq6u/rmzTWx49+om0yhZN+JhVoxDzt75UoFRg==}
     engines: {node: '>=14.18'}
+    dev: false
+
+  /@sentry/types@8.34.0:
+    resolution: {integrity: sha512-zLRc60CzohGCo6zNsNeQ9JF3SiEeRE4aDCP9fDDdIVCOKovS+mn1rtSip0qd0Vp2fidOu0+2yY0ALCz1A3PJSQ==}
+    engines: {node: '>=14.18'}
+    dev: true
 
   /@sentry/utils@8.33.0:
     resolution: {integrity: sha512-TdwtGdevJij2wq2x/hDUr+x5TXt47ZhWxZ8zluai/lnIDTUB3Xs/L9yHtj1J+H9hr8obkMASE9IanUrWXzrP6Q==}
     engines: {node: '>=14.18'}
     dependencies:
       '@sentry/types': 8.33.0
+    dev: false
+
+  /@sentry/utils@8.34.0:
+    resolution: {integrity: sha512-W1KoRlFUjprlh3t86DZPFxLfM6mzjRzshVfMY7vRlJFymBelJsnJ3A1lPeBZM9nCraOSiw6GtOWu6k5BAkiGIg==}
+    engines: {node: '>=14.18'}
+    dependencies:
+      '@sentry/types': 8.34.0
+    dev: true
 
   /@sentry/vercel-edge@8.33.0:
     resolution: {integrity: sha512-5NGTt4FEZ1R49NIAczE886hpJBqo8wexM1D7ooTq8QmDqxTXQUW8m6Yg9SJkLP0LujrAAUr22PeH0wDiEl4M+w==}
