@@ -46,7 +46,7 @@
     "@mdx-js/react": "^3.0.1",
     "@next/mdx": "^14.2.14",
     "@next/third-parties": "^14.2.14",
-    "@sentry/nextjs": "^8.33.0",
+    "@sentry/nextjs": "^8.34.0",
     "@spotlightjs/spotlight": "^2.4.2",
     "@stripe/react-stripe-js": "^2.8.0",
     "@stripe/stripe-js": "^4.6.0",
