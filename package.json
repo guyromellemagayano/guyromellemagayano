@@ -128,7 +128,7 @@
     "@nx/next": "^17.0.0",
     "@nx/node": "^17.0.0",
     "@nx/playwright": "17.3.2",
-    "@nx/react": "17.3.2",
+    "@nx/react": "20.0.7",
     "@nx/vite": "17.3.2",
     "@nx/web": "17.3.2",
     "@nx/workspace": "^17.0.0",
