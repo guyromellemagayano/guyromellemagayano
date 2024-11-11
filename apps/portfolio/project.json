@@ -3,77 +3,41 @@
   "$schema": "../../node_modules/nx/schemas/project-schema.json",
   "sourceRoot": "apps/portfolio",
   "projectType": "application",
-  "tags": [],
+  "tags": ["portfolio"],
   "targets": {
     "build": {
-      "executor": "@nx/next:build",
-      "defaultConfiguration": "production",
+      "executor": "@nx/remix:build",
+      "outputs": ["{options.outputPath}"],
       "options": {
-        "outputPath": "dist/apps/portfolio",
-        "postcssConfig": "apps/portfolio/postcss.config.js",
-        "outputFileName": "apps/portfolio/next.config.mjs"
-      },
-      "configurations": {
-        "development": {
-          "mode": "development",
-          "outputPath": "apps/portfolio"
-        },
-        "production": {
-          "mode": "production",
-          "generateLockfile": true
-        }
+        "outputPath": "dist/apps/portfolio"
       }
     },
     "serve": {
-      "executor": "@nx/next:server",
-      "defaultConfiguration": "development",
+      "executor": "@nx/remix:serve",
       "options": {
-        "buildTarget": "portfolio:build",
-        "dev": true
-      },
-      "configurations": {
-        "development": {
-          "buildTarget": "portfolio:build:development",
-          "dev": true
-        },
-        "production": {
-          "buildTarget": "portfolio:build:production",
-          "dev": false
-        }
+        "command": "pnpm exec remix-serve build/index.js",
+        "manual": true,
+        "port": 4200
       }
     },
-    "export": {
-      "executor": "@nx/next:export",
+    "start": {
+      "dependsOn": ["build"],
+      "command": "remix-serve build/index.js",
       "options": {
-        "buildTarget": "portfolio:build:production"
+        "cwd": "apps/portfolio"
+      }
+    },
+    "typecheck": {
+      "command": "tsc --project tsconfig.app.json",
+      "options": {
+        "cwd": "apps/portfolio"
       }
     },
     "test": {
-      "executor": "@nx/jest:jest",
-      "outputs": [
-        "{workspaceRoot}/coverage/{projectRoot}"
-      ],
+      "executor": "@nx/vite:test",
+      "outputs": ["{options.reportsDirectory}"],
       "options": {
-        "jestConfig": "apps/portfolio/jest.config.ts",
-        "passWithNoTests": true
-      },
-      "configurations": {
-        "ci": {
-          "ci": true,
-          "codeCoverage": true
-        }
-      }
-    },
-    "lint": {
-      "executor": "@nx/eslint:lint",
-      "outputs": [
-        "{options.outputFile}"
-      ],
-      "options": {
-        "lintFilePatterns": [
-          "apps/portfolio/**/*.ts?(x)"
-        ],
-        "fix": true
+        "reportsDirectory": "../../coverage/apps/portfolio"
       }
     }
   }
