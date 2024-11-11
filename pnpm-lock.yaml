@@ -6004,7 +6004,6 @@ packages:
   /@spotlightjs/sidecar@1.9.2:
     resolution: {integrity: sha512-xGHyyXotXLwNjM9XbIY7tK1jX8t8b7gX3h7UNqB9Hcd8YJW2mRl/ZJUedXQh6oK/TY8+mLZo8xyE7uJ70iljOA==}
     engines: {node: '>=18'}
-    hasBin: true
     dependencies:
       kleur: 4.1.5
       launch-editor: 2.9.1
@@ -6014,7 +6013,6 @@ packages:
   /@spotlightjs/spotlight@2.7.0:
     resolution: {integrity: sha512-wQkn1z2aMisNfeEK5J675Unzee9WVtKn4PfW6aPpc/hVR497BiU3z+JzO22bkPwFdn8eG8u1u1+Se1c8/rrgmw==}
     engines: {node: '>=18'}
-    hasBin: true
     dependencies:
       '@spotlightjs/overlay': 2.8.0
       '@spotlightjs/sidecar': 1.9.2
@@ -9450,7 +9448,6 @@ packages:
   /cypress@13.16.1:
     resolution: {integrity: sha512-17FtCaz0cx7ssWYKXzGB0Vub8xHwpVPr+iPt2fHhLMDhVAPVrplD+rTQsZUsfb19LVBn5iwkEUFjQ1yVVJXsLA==}
     engines: {node: ^16.0.0 || ^18.0.0 || >=20.0.0}
-    hasBin: true
     requiresBuild: true
     dependencies:
       '@cypress/request': 3.0.6
@@ -11102,7 +11099,6 @@ packages:
   /extract-zip@2.0.1(supports-color@8.1.1):
     resolution: {integrity: sha512-GDhU9ntwuKyGXdZBUgTIe+vXnWj0fppUEtMDL0+idd5Sta8TGpHssn/eusA9mrPr9qNDym6SxAYZjNvCn/9RBg==}
     engines: {node: '>= 10.17.0'}
-    hasBin: true
     dependencies:
       debug: 4.3.7(supports-color@8.1.1)
       get-stream: 5.2.0
@@ -16845,7 +16841,6 @@ packages:
   /postject@1.0.0-alpha.6:
     resolution: {integrity: sha512-b9Eb8h2eVqNE8edvKdwqkrY6O7kAwmI8kcnBv1NScolYJbo59XUF0noFq+lxbC1yN20bmC0WBEbDC5H/7ASb0A==}
     engines: {node: '>=14.0.0'}
-    hasBin: true
     dependencies:
       commander: 9.5.0
     dev: false
@@ -17831,7 +17826,6 @@ packages:
 
   /semver@5.7.2:
     resolution: {integrity: sha512-cBznnQ9KjJqU67B52RMC65CMarK2600WFnbkcaiwWq3xy/5haFJlshgnpjovMVJ+Hff49d8GEn0b87C5pDQ10g==}
-    hasBin: true
     requiresBuild: true
     dev: true
     optional: true
@@ -18207,7 +18201,6 @@ packages:
   /sshpk@1.18.0:
     resolution: {integrity: sha512-2p2KJZTSqQ/I3+HX42EpYOa2l3f8Erv8MWKsy2I9uf4wA7yFIkXRffYdsx86y6z4vHtV8u7g+pPlr8/4ouAxsQ==}
     engines: {node: '>=0.10.0'}
-    hasBin: true
     dependencies:
       asn1: 0.2.6
       assert-plus: 1.0.0
@@ -18951,7 +18944,6 @@ packages:
 
   /tree-kill@1.2.2:
     resolution: {integrity: sha512-L0Orpi8qGpRG//Nd+H90vFB+3iHnue1zSSGmNOOCh1GLJ7rUKVwV2HvijphGQS2UmhUZewS9VgvxYIdgr+fG1A==}
-    hasBin: true
     dev: true
 
   /trim-lines@3.0.1:
