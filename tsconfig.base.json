@@ -53,9 +53,6 @@
       "@react-components": [
         "packages/react/components/src/index.ts"
       ],
-      "@react-hooks": [
-        "packages/react/hooks/src/index.ts"
-      ],
       "@react-libs": [
         "packages/react/libs/src/index.ts"
       ],
