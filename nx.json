@@ -6,21 +6,50 @@
       "sharedGlobals"
     ],
     "production": [
-      "default",
-      "!{projectRoot}/cypress/**/*",
+      "!{projectRoot}/.eslintrc.json",
+      "!{projectRoot}/**/?(*.)+(spec|test).[jt]s?(x)?(.snap)",
       "!{projectRoot}/**/*.cy.[jt]s?(x)",
       "!{projectRoot}/cypress.config.[jt]s",
-      "!{projectRoot}/.eslintrc.json",
+      "!{projectRoot}/cypress/**/*",
       "!{projectRoot}/eslint.config.js",
-      "!{projectRoot}/**/?(*.)+(spec|test).[jt]s?(x)?(.snap)",
-      "!{projectRoot}/tsconfig.spec.json",
       "!{projectRoot}/jest.config.[jt]s",
       "!{projectRoot}/src/test-setup.[jt]s",
-      "!{projectRoot}/test-setup.[jt]s"
+      "!{projectRoot}/test-setup.[jt]s",
+      "!{projectRoot}/tsconfig.spec.json",
+      "default"
     ],
-    "sharedGlobals": []
+    "sharedGlobals": [
+      "{workspaceRoot}/.github/workflows/ci.yml"
+    ]
   },
+  "nxCloudId": "66cbc08484a793b218a777f1",
+  "nxCloudAccessToken": "ZTYyMDM4ZTAtMWQxYS00MjFkLWFjYTItZWM5Mzk3ZWVmZWE3fHJlYWQtd3JpdGU=",
+  "defaultBase": "main",
+  "useInferencePlugins": false,
   "plugins": [
+    {
+      "plugin": "@nx/js/typescript",
+      "options": {
+        "typecheck": {
+          "targetName": "typecheck"
+        },
+        "build": {
+          "targetName": "build",
+          "configName": "tsconfig.lib.json"
+        }
+      }
+    },
+    {
+      "plugin": "@nx/vite/plugin",
+      "options": {
+        "buildTargetName": "build",
+        "testTargetName": "test",
+        "serveTargetName": "serve",
+        "previewTargetName": "preview",
+        "serveStaticTargetName": "serve-static",
+        "typecheckTargetName": "typecheck"
+      }
+    },
     {
       "plugin": "@nx/cypress/plugin",
       "options": {
@@ -106,6 +135,16 @@
         "^production"
       ]
     },
+    "@nx/js:swc": {
+      "cache": true,
+      "dependsOn": [
+        "^build"
+      ],
+      "inputs": [
+        "production",
+        "^production"
+      ]
+    },
     "@nx/remix:build": {
       "cache": true,
       "dependsOn": [
@@ -134,7 +173,9 @@
       }
     }
   },
-  "nxCloudAccessToken": "ZTYyMDM4ZTAtMWQxYS00MjFkLWFjYTItZWM5Mzk3ZWVmZWE3fHJlYWQtd3JpdGU=",
-  "defaultBase": "main",
-  "useInferencePlugins": false
+  "release": {
+    "version": {
+      "preVersionCommand": "pnpm dlx nx run-many -t build"
+    }
+  }
 }
