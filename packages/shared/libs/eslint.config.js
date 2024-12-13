@@ -9,6 +9,7 @@ const compat = new FlatCompat({
 
 module.exports = [
   ...baseConfig,
+  ...compat.extends('plugin:prettier/recommended'),
   ...compat
     .config({ extends: ['plugin:@nx/react-typescript'] })
     .map(config => ({
@@ -35,15 +36,7 @@ module.exports = [
   {
     files: ['**/*.json'],
     rules: {
-      '@nx/dependency-checks': [
-        'error',
-        {
-          ignoredFiles: [
-            '{projectRoot}/eslint.config.{js,cjs,mjs}',
-            '{projectRoot}/vite.config.{js,ts,mjs,mts}'
-          ]
-        }
-      ]
+      'prettier/prettier': 'off'
     },
     languageOptions: {
       parser: require('jsonc-eslint-parser')

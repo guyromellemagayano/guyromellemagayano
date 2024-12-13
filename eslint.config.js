@@ -8,9 +8,9 @@ const compat = new FlatCompat({
 })
 
 module.exports = [
-  ...compat.extends('plugin:prettier/recommended'),
   { plugins: { '@nx': nxEslintPlugin } },
   { settings: { react: { version: 'detect' } } },
+  ...compat.extends('plugin:prettier/recommended'),
   ...compat
     .config({
       parser: '@typescript-eslint/parser',
@@ -65,6 +65,15 @@ module.exports = [
       ...config,
       files: ['**/*.{spec,test}.{ts,tsx}', '**/__tests__/*.{ts,tsx}']
     })),
+  {
+    files: ['**/*.json'],
+    rules: {
+      'prettier/prettier': 'off'
+    },
+    languageOptions: {
+      parser: require('jsonc-eslint-parser')
+    }
+  },
   {
     ignores: [
       '# Custom',
