@@ -31,5 +31,14 @@ module.exports = [
         '**/*.test.ts',
         '**/*.test.tsx'
       ]
-    }))
+    })),
+  {
+    files: ['**/*.json'],
+    rules: {
+      'prettier/prettier': 'off'
+    },
+    languageOptions: {
+      parser: require('jsonc-eslint-parser')
+    }
+  }
 ]
