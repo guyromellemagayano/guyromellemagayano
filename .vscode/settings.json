@@ -15,9 +15,6 @@
   "git.autofetch": true,
   "git.confirmSync": false,
   "npm.packageManager": "pnpm",
-  "i18n-ally.localesPaths": [
-    "apps/portfolio/messages"
-  ],
   "i18n-ally.keystyle": "nested",
   "i18n-ally.sourceLanguage": "en-US",
   "eslint.format.enable": true,
@@ -48,6 +45,8 @@
   "typescript.tsdk": "node_modules/typescript/lib",
   "typescript.enablePromptUseWorkspaceTsdk": true,
   "graphql-config.load.rootDir": "",
+  "nxConsole.nxWorkspacePath": "./",
+  "prettier.configPath": "./prettier.config.js",
   "files.associations": {
     "*.ts": "typescript",
     "*.tsx": "typescriptreact",
@@ -95,5 +94,4 @@
   "[xml]": {
     "editor.defaultFormatter": "redhat.vscode-xml"
   },
-  "nxConsole.nxWorkspacePath": ""
 }
