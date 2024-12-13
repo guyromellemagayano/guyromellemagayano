@@ -189,3 +189,7 @@ apps/*-server-*/
 
 # Next.js
 .next
+
+# Vite
+**/vite.config.{js,ts,mjs,mts,cjs,cts}.timestamp*
+vite.config.*.timestamp*

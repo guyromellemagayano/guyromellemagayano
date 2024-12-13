@@ -183,9 +183,8 @@ typings/
 Thumbs.db
 
 # NX
-.nx/cache/
+.nx/
 apps/*-server-*/
-.nx/workspace-data/
 
 # Sentry Config File
 .sentryclirc
