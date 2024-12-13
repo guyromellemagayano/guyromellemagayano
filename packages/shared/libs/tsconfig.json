@@ -4,12 +4,12 @@
     "jsx": "react-jsx",
     "allowJs": false,
     "esModuleInterop": false,
-    "allowSyntheticDefaultImports": true,
+    "allowSyntheticDefaultImports": true
   },
   "include": [],
   "references": [
     {
       "path": "./tsconfig.lib.json"
     }
-  ],
+  ]
 }
